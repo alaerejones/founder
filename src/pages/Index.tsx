@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -254,48 +252,40 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Impact by Numbers - Refined */}
+      {/* Impact by Numbers - Updated */}
       <section className="py-8 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                </svg>
+              <div className="w-12 h-12 mx-auto bg-foreground rounded-full flex items-center justify-center text-white mb-3">
+                <Home className="w-6 h-6" />
               </div>
-              <div className="text-2xl font-bold text-foreground">500+</div>
-              <p className="text-sm text-muted-foreground">Youth Empowered</p>
+              <div className="text-2xl font-bold text-foreground">150+</div>
+              <p className="text-sm text-muted-foreground">Real estate development Projects delivered through sinocle across west africa</p>
             </div>
             
             <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm3 2a1 1 0 000 2h6a1 1 0 100-2H7z"></path>
-                </svg>
-              </div>
-              <div className="text-2xl font-bold text-foreground">₦50M+</div>
-              <p className="text-sm text-muted-foreground">Investments Made</p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
+              <div className="w-12 h-12 mx-auto bg-foreground rounded-full flex items-center justify-center text-white mb-3">
+                <Building className="w-6 h-6" />
               </div>
               <div className="text-2xl font-bold text-foreground">4</div>
-              <p className="text-sm text-muted-foreground">Active Ventures</p>
+              <p className="text-sm text-muted-foreground">Major Sectors of operation</p>
             </div>
             
             <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path>
-                </svg>
+              <div className="w-12 h-12 mx-auto bg-foreground rounded-full flex items-center justify-center text-white mb-3">
+                <Users className="w-6 h-6" />
               </div>
-              <div className="text-2xl font-bold text-foreground">15</div>
-              <p className="text-sm text-muted-foreground">Communities Reached</p>
+              <div className="text-2xl font-bold text-foreground">10,000+</div>
+              <p className="text-sm text-muted-foreground">Lives Impacted</p>
+            </div>
+            
+            <div className="space-y-2">
+              <div className="w-12 h-12 mx-auto bg-foreground rounded-full flex items-center justify-center text-white mb-3">
+                <Award className="w-6 h-6" />
+              </div>
+              <div className="text-2xl font-bold text-foreground">15+</div>
+              <p className="text-sm text-muted-foreground">Awards Received</p>
             </div>
           </div>
         </div>
@@ -546,4 +536,3 @@ const Index = () => {
 };
 
 export default Index;
-
