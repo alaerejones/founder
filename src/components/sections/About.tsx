@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { ArrowRight, Building2, Users, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-12 lg:py-16 bg-white">
+    <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
