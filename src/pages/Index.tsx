@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -214,7 +213,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-full h-32 mx-auto mb-4 rounded-lg overflow-hidden">
+              <div className="w-full h-48 mx-auto mb-4 rounded-lg overflow-hidden">
                 <img 
                   src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
                   alt="Sinocle Nigeria Limited Team" 
@@ -229,8 +228,8 @@ const Index = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-full h-32 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
-                <Leaf className="w-12 h-12" />
+              <div className="w-full h-48 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+                <Leaf className="w-16 h-16" />
               </div>
               <h3 className="font-semibold text-foreground mb-2 text-center">Sinocle Agrosolutions</h3>
               <p className="text-sm text-muted-foreground text-center mb-4">Innovative agricultural technology and sustainable farming solutions</p>
@@ -240,8 +239,8 @@ const Index = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-full h-32 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
-                <Zap className="w-12 h-12" />
+              <div className="w-full h-48 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+                <Zap className="w-16 h-16" />
               </div>
               <h3 className="font-semibold text-foreground mb-2 text-center">Sinocle Energy Solutions</h3>
               <p className="text-sm text-muted-foreground text-center mb-4">Renewable energy infrastructure for sustainable development</p>
@@ -251,8 +250,8 @@ const Index = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-full h-32 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
-                <Lightbulb className="w-12 h-12" />
+              <div className="w-full h-48 mx-auto bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+                <Lightbulb className="w-16 h-16" />
               </div>
               <h3 className="font-semibold text-foreground mb-2 text-center">iLunar Technologies</h3>
               <p className="text-sm text-muted-foreground text-center mb-4">Cutting-edge technology solutions and digital innovation</p>
