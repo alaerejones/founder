@@ -66,12 +66,12 @@ const Hero = () => {
               </div>
               
               {/* Floating Achievement Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-background border border-border rounded-lg shadow-lg p-3">
+              <div className="absolute -bottom-6 -right-6 bg-background border border-border rounded-lg shadow-lg p-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <Building className="w-4 h-4 text-primary-foreground" />
                   </div>
-                  <div>
+                  <div className="text-right">
                     <div className="text-xs font-semibold text-foreground">CEO</div>
                     <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
                   </div>
