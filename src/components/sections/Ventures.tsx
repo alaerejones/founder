@@ -12,8 +12,7 @@ const Ventures = () => {
       description: "Premier real estate development and construction solutions transforming Nigeria's landscape",
       image: "/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png",
       tag: "Real Estate",
-      tagColor: "bg-primary/10 text-primary",
-      gradient: "from-primary to-primary"
+      tagColor: "bg-primary/10 text-primary"
     },
     {
       icon: Leaf,
@@ -21,8 +20,7 @@ const Ventures = () => {
       description: "Revolutionary agricultural technology and sustainable farming solutions for Africa",
       image: null,
       tag: "Agriculture",
-      tagColor: "bg-secondary/20 text-primary",
-      gradient: "from-primary to-secondary"
+      tagColor: "bg-primary/10 text-primary"
     },
     {
       icon: Zap,
@@ -30,8 +28,7 @@ const Ventures = () => {
       description: "Next-generation renewable energy infrastructure for sustainable African development",
       image: null,
       tag: "Coming Soon",
-      tagColor: "bg-primary/10 text-primary",
-      gradient: "from-secondary to-primary"
+      tagColor: "bg-primary/10 text-primary"
     },
     {
       icon: Lightbulb,
@@ -39,22 +36,15 @@ const Ventures = () => {
       description: "Cutting-edge technology solutions driving digital transformation across industries",
       image: null,
       tag: "Co-founder",
-      tagColor: "bg-secondary/20 text-primary",
-      gradient: "from-primary to-secondary"
+      tagColor: "bg-primary/10 text-primary"
     }
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-gradient-to-bl from-primary/10 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-gradient-to-tr from-secondary/10 to-transparent rounded-full blur-3xl"></div>
-      </div>
-      
-      <div className="container mx-auto px-4 lg:px-6 relative z-10">
+    <section className="py-16 lg:py-24 bg-white">
+      <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full mb-6" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">Portfolio</span>
           </div>
           
@@ -69,48 +59,39 @@ const Ventures = () => {
         
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {ventures.map((venture, index) => (
-            <div key={venture.title} className="group relative">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+            <div key={venture.title}>
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg border">
                 {/* Image or Icon Header */}
                 <div className="relative h-64 overflow-hidden">
                   {venture.image ? (
                     <img 
                       src={venture.image} 
                       alt={venture.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className={`w-full h-full bg-gradient-to-br ${venture.gradient} flex items-center justify-center relative`}>
-                      <venture.icon className="w-20 h-20 text-white/90" />
-                      <div className="absolute inset-0 bg-black/10"></div>
+                    <div className="w-full h-full bg-primary flex items-center justify-center">
+                      <venture.icon className="w-20 h-20 text-white" />
                     </div>
                   )}
                   
                   {/* Tag */}
                   <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${venture.tagColor} backdrop-blur-sm`}>
+                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${venture.tagColor}`}>
                       {venture.tag}
                     </span>
-                  </div>
-                  
-                  {/* Arrow Icon */}
-                  <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <ArrowUpRight className="w-5 h-5 text-white" />
                   </div>
                 </div>
                 
                 {/* Content */}
                 <div className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-foreground mb-3">
                     {venture.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {venture.description}
                   </p>
                 </div>
-                
-                {/* Hover Effect Border */}
-                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-primary/20 transition-colors duration-300 pointer-events-none"></div>
               </div>
             </div>
           ))}
@@ -118,9 +99,9 @@ const Ventures = () => {
         
         <div className="text-center">
           <Link to="/ventures">
-            <Button size="lg" className="group text-white bg-primary hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Button size="lg" className="text-white bg-primary hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-2xl">
               Explore All Ventures
-              <ArrowUpRight className="w-5 h-5 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+              <ArrowUpRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
         </div>

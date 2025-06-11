@@ -6,20 +6,13 @@ import { ArrowRight, Building2, Users, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-secondary/5 to-primary/5 rounded-full blur-3xl"></div>
-      </div>
-      
-      <div className="container mx-auto px-4 lg:px-6 relative z-10">
+    <section className="py-16 lg:py-24 bg-white">
+      <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
           <div className="relative order-2 lg:order-1">
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
-              <div className="relative bg-white rounded-2xl p-2 shadow-2xl">
+              <div className="bg-white rounded-2xl p-2 shadow-lg border">
                 <img 
                   src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                   alt="Onyeolu Israel Chima" 
@@ -28,10 +21,10 @@ const About = () => {
               </div>
               
               {/* Floating Stats */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border">
+              <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-lg p-6 border">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                    <Building2 className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
+                    <Building2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-foreground">150+</div>
@@ -40,10 +33,10 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-6 border">
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-6 border">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
-                    <Trophy className="w-6 h-6 text-black" />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
+                    <Trophy className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-foreground">15+</div>
@@ -57,7 +50,7 @@ const About = () => {
           {/* Content Section */}
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full">
+              <div className="inline-flex items-center px-4 py-2 rounded-full" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Ambassador</span>
               </div>
               
@@ -88,13 +81,13 @@ const About = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Link to="/about">
-                <Button size="lg" className="group w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8 transition-all duration-300">
+                <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8">
                   Learn More
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 transition-all duration-300">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-8">
                   Partner with Me
                 </Button>
               </Link>
