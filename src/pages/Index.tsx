@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -11,8 +10,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Enhanced Hero Section */}
-      <section className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+      {/* Enhanced Hero Section with reduced height */}
+      <section className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden" style={{ minHeight: 'calc(85vh - 4rem)' }}>
         {/* Subtle background elements */}
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
@@ -20,7 +19,7 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 lg:px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-4rem)]">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Content - Enhanced */}
             <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -387,3 +386,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
