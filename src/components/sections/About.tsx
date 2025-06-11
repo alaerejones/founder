@@ -6,7 +6,7 @@ import { ArrowRight, Building2, Users, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-12 lg:py-16 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
@@ -16,7 +16,7 @@ const About = () => {
                 <img 
                   src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                   alt="Onyeolu Israel Chima" 
-                  className="w-full h-[400px] object-cover object-center rounded-xl"
+                  className="w-full h-[480px] object-cover object-center rounded-xl"
                 />
               </div>
               
@@ -27,8 +27,8 @@ const About = () => {
                     <Building2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-foreground">150+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
+                    <div className="text-2xl font-bold text-foreground">200+</div>
+                    <div className="text-sm text-muted-foreground">Clients</div>
                   </div>
                 </div>
               </div>
@@ -39,8 +39,8 @@ const About = () => {
                     <Trophy className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-foreground">15+</div>
-                    <div className="text-sm text-muted-foreground">Awards</div>
+                    <div className="text-2xl font-bold text-foreground">5+</div>
+                    <div className="text-sm text-muted-foreground">Years</div>
                   </div>
                 </div>
               </div>
@@ -51,14 +51,14 @@ const About = () => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6">
               <div className="inline-flex items-center px-4 py-2 rounded-full" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Ambassador</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Amb. Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 As CEO of Sinocle Nigeria Limited and ECOWAS Youth Ambassador, I'm transforming Africa through strategic business ventures across real estate, agriculture, and technology.
               </p>
             </div>
