@@ -37,9 +37,6 @@ const Hero = () => {
                 <p className="text-lg lg:text-xl text-secondary font-semibold animate-fade-in">
                   Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
                 </p>
-                <p className="text-base lg:text-lg text-white/90 max-w-lg leading-relaxed animate-fade-in">
-                  As CEO of Sinocle Nigeria Limited and serial entrepreneur, I'm transforming Africa through strategic business ventures across multiple sectors and youth empowerment initiatives.
-                </p>
               </div>
             </div>
             
