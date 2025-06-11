@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -146,7 +147,7 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
+            <div className="relative order-1 lg:order-1">
               <img 
                 src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
                 alt="Onyeolu Israel Chima in Professional Setting" 
@@ -154,7 +155,7 @@ const Index = () => {
               />
             </div>
             
-            <div className="space-y-6 order-1 lg:order-2">
+            <div className="space-y-6 order-2 lg:order-2">
               <div className="space-y-4">
                 <p className="text-sm font-semibold tracking-[2px] text-primary uppercase">
                   ABOUT AMBASSADOR CHIMA
@@ -184,7 +185,7 @@ const Index = () => {
       </section>
 
       {/* Impact by Numbers - Refined */}
-      <section className="py-12 bg-muted/30">
+      <section className="py-8 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div className="space-y-2">
@@ -370,47 +371,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Preview Section */}
-      <section className="py-16 lg:py-20 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <p className="text-sm font-semibold tracking-[2px] text-primary uppercase">
-                  ABOUT AMBASSADOR CHIMA
-                </p>
-                <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground leading-tight">
-                  Building Africa's Future Through Strategic Leadership
-                </h2>
-              </div>
-              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                From humble beginnings to leading Sinocle Nigeria Limited, my journey has been driven by passion for transforming Africa. My work spans real estate, agriculture, energy, and technology — leaving a lasting impact across sectors and communities through strategic business ventures and youth empowerment.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link to="/about">
-                  <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90">
-                    Learn More About My Journey
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white">
-                    Start a Conversation
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
-                alt="Onyeolu Israel Chima in Professional Setting" 
-                className="w-full rounded-lg shadow-xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Strong CTA Section */}
       <section className="py-16 lg:py-20 bg-primary text-white">
         <div className="container mx-auto px-4 lg:px-6">
@@ -519,5 +479,3 @@ const Index = () => {
 };
 
 export default Index;
-
-</initial_code>
