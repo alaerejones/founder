@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Users, Trophy } from 'lucide-react';
+import { ArrowRight, Calendar, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
@@ -20,26 +20,14 @@ const About = () => {
               </div>
               
               {/* Floating Stats */}
-              <div className="absolute -top-6 -right-6 bg-white rounded-2xl shadow-lg p-6 border">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                    <Building2 className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-foreground">200+</div>
-                    <div className="text-sm text-muted-foreground">Clients</div>
-                  </div>
-                </div>
-              </div>
-              
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-6 border">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                    <Trophy className="w-6 h-6 text-primary" />
+                    <Calendar className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-foreground">5+</div>
-                    <div className="text-sm text-muted-foreground">Years</div>
+                    <div className="text-2xl font-bold text-foreground">20+</div>
+                    <div className="text-sm text-muted-foreground">Years in Business</div>
                   </div>
                 </div>
               </div>
