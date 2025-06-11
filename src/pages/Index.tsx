@@ -172,7 +172,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="text-xs font-semibold text-gray-900">CEO</div>
-                      <div className="text-xs text-gray-600">Sinocle Group/ Co-Founder Ilunar Technologies</div>
+                      <div className="text-xs text-gray-600">Sinocle Group/Ilunar Technologies</div>
                     </div>
                   </div>
                 </div>
@@ -536,3 +536,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
