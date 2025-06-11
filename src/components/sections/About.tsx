@@ -27,19 +27,31 @@ const About = () => {
             
             <div className="space-y-5">
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                As CEO of Sinocle Nigeria Limited, I've spent the last decade developing projects across West Africa. Started with real estate in Lagos, expanded into agricultural ventures in the northern regions, and now exploring technology solutions that connect these traditional sectors.
+                As the CEO of Sinocle Nigeria Limited and co-founder of Ilunar Technologies, my journey has been defined by a passion for building businesses that not only succeed but also serve, creating real solutions, generating employment, and contributing to sustainable development across Nigeria and West Africa.
               </p>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                The ECOWAS Youth Council recognized this work when they appointed me as West Africa Youth Ambassador. It's not about the title—it's about the platform to create opportunities for the next generation.
+                For years, I have led Sinocle Nigeria Limited to become one of the fastest-growing construction and real estate companies in Nigeria, delivering high-impact projects that now serve communities in Delta State, Lagos, Abuja, and extending into Lomé, Togo. From commercial malls and residential estates to hospitals, institutional and infrastructure development projects, each development represents not just brick and mortar, but an opportunity to transform lives, empower local economies, and leave a lasting legacy.
               </p>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                My approach is straightforward: identify where Africa needs infrastructure, build sustainable solutions, and ensure they create jobs. Whether it's housing developments in urban centers or agricultural processing facilities in rural areas, the goal is the same—economic value that lasts.
+                Recognizing the importance of diversification and innovation, I co-founded Ilunar Technologies, where we focus on delivering technology-driven solutions that support businesses, institutions, and individuals in an increasingly digital world. Our goal is to bridge technology gaps, unlock growth potential, and drive digital transformation across industries.
               </p>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Currently working on integrating technology platforms that can scale these traditional businesses more efficiently across borders. There's significant potential when you combine local expertise with modern systems.
+                As part of my ongoing mission to address critical development needs, I am also preparing to launch Sinocle Energy Solutions, which will focus on clean and sustainable energy solutions to support Africa's growing energy demands. This new venture represents the next phase of my long-term vision: combining infrastructure, technology, agriculture, and energy to support economic growth and improve quality of life across the continent.
+              </p>
+              
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                In addition to my business pursuits, I remain deeply committed to youth development and regional peace-building. This commitment earned me the honor of being appointed a Youth Ambassador by the West African Youth Council (ECOWAS Youth Council), a recognition of my work in promoting youth empowerment, economic growth, and social stability across West Africa.
+              </p>
+              
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                I believe real success is measured not simply by financial gain, but by impact: how many lives you touch, how many jobs you create, and how much positive change you help to drive. Whether through construction, technology, agriculture, or energy, my mission remains simple: to build, empower, and lead with purpose across Nigeria and West Africa.
+              </p>
+              
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                Though often called one of Nigeria's silent young millionaires, I prefer to let my work speak. My focus remains on creating businesses that serve real needs, building institutions that outlive individuals, and raising the next generation of African entrepreneurs and leaders.
               </p>
             </div>
             
