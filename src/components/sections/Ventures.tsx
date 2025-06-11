@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -30,7 +31,7 @@ const Ventures = () => {
       icon: Leaf,
       title: "Sinocle Agrosolutions",
       description: "Revolutionary agricultural technology and sustainable farming solutions empowering African farmers with modern techniques",
-      image: null,
+      image: "/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png",
       tag: "Agriculture",
       tagColor: "bg-green-100 text-green-700 border-green-200",
       status: "expanding",
@@ -180,3 +181,4 @@ const Ventures = () => {
 };
 
 export default Ventures;
+
