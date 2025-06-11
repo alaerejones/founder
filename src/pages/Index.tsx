@@ -1,10 +1,17 @@
 
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Award, Building, Users, Star, Lightbulb, Leaf, Zap, Home } from 'lucide-react';
+import { Award, Building, Users, Star, Lightbulb, Leaf, Zap, Home, Menu, X } from 'lucide-react';
 
 const Index = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -26,12 +33,75 @@ const Index = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="lg:hidden p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button 
+              className="lg:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-b shadow-lg">
+              <div className="px-4 py-4 space-y-3">
+                <Link 
+                  to="/" 
+                  className="block text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  HOME
+                </Link>
+                <Link 
+                  to="/about" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  ABOUT
+                </Link>
+                <Link 
+                  to="/ventures" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  VENTURES
+                </Link>
+                <Link 
+                  to="/philanthropy" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  PHILANTHROPY
+                </Link>
+                <Link 
+                  to="/media" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  MEDIA & INSIGHTS
+                </Link>
+                <Link 
+                  to="/awards" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  AWARDS
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  CONTACT
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -104,7 +174,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="text-xs font-semibold text-gray-900">CEO</div>
-                      <div className="text-xs text-gray-600">Sinocle Group/ CoFounder Ilunar Technologies</div>
+                      <div className="text-xs text-gray-600">Sinocle Group/ Co-Founder Ilunar Technologies</div>
                     </div>
                   </div>
                 </div>
@@ -354,7 +424,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Personal Quote Section */}
       <section className="py-16 lg:py-20 bg-primary text-white">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -371,7 +440,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Strong CTA Section */}
       <section className="py-16 lg:py-20 bg-primary text-white">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -403,7 +471,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Footer */}
       <footer className="bg-darken py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -479,3 +546,4 @@ const Index = () => {
 };
 
 export default Index;
+
