@@ -10,21 +10,62 @@ const Navigation = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-lg lg:text-xl font-bold text-primary">
+          <button 
+            onClick={() => scrollToSection('hero')} 
+            className="text-lg lg:text-xl font-bold text-primary hover:text-primary/80 transition-colors"
+          >
             AMB. ONYEOLU CHIMA
-          </Link>
+          </button>
           
           <div className="hidden lg:flex space-x-6 xl:space-x-8">
-            <Link to="/" className="text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors">HOME</Link>
-            <Link to="/about" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">ABOUT</Link>
-            <Link to="/ventures" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">VENTURES</Link>
-            <Link to="/media" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">MEDIA & INSIGHTS</Link>
-            <Link to="/awards" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">AWARDS</Link>
-            <Link to="/contact" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">CONTACT</Link>
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+              className="text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors"
+            >
+              HOME
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors"
+            >
+              ABOUT
+            </button>
+            <button 
+              onClick={() => scrollToSection('ventures')} 
+              className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors"
+            >
+              VENTURES
+            </button>
+            <button 
+              onClick={() => scrollToSection('media')} 
+              className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors"
+            >
+              MEDIA & INSIGHTS
+            </button>
+            <button 
+              onClick={() => scrollToSection('awards')} 
+              className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors"
+            >
+              AWARDS
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors"
+            >
+              CONTACT
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -45,48 +86,42 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-b shadow-lg">
             <div className="px-4 py-4 space-y-3">
-              <Link 
-                to="/" 
-                className="block text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors py-2"
               >
                 HOME
-              </Link>
-              <Link 
-                to="/about" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
               >
                 ABOUT
-              </Link>
-              <Link 
-                to="/ventures" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('ventures')} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
               >
                 VENTURES
-              </Link>
-              <Link 
-                to="/media" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('media')} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
               >
                 MEDIA & INSIGHTS
-              </Link>
-              <Link 
-                to="/awards" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('awards')} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
               >
                 AWARDS
-              </Link>
-              <Link 
-                to="/contact" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="block w-full text-left text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
               >
                 CONTACT
-              </Link>
+              </button>
             </div>
           </div>
         )}
