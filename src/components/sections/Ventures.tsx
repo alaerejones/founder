@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -50,8 +51,8 @@ const Ventures = () => {
   return (
     <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-muted/20">
       <div className="container mx-auto px-4 lg:px-6">
-        {/* Header - Matching About section structure */}
-        <div className="text-center mb-16 lg:mb-20">
+        {/* Header - Matching About section left-aligned structure */}
+        <div className="mb-16 lg:mb-20">
           <div className="inline-flex items-center px-6 py-3 rounded-full mb-6 lg:mb-8 border border-primary/20 bg-muted">
             <Building2 className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-bold text-primary uppercase tracking-wider">Portfolio Overview</span>
@@ -62,7 +63,7 @@ const Ventures = () => {
             <span className="text-primary">One Project at a Time</span>
           </h2>
           
-          <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base lg:text-lg text-muted-foreground max-w-4xl leading-relaxed text-justify">
             Building Africa's future through strategic business ventures across multiple sectors, creating sustainable solutions that drive economic growth, empower communities, and foster innovation throughout West Africa.
           </p>
         </div>
