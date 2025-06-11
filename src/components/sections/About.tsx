@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
@@ -18,18 +17,6 @@ const About = () => {
                 alt="Onyeolu Israel Chima" 
                 className="w-full h-[450px] lg:h-full object-cover object-center rounded-2xl shadow-2xl"
               />
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 border border-muted">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                    <Users className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-foreground">Youth Advocate</div>
-                    <div className="text-xs text-muted-foreground">Empowering Africa's Future</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
