@@ -46,7 +46,7 @@ const About = () => {
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-base text-muted-foreground leading-relaxed space-y-4">
+              <div className="text-base text-muted-foreground leading-relaxed space-y-4 text-justify">
                 <p>
                   At <strong>Sinocle Nigeria Limited</strong>, I've led a diverse portfolio of <strong>real estate, construction, and infrastructure projects</strong>, delivering <strong>malls, hospitals, estates, and institutional developments</strong> across <strong>Delta State, Lagos, Abuja, and Lomé, Togo</strong>. Each project reflects my belief that <strong>development is not just about structures, but about transforming lives and empowering communities</strong>.
                 </p>

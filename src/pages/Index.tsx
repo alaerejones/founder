@@ -16,8 +16,19 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <Stats />
-      <About />
+      
+      {/* Mobile: About section comes immediately after Hero */}
+      <div className="block lg:hidden">
+        <About />
+        <Stats />
+      </div>
+      
+      {/* Desktop: Stats section comes before About */}
+      <div className="hidden lg:block">
+        <Stats />
+        <About />
+      </div>
+      
       <MediaCoverage />
       <Ventures />
       <Awards />
