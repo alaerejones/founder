@@ -6,16 +6,16 @@ import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-4 lg:py-8 bg-white">
+    <section className="py-8 lg:py-8 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Image Section */}
           <div className="relative order-2 lg:order-1">
             <img 
               src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
               alt="Onyeolu Israel Chima" 
-              className="w-full h-[400px] lg:h-screen object-cover object-center rounded-none lg:rounded-xl"
+              className="w-full h-[400px] lg:h-[600px] object-cover object-center rounded-none lg:rounded-xl"
             />
           </div>
 
@@ -44,11 +44,26 @@ const About = () => {
                 </p>
               </div>
             </div>
+            
+            {/* Desktop Buttons - positioned with the text content */}
+            <div className="hidden lg:flex flex-col sm:flex-row gap-4">
+              <Link to="/about">
+                <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-8">
+                  Partner with Me
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
         
-        {/* Buttons Section - Now below the image and content */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 lg:mt-12">
+        {/* Mobile Buttons - centered below content */}
+        <div className="flex lg:hidden flex-col sm:flex-row gap-4 justify-center mt-8">
           <Link to="/about">
             <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8">
               Learn More
