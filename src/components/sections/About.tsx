@@ -10,6 +10,15 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
+          {/* Image Section */}
+          <div className="relative order-2 lg:order-1">
+            <img 
+              src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
+              alt="Onyeolu Israel Chima" 
+              className="w-full h-[480px] object-cover object-center rounded-xl"
+            />
+          </div>
+
           {/* Content Section */}
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6">
@@ -17,43 +26,22 @@ const About = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold text-foreground leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4 lg:space-y-6">
+              <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
                 <p>
-                  As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, I lead businesses that deliver <strong>infrastructure, technology, energy, and agricultural solutions across Nigeria and West Africa</strong>.
+                  As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, I lead businesses that deliver infrastructure, technology, energy, and agricultural solutions across Nigeria and West Africa.
                 </p>
                 
                 <p>
-                  At <strong>Sinocle Nigeria Limited</strong>, I have overseen <strong>major construction, real estate, and infrastructure projects</strong>, including <strong>malls, hospitals, estates, institutional and infrastructural developments</strong> across <strong>Delta State, Lagos, Abuja, and Lomé, Togo</strong>.
+                  From overseeing major construction and real estate projects across Delta State, Lagos, Abuja, and Lomé, to driving digital transformation through innovative software solutions, my work focuses on creating lasting impact.
                 </p>
                 
                 <p>
-                  Through <strong>Ilunar Technologies</strong>, we drive <strong>digital transformation</strong>, by developing software solutions that <strong>bridge technology gaps and unlock growth</strong> across sectors.
+                  Beyond enterprise, my appointment as <strong>Youth Ambassador to the ECOWAS Youth Council</strong> reflects my commitment to empowering the next generation and building enduring institutions that outlive individuals.
                 </p>
-                
-                <p>
-                  With the upcoming launch of <strong>Sinocle Energy Solutions</strong>, my focus extends into <strong>clean, sustainable energy</strong>, addressing <strong>Africa's evolving energy needs</strong> and supporting long-term development.
-                </p>
-                
-                <p>
-                  Beyond enterprise, my work in <strong>youth empowerment and regional peace-building</strong> has been recognized by my appointment as <strong>Youth Ambassador to the ECOWAS Youth Council</strong>.
-                </p>
-                
-                <p>
-                  The goal has always been <strong>impact, building enduring institutions, enabling opportunities, and driving growth that outlives individuals</strong>.
-                </p>
-              </div>
-              
-              {/* Image Section - moved after paragraph on mobile */}
-              <div className="relative lg:hidden">
-                <img 
-                  src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
-                  alt="Onyeolu Israel Chima" 
-                  className="w-full h-[480px] object-cover object-center rounded-xl"
-                />
               </div>
             </div>
             
@@ -70,15 +58,6 @@ const About = () => {
                 </Button>
               </Link>
             </div>
-          </div>
-
-          {/* Image Section - only visible on desktop, no border/shadow */}
-          <div className="relative order-2 lg:order-1 hidden lg:block">
-            <img 
-              src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
-              alt="Onyeolu Israel Chima" 
-              className="w-full h-[480px] object-cover object-center rounded-xl"
-            />
           </div>
         </div>
       </div>
