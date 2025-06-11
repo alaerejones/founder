@@ -29,7 +29,7 @@ const About = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+              <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
