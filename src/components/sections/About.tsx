@@ -30,7 +30,7 @@ const About = () => {
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4">
+              <div className="text-base lg:text-lg text-foreground font-semibold leading-relaxed space-y-4">
                 <p>
                   As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, I lead businesses that deliver infrastructure, technology, energy, and agricultural solutions across Nigeria and West Africa.
                 </p>
