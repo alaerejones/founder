@@ -21,19 +21,6 @@ const About = () => {
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              {/* Image Section - moved here from separate grid column */}
-              <div className="relative lg:hidden">
-                <div className="relative">
-                  <div className="bg-white rounded-2xl p-2 shadow-lg">
-                    <img 
-                      src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
-                      alt="Onyeolu Israel Chima" 
-                      className="w-full h-[480px] object-cover object-center rounded-xl"
-                    />
-                  </div>
-                </div>
-              </div>
-              
               <div className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4 lg:space-y-6">
                 <p>
                   At <strong>Sinocle Nigeria Limited</strong>, I lead diverse real estate, construction, and infrastructure projects across Delta State, Lagos, Abuja, and Lomé, Togo. Each project reflects my belief that development transforms lives and empowers communities.
@@ -46,6 +33,15 @@ const About = () => {
                 <p>
                   As a <strong>Youth Ambassador for the West African Youth Council (ECOWAS)</strong>, I remain committed to youth empowerment and regional peace-building, focusing on creating institutions that outlast individuals and raising the next generation of African leaders.
                 </p>
+              </div>
+              
+              {/* Image Section - moved after paragraph on mobile */}
+              <div className="relative lg:hidden">
+                <img 
+                  src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
+                  alt="Onyeolu Israel Chima" 
+                  className="w-full h-[480px] object-cover object-center rounded-xl"
+                />
               </div>
             </div>
             
@@ -64,17 +60,13 @@ const About = () => {
             </div>
           </div>
 
-          {/* Image Section - only visible on desktop */}
+          {/* Image Section - only visible on desktop, no border/shadow */}
           <div className="relative order-2 lg:order-1 hidden lg:block">
-            <div className="relative">
-              <div className="bg-white rounded-2xl p-2 shadow-lg">
-                <img 
-                  src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
-                  alt="Onyeolu Israel Chima" 
-                  className="w-full h-[480px] object-cover object-center rounded-xl"
-                />
-              </div>
-            </div>
+            <img 
+              src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
+              alt="Onyeolu Israel Chima" 
+              className="w-full h-[480px] object-cover object-center rounded-xl"
+            />
           </div>
         </div>
       </div>
