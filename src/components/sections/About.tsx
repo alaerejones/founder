@@ -24,7 +24,7 @@ const About = () => {
               {/* Image Section - moved here from separate grid column */}
               <div className="relative lg:hidden">
                 <div className="relative">
-                  <div className="bg-white rounded-2xl p-2 shadow-lg border">
+                  <div className="bg-white rounded-2xl p-2 shadow-lg">
                     <img 
                       src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                       alt="Onyeolu Israel Chima" 
@@ -67,7 +67,7 @@ const About = () => {
           {/* Image Section - only visible on desktop */}
           <div className="relative order-2 lg:order-1 hidden lg:block">
             <div className="relative">
-              <div className="bg-white rounded-2xl p-2 shadow-lg border">
+              <div className="bg-white rounded-2xl p-2 shadow-lg">
                 <img 
                   src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                   alt="Onyeolu Israel Chima" 
