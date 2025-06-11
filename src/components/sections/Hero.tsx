@@ -29,16 +29,13 @@ const Hero = () => {
                 BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-foreground animate-fade-in">
-                Founder <span className="text-secondary">Builder</span><br />
+                Founder <span style={{ color: '#03372b' }}>Builder</span><br />
                 Entrepreneur & Youth<br />
                 Advocate
               </h1>
               <div className="space-y-3">
-                <p className="text-lg lg:text-xl text-secondary font-semibold animate-fade-in">
+                <p className="text-lg lg:text-xl text-white font-semibold animate-fade-in">
                   Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
-                </p>
-                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed animate-fade-in">
-                  As CEO of Sinocle Nigeria Limited and serial entrepreneur, I'm transforming Africa through strategic business ventures across multiple sectors and youth empowerment initiatives.
                 </p>
               </div>
             </div>
