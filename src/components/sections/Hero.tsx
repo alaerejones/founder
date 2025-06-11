@@ -64,20 +64,20 @@ const Hero = () => {
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary/20 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl rotate-2 group-hover:-rotate-1 transition-transform duration-300"></div>
               </div>
-              
-              {/* Floating Achievement Badge - repositioned for mobile */}
-              <div className="absolute bottom-4 right-4 lg:-bottom-6 lg:right-0 bg-background border border-border rounded-lg shadow-lg p-3">
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                    <Building className="w-4 h-4 text-primary-foreground" />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-xs font-semibold text-foreground">CEO</div>
-                    <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
-                  </div>
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Floating Achievement Badge - Mobile: bottom right of screen, Desktop: relative to image */}
+      <div className="absolute bottom-6 right-4 lg:bottom-auto lg:right-auto lg:top-[65%] lg:left-[75%] bg-background border border-border rounded-lg shadow-lg p-3 z-20">
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+            <Building className="w-4 h-4 text-primary-foreground" />
+          </div>
+          <div className="text-left">
+            <div className="text-xs font-semibold text-foreground">CEO</div>
+            <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
           </div>
         </div>
       </div>
