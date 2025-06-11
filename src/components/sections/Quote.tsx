@@ -13,8 +13,8 @@ const Quote = () => {
           </div>
           
           {/* Main Quote */}
-          <blockquote className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-12 text-white">
-            "Entrepreneurship is not just a career path — it's a responsibility to build solutions for generations."
+          <blockquote className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight mb-12 text-white text-justify">
+            "Entrepreneurship is not just a career path it's a responsibility to build solutions for generations."
           </blockquote>
           
           {/* Attribution */}
