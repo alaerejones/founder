@@ -23,7 +23,7 @@ const Ventures = () => {
       tag: "IT",
       tagColor: "bg-blue-100 text-blue-700 border-blue-200",
       status: "active",
-      projects: "25+ Solutions"
+      projects: "2 Software Solutions"
     },
     {
       icon: Leaf,
