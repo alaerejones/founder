@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -22,7 +23,7 @@ const About = () => {
 
           {/* Content Section */}
           <div className="space-y-8 order-1 lg:order-2">
-            <div className="space-y-6">
+            <div className="space-y-6 text-center lg:text-left">
               <div className="inline-flex items-center px-6 py-3 rounded-full bg-muted border border-primary/20">
                 <span className="text-sm font-bold text-primary uppercase tracking-wider">My Story & Mission</span>
               </div>
@@ -32,7 +33,7 @@ const About = () => {
                 <span className="text-primary">One Project at a Time</span>
               </h2>
               
-              <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5">
+              <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5 text-left">
                 <p className="text-base lg:text-lg text-muted-foreground text-justify">
                   Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future with businesses that solve problems, create opportunities, and deliver lasting value.
                 </p>
