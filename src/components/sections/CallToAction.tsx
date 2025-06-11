@@ -26,11 +26,6 @@ const CallToAction = () => {
                 Partner with Me
               </Button>
             </Link>
-            <Link to="/philanthropy">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white px-8">
-                Join the Movement
-              </Button>
-            </Link>
           </div>
         </div>
       </div>

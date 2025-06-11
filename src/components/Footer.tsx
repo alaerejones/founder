@@ -31,7 +31,6 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-2">
               <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link>
               <Link to="/ventures" className="text-gray-300 hover:text-white transition-colors">Ventures</Link>
-              <Link to="/philanthropy" className="text-gray-300 hover:text-white transition-colors">Philanthropy</Link>
               <Link to="/awards" className="text-gray-300 hover:text-white transition-colors">Awards</Link>
               <Link to="/media" className="text-gray-300 hover:text-white transition-colors">Media</Link>
               <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>

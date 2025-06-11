@@ -22,7 +22,6 @@ const Navigation = () => {
             <Link to="/" className="text-sm font-semibold tracking-wider text-primary hover:text-primary/80 transition-colors">HOME</Link>
             <Link to="/about" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">ABOUT</Link>
             <Link to="/ventures" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">VENTURES</Link>
-            <Link to="/philanthropy" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">PHILANTHROPY</Link>
             <Link to="/media" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">MEDIA & INSIGHTS</Link>
             <Link to="/awards" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">AWARDS</Link>
             <Link to="/contact" className="text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors">CONTACT</Link>
@@ -66,13 +65,6 @@ const Navigation = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 VENTURES
-              </Link>
-              <Link 
-                to="/philanthropy" 
-                className="block text-sm font-semibold tracking-wider text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                PHILANTHROPY
               </Link>
               <Link 
                 to="/media" 

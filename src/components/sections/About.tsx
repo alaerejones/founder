@@ -7,18 +7,18 @@ const About = () => {
   return (
     <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative order-1 lg:order-1">
-            <div className="relative">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          <div className="relative order-1 lg:order-1 h-full min-h-[400px] lg:min-h-[500px]">
+            <div className="relative h-full">
               <img 
                 src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                 alt="Onyeolu Israel Chima" 
-                className="w-full rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
           
-          <div className="space-y-6 order-2 lg:order-2">
+          <div className="space-y-6 order-2 lg:order-2 flex flex-col justify-center">
             <div className="space-y-4">
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
                 Building sustainable solutions across Africa
