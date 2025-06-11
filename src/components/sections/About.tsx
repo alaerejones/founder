@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,7 @@ import { ArrowRight, Heart } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-16 lg:py-16 bg-white">
+    <section className="py-16 lg:pb-16 lg:pt-0 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           
