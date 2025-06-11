@@ -46,16 +46,16 @@ const About = () => {
               </h2>
               
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5">
-                <p className="text-base lg:text-lg font-medium text-foreground">
+                <p className="text-base lg:text-lg text-muted-foreground">
                   Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future — with businesses that solve problems, create opportunities, and deliver lasting value.
                 </p>
                 
-                <p>
-                  As <strong className="text-primary">CEO of Sinocle Nigeria Limited</strong> and <strong className="text-primary">co-founder of Ilunar Technologies</strong>, my work is focused on <strong className="text-primary">developing infrastructure, driving technology adoption, and expanding into energy solutions that serve real needs across Nigeria and West Africa</strong>.
+                <p className="text-base lg:text-lg text-muted-foreground">
+                  As CEO of Sinocle Nigeria Limited and co-founder of Ilunar Technologies, my work is focused on developing infrastructure, driving technology adoption, and expanding into energy solutions that serve real needs across Nigeria and West Africa.
                 </p>
                 
-                <p>
-                  The appointment as <strong className="text-primary">Youth Ambassador by the ECOWAS Youth Council</strong> is a reflection of that commitment — not to titles, but to <strong className="text-primary">building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation</strong>.
+                <p className="text-base lg:text-lg text-muted-foreground">
+                  The appointment as Youth Ambassador by the ECOWAS Youth Council is a reflection of that commitment — not to titles, but to building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation.
                 </p>
                 
                 <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
