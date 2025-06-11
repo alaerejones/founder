@@ -3,29 +3,24 @@ import React from 'react';
 
 const MediaCoverage = () => {
   return (
-    <section className="py-16 lg:py-20 bg-muted/30">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
-            FEATURED IN
+        <div className="text-center">
+          <p className="text-xs font-medium tracking-wider text-muted-foreground uppercase mb-6">
+            Featured In
           </p>
-          <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-8">Recognized Media Coverage</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all hover-scale">
-              <div className="text-lg font-bold text-foreground mb-2">VANGUARD</div>
-              <div className="text-sm text-muted-foreground">Nigeria</div>
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+            <div className="text-center">
+              <div className="text-sm font-semibold text-muted-foreground">VANGUARD</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all hover-scale">
-              <div className="text-lg font-bold text-foreground mb-2">THE SUN</div>
-              <div className="text-sm text-muted-foreground">Nigeria</div>
+            <div className="text-center">
+              <div className="text-sm font-semibold text-muted-foreground">THE SUN</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all hover-scale">
-              <div className="text-lg font-bold text-foreground mb-2">THE NATION</div>
-              <div className="text-sm text-muted-foreground">Nigeria</div>
+            <div className="text-center">
+              <div className="text-sm font-semibold text-muted-foreground">THE NATION</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-all hover-scale">
-              <div className="text-lg font-bold text-foreground mb-2">LATEST NEWS</div>
-              <div className="text-sm text-muted-foreground">Nigeria</div>
+            <div className="text-center">
+              <div className="text-sm font-semibold text-muted-foreground">LATEST NEWS</div>
             </div>
           </div>
         </div>

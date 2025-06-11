@@ -11,7 +11,7 @@ const About = () => {
           <div className="relative order-1 lg:order-1">
             <div className="relative">
               <img 
-                src="/assets/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                 alt="Onyeolu Israel Chima in Professional Setting" 
                 className="w-full rounded-lg shadow-xl"
               />
