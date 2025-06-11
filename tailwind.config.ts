@@ -48,6 +48,9 @@ export default {
 					DEFAULT: '#a0f669',
 					foreground: '#000000'
 				},
+				darken: {
+					DEFAULT: '#232931',
+				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
