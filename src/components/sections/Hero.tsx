@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import { Building } from 'lucide-react';
 const Hero = () => {
   return (
     <section 
-      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat min-h-screen" 
+      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
       style={{ 
         backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
@@ -18,7 +19,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-[85vh]">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-8rem)]">
           
           {/* Left Content - Enhanced */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -68,7 +69,7 @@ const Hero = () => {
       </div>
       
       {/* Floating Achievement Badge - Mobile: bottom right but above buttons, Desktop: relative to image */}
-      <div className="absolute bottom-24 right-4 sm:bottom-6 lg:bottom-auto lg:right-auto lg:top-[65%] lg:left-[75%] bg-background border border-border rounded-lg shadow-lg p-3 z-20">
+      <div className="absolute bottom-32 right-4 sm:bottom-6 lg:bottom-auto lg:right-auto lg:top-[65%] lg:left-[75%] bg-background border border-border rounded-lg shadow-lg p-3 z-20">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <Building className="w-4 h-4 text-primary-foreground" />
