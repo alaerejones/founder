@@ -30,7 +30,7 @@ const About = () => {
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-base lg:text-lg text-foreground font-semibold leading-relaxed space-y-4">
+              <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, I lead businesses that deliver infrastructure, technology, energy, and agricultural solutions across Nigeria and West Africa.
                 </p>
@@ -44,21 +44,22 @@ const About = () => {
                 </p>
               </div>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/about">
-                <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8">
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-8">
-                  Partner with Me
-                </Button>
-              </Link>
-            </div>
           </div>
+        </div>
+        
+        {/* Buttons Section - Now below the image and content */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 lg:mt-12">
+          <Link to="/about">
+            <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-8">
+              Learn More
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-8">
+              Partner with Me
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
