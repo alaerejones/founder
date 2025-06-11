@@ -104,7 +104,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="text-xs font-semibold text-gray-900">CEO</div>
-                      <div className="text-xs text-gray-600">Sinocle Nigeria</div>
+                      <div className="text-xs text-gray-600">Sinocle Group/ CoFounder Ilunar Technologies</div>
                     </div>
                   </div>
                 </div>
