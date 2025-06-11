@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
-const Index = () => {
+const Philanthropy = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -14,10 +14,10 @@ const Index = () => {
             </Link>
             
             <div className="hidden md:flex space-x-8">
-              <Link to="/" className="text-sm font-semibold tracking-wider text-primary">HOME</Link>
+              <Link to="/" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">HOME</Link>
               <Link to="/about" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">ABOUT</Link>
               <Link to="/ventures" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">VENTURES</Link>
-              <Link to="/philanthropy" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">PHILANTHROPY</Link>
+              <Link to="/philanthropy" className="text-sm font-semibold tracking-wider text-primary">PHILANTHROPY</Link>
               <Link to="/media" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">MEDIA & INSIGHTS</Link>
               <Link to="/awards" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">AWARDS & RECOGNITION</Link>
               <Link to="/contact" className="text-sm font-semibold tracking-wider hover:text-primary transition-colors">CONTACT</Link>
@@ -27,117 +27,43 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-16 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-4rem)]">
-            <div className="space-y-6 lg:pr-8">
-              <p className="text-sm font-semibold tracking-[3px] text-primary uppercase">
-                BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
-              </p>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground">
-                Founder <span className="text-primary">Builder</span><br />
-                Entrepreneur & Youth<br />
-                Advocate
-              </h1>
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <Link to="/ventures">
-                  <Button size="lg" className="text-white bg-primary hover:bg-primary/90">
-                    Explore Ventures
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
-                    Build with Sinocle
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            
-            <div className="relative flex justify-end">
-              <div className="relative w-full max-w-lg">
-                <img 
-                  src="/lovable-uploads/ba70c25b-3758-4ab6-be0a-a068feb953bf.png" 
-                  alt="Onyeolu Israel Chima" 
-                  className="w-full h-auto object-cover"
-                />
-                {/* Geometric overlays matching the reference design */}
-                <div className="absolute -left-8 top-0 w-32 h-1/2 bg-white transform skew-x-12 opacity-80"></div>
-                <div className="absolute -left-8 bottom-0 w-32 h-1/2 bg-white transform -skew-x-12 opacity-80"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="min-h-screen flex items-center pt-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div className="space-y-4">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">150+</h3>
-              <p className="text-muted-foreground font-medium">Projects Complete</p>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"></path>
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">4</h3>
-              <p className="text-muted-foreground font-medium">Major Sectors</p>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">10,000+</h3>
-              <p className="text-muted-foreground font-medium">People Impacted</p>
-            </div>
-            
-            <div className="space-y-4">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-                </svg>
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">15+</h3>
-              <p className="text-muted-foreground font-medium">Awards Received</p>
-            </div>
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold tracking-[3px] text-primary uppercase mb-4">
+              PHILANTHROPY & YOUTH EMPOWERMENT
+            </p>
+            <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground mb-6">
+              Building Africa's <span className="text-primary">Future</span><br />
+              Through Youth<br />
+              Empowerment
+            </h1>
           </div>
         </div>
       </section>
 
-      {/* Featured Section */}
+      {/* Mission Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                Building Africa's Future
+                Empowering the Next Generation
               </h2>
-              <p className="text-lg text-muted-foreground">
-                As CEO of Sinocle Nigeria Limited and ECOWAS Youth Ambassador, I'm committed to transforming Africa through strategic investments in real estate, agriculture, and youth empowerment initiatives.
-              </p>
-              <Link to="/about">
-                <Button size="lg" className="text-white">
-                  Learn More About My Journey
-                </Button>
-              </Link>
+              <div className="space-y-4 text-lg text-muted-foreground">
+                <p>
+                  As ECOWAS Youth Ambassador, I am committed to creating sustainable opportunities for young Africans to thrive and contribute meaningfully to economic development across the continent.
+                </p>
+                <p>
+                  Through targeted programs, mentorship initiatives, and strategic partnerships, we're building a pipeline of empowered youth who will drive Africa's transformation.
+                </p>
+              </div>
             </div>
             
             <div className="relative">
               <img 
                 src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
-                alt="Onyeolu Israel Chima Professional" 
+                alt="Youth Empowerment" 
                 className="w-full rounded-lg shadow-xl"
               />
             </div>
@@ -145,8 +71,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Programs Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Our Impact Programs
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-foreground">Skills Development</h3>
+              <p className="text-muted-foreground">Comprehensive training in construction, agriculture, and entrepreneurship</p>
+            </div>
+            
+            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-foreground">Mentorship Programs</h3>
+              <p className="text-muted-foreground">One-on-one guidance for emerging leaders and entrepreneurs</p>
+            </div>
+            
+            <div className="text-center space-y-4 p-6 bg-white rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-foreground">Community Development</h3>
+              <p className="text-muted-foreground">Local projects that create jobs and improve communities</p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button size="lg" className="text-white">
+              Let's Build Africa Together
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-muted py-12">
+        
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="space-y-4">
@@ -209,4 +170,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Philanthropy;
