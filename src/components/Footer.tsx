@@ -8,10 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4 lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">OC</span>
-              </div>
+            <div className="mb-4">
               <h5 className="text-lg font-bold text-white">AMB. ONYEOLU CHIMA</h5>
             </div>
             <p className="text-gray-300 leading-relaxed max-w-md">
