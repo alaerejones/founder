@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -7,9 +6,8 @@ import { Building } from 'lucide-react';
 const Hero = () => {
   return (
     <section 
-      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat min-h-screen" 
       style={{ 
-        height: '100vh',
         backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
     >
@@ -20,7 +18,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh] lg:min-h-[85vh]">
           
           {/* Left Content - Enhanced */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -59,7 +57,7 @@ const Hero = () => {
             {/* Main profile image container */}
             <div className="relative group">
               {/* Profile image - now hidden since it's the background */}
-              <div className="w-80 h-80 lg:w-96 lg:h-96 relative opacity-0">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] relative opacity-0">
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary/20 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl rotate-2 group-hover:-rotate-1 transition-transform duration-300"></div>
