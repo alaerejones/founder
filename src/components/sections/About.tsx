@@ -41,26 +41,26 @@ const About = () => {
               </div>
               
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
-                From <span className="text-primary">Dreams</span> to Reality:<br />
-                Building Africa's <span className="text-primary">Brightest Future</span>
+                Building Africa's Future,<br />
+                <span className="text-primary">One Project at a Time</span>
               </h2>
               
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5">
                 <p className="text-base lg:text-lg font-medium text-foreground">
-                  Every great journey begins with a single step. Mine started with an unshakeable belief that <em>Africa's potential is limitless</em>.
+                  Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future — with businesses that solve problems, create opportunities, and deliver lasting value.
                 </p>
                 
                 <p>
-                  As <strong className="text-primary">CEO of Sinocle Nigeria Limited</strong> and <strong className="text-primary">co-founder of Ilunar Technologies</strong>, I don't just run businesses – I nurture dreams into reality. From infrastructure that connects communities to technology that transforms lives, every project carries a piece of my heart.
+                  As <strong className="text-primary">CEO of Sinocle Nigeria Limited</strong> and <strong className="text-primary">co-founder of Ilunar Technologies</strong>, my work is focused on <strong className="text-primary">developing infrastructure, driving technology adoption, and expanding into energy solutions that serve real needs across Nigeria and West Africa</strong>.
                 </p>
                 
                 <p>
-                  When the <strong className="text-primary">ECOWAS Youth Council</strong> appointed me as Youth Ambassador, it wasn't just recognition – it was a calling. A reminder that true success isn't measured by what we achieve, but by how many others we lift along the way.
+                  The appointment as <strong className="text-primary">Youth Ambassador by the ECOWAS Youth Council</strong> is a reflection of that commitment — not to titles, but to <strong className="text-primary">building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation</strong>.
                 </p>
                 
                 <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
                   <p className="italic text-foreground font-medium">
-                    "I don't just build companies. I build hope. I build futures. I build the Africa our children deserve."
+                    "At every stage, my focus remains clear: to build companies that outlive individuals, drive growth that lasts, and create spaces where people and communities thrive."
                   </p>
                 </div>
               </div>
