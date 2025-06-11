@@ -11,7 +11,7 @@ const Index = () => {
       <Navigation />
 
       {/* Enhanced Hero Section with reduced height */}
-      <section className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden" style={{ minHeight: 'calc(85vh - 4rem)' }}>
+      <section className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden" style={{ minHeight: 'calc(75vh - 4rem)' }}>
         {/* Subtle background elements */}
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
@@ -34,7 +34,7 @@ const Index = () => {
                 </h1>
                 <div className="space-y-3">
                   <p className="text-lg lg:text-xl text-primary font-semibold animate-fade-in">
-                    Driving Africa's growth through vision, leadership, and empowered youth.
+                    Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
                   </p>
                   <p className="text-base lg:text-lg text-muted-foreground max-w-lg leading-relaxed animate-fade-in">
                     As CEO of Sinocle Nigeria Limited and serial entrepreneur, I'm transforming Africa through strategic business ventures across multiple sectors and youth empowerment initiatives.
@@ -143,7 +143,7 @@ const Index = () => {
             <div className="space-y-6 order-2 lg:order-2">
               <div className="space-y-4">
                 <p className="text-sm font-semibold tracking-[2px] text-primary uppercase">
-                  ABOUT AMBASSADOR CHIMA
+                  ABOUT AMB. ONYEOLU ISRAEL CHIMA
                 </p>
                 <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground leading-tight">
                   Building Africa's Future Through Strategic Leadership
@@ -386,3 +386,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
