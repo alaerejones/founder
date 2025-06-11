@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
@@ -15,7 +15,7 @@ const About = () => {
             <img 
               src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
               alt="Onyeolu Israel Chima" 
-              className="w-full h-[480px] object-cover object-center rounded-xl"
+              className="w-full h-[400px] lg:h-[480px] object-cover object-center rounded-none lg:rounded-xl"
             />
           </div>
 
@@ -26,7 +26,7 @@ const About = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+              <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
