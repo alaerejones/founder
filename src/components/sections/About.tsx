@@ -15,7 +15,7 @@ const About = () => {
             <img 
               src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
               alt="Onyeolu Israel Chima" 
-              className="w-full h-[400px] lg:h-[480px] object-cover object-center rounded-none lg:rounded-xl"
+              className="w-full h-screen lg:h-[480px] object-cover object-center rounded-none lg:rounded-xl"
             />
           </div>
 
