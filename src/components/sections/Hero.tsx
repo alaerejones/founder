@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -45,7 +46,7 @@ const Hero = () => {
                   Explore My Ventures
                 </Button>
               </Link>
-              <Link to="/contact">
+              <Link to="/contact" className="hidden sm:block">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 lg:px-8 hover-scale">
                   Partner with Me
                 </Button>
@@ -68,8 +69,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Floating Achievement Badge - Mobile: bottom right but above buttons, Desktop: relative to image */}
-      <div className="absolute bottom-32 right-4 sm:bottom-6 lg:bottom-auto lg:right-auto lg:top-[65%] lg:left-[75%] bg-background border border-border rounded-lg shadow-lg p-3 z-20">
+      {/* Floating Achievement Badge - Bottom right on all devices */}
+      <div className="absolute bottom-6 right-4 bg-background border border-border rounded-lg shadow-lg p-3 z-20">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <Building className="w-4 h-4 text-primary-foreground" />
@@ -85,3 +86,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
