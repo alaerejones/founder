@@ -75,8 +75,8 @@ const Hero = () => {
             <Building className="w-4 h-4 text-primary-foreground" />
           </div>
           <div className="text-left">
-            <div className="text-xs font-semibold text-foreground">CEO</div>
-            <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
+            <div className="text-xs font-semibold" style={{ color: '#03372b' }}>CEO</div>
+            <div className="text-xs" style={{ color: '#03372b' }}>Sinocle Group/Ilunar Technologies</div>
           </div>
         </div>
       </div>
