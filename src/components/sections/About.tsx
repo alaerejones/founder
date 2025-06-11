@@ -8,7 +8,7 @@ const About = () => {
     <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-          <div className="relative order-1 lg:order-1 h-full min-h-[400px] lg:min-h-[500px]">
+          <div className="relative order-1 lg:order-1 h-full min-h-[500px] lg:min-h-[600px]">
             <div className="relative h-full">
               <img 
                 src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
@@ -21,17 +21,25 @@ const About = () => {
           <div className="space-y-6 order-2 lg:order-2 flex flex-col justify-center">
             <div className="space-y-4">
               <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
-                Building sustainable solutions across Africa
+                Building across real estate, agriculture, and technology
               </h2>
             </div>
             
-            <div className="space-y-4">
+            <div className="space-y-5">
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                As CEO of Sinocle Nigeria Limited, I focus on developing projects that create lasting economic value and opportunities across West Africa.
+                As CEO of Sinocle Nigeria Limited, I've spent the last decade developing projects across West Africa. Started with real estate in Lagos, expanded into agricultural ventures in the northern regions, and now exploring technology solutions that connect these traditional sectors.
               </p>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                My work spans real estate development, agriculture, and technology — sectors where thoughtful investment can drive meaningful growth.
+                The ECOWAS Youth Council recognized this work when they appointed me as West Africa Youth Ambassador. It's not about the title—it's about the platform to create opportunities for the next generation.
+              </p>
+              
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                My approach is straightforward: identify where Africa needs infrastructure, build sustainable solutions, and ensure they create jobs. Whether it's housing developments in urban centers or agricultural processing facilities in rural areas, the goal is the same—economic value that lasts.
+              </p>
+              
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                Currently working on integrating technology platforms that can scale these traditional businesses more efficiently across borders. There's significant potential when you combine local expertise with modern systems.
               </p>
             </div>
             
