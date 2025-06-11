@@ -7,7 +7,7 @@ import { Building } from 'lucide-react';
 const Hero = () => {
   return (
     <section 
-      className="flex items-center pt-8 pb-0 lg:pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
+      className="flex items-center pt-8 pb-0 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
       style={{ 
         backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
@@ -24,16 +24,16 @@ const Hero = () => {
           {/* Left Content - Enhanced */}
           <div className="space-y-4 lg:space-y-8 order-2 lg:order-1 lg:pt-20 flex flex-col justify-center h-full">
             <div className="space-y-3 lg:space-y-4">
-              <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-primary uppercase animate-fade-in">
+              <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-primary uppercase animate-fade-in text-justify">
                 BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
               </p>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-foreground animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-foreground animate-fade-in text-justify">
                 Founder <span style={{ color: '#03372b' }}>Builder</span><br />
                 Entrepreneur & Youth<br />
                 Advocate
               </h1>
               <div className="space-y-3">
-                <p className="text-lg lg:text-xl text-white font-semibold animate-fade-in">
+                <p className="text-lg lg:text-xl text-white font-semibold animate-fade-in text-justify">
                   Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
                 </p>
               </div>
