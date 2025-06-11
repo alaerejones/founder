@@ -1,10 +1,15 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Award, Building, Users, Star } from 'lucide-react';
+import { Award, Building, Users, Star, Menu, X } from 'lucide-react';
 
 const Index = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -26,12 +31,74 @@ const Index = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="lg:hidden p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button 
+              className="lg:hidden p-2 text-gray-700 hover:text-primary transition-colors"
+              onClick={toggleMobileMenu}
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="lg:hidden bg-white border-t">
+              <div className="px-4 py-2 space-y-1">
+                <Link 
+                  to="/" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  HOME
+                </Link>
+                <Link 
+                  to="/about" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  ABOUT
+                </Link>
+                <Link 
+                  to="/ventures" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  VENTURES
+                </Link>
+                <Link 
+                  to="/philanthropy" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  PHILANTHROPY
+                </Link>
+                <Link 
+                  to="/media" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  MEDIA & INSIGHTS
+                </Link>
+                <Link 
+                  to="/awards" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  AWARDS
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="block px-3 py-2 text-sm font-semibold tracking-wider text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  CONTACT
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -139,6 +206,47 @@ const Index = () => {
               <div className="text-center">
                 <div className="text-lg font-bold text-foreground">LATEST NEWS</div>
                 <div className="text-xs text-muted-foreground">Nigeria</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Leadership Interview Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
+              FEATURED LEADERSHIP INTERVIEW
+            </p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+              Vision for Leadership & National Impact
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Watch Amb. Onyeolu Israel Chima share his vision for leadership, real estate development, and national impact at the Nigerian SME Awards.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/7LxCK0jnLfU"
+                  title="Amb. Onyeolu Israel Chima - Leadership Interview"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              
+              {/* Video Caption */}
+              <div className="p-6 bg-white">
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  Leadership Excellence & Vision for Africa
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  Nigerian SME Awards • Featuring insights on entrepreneurship, youth empowerment, and sustainable development across Africa.
+                </p>
               </div>
             </div>
           </div>
@@ -287,7 +395,7 @@ const Index = () => {
             <div className="text-center space-y-4 p-6">
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  <path d="M9 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8zM17 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8z"/>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-foreground">Impact</h3>
@@ -471,7 +579,7 @@ const Index = () => {
               <div className="flex space-x-4">
                 <a href="https://www.instagram.com/ionyeolu?igsh=MXJtaTFyaXVhdnVpaw==" target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275.501-.715.334-1.336.795-1.861 1.378-.525.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334-1.336.795-1.861 1.378-.525.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
                   </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/israel-chima-onyeolu-025aab1a0?" target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all">
@@ -507,3 +615,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
