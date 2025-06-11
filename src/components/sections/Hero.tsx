@@ -7,7 +7,7 @@ import { Building } from 'lucide-react';
 const Hero = () => {
   return (
     <section 
-      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
+      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat md:bg-center bg-[center_20%]" 
       style={{ 
         height: '100vh',
         backgroundImage: 'url(/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png)'
@@ -65,8 +65,8 @@ const Hero = () => {
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl rotate-2 group-hover:-rotate-1 transition-transform duration-300"></div>
               </div>
               
-              {/* Floating Achievement Badge */}
-              <div className="absolute -bottom-6 right-0 bg-background border border-border rounded-lg shadow-lg p-3">
+              {/* Floating Achievement Badge - repositioned for mobile */}
+              <div className="absolute -bottom-6 right-0 lg:-bottom-6 lg:right-0 md:-bottom-8 md:right-4 sm:-bottom-10 sm:left-1/2 sm:-translate-x-1/2 bg-background border border-border rounded-lg shadow-lg p-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <Building className="w-4 h-4 text-primary-foreground" />
