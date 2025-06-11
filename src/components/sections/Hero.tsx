@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -32,7 +33,7 @@ const Hero = () => {
                 Advocate
               </h1>
               <div className="space-y-3">
-                <p className="text-lg lg:text-xl text-white font-semibold animate-fade-in">
+                <p className="text-sm sm:text-base lg:text-xl text-white font-semibold animate-fade-in">
                   Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
                 </p>
               </div>
