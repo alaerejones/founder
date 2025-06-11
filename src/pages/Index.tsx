@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Award, Building, Users, Star } from 'lucide-react';
+import { Award, Building, Users, Star, Lightbulb, Leaf, Zap, Home } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -59,10 +59,10 @@ const Index = () => {
                 </h1>
                 <div className="space-y-3">
                   <p className="text-lg lg:text-xl text-primary font-semibold animate-fade-in">
-                    Driven by purpose. Building solutions that impact lives across Africa.
+                    Driving Africa's growth through vision, leadership, and empowered youth.
                   </p>
                   <p className="text-base lg:text-lg text-muted-foreground max-w-lg leading-relaxed animate-fade-in">
-                    As CEO of Sinocle Nigeria Limited and ECOWAS Youth Ambassador, I'm transforming Africa through strategic business ventures and youth empowerment.
+                    As CEO of Sinocle Nigeria Limited and serial entrepreneur, I'm transforming Africa through strategic business ventures across multiple sectors and youth empowerment initiatives.
                   </p>
                 </div>
               </div>
@@ -100,13 +100,11 @@ const Index = () => {
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-3 border">
                   <div className="flex items-center space-x-2">
                     <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-                      </svg>
+                      <Building className="w-4 h-4 text-white" />
                     </div>
                     <div>
-                      <div className="text-xs font-semibold text-gray-900">ECOWAS</div>
-                      <div className="text-xs text-gray-600">Ambassador</div>
+                      <div className="text-xs font-semibold text-gray-900">CEO</div>
+                      <div className="text-xs text-gray-600">Sinocle Nigeria</div>
                     </div>
                   </div>
                 </div>
@@ -116,45 +114,38 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Media Coverage Strip */}
-      <section className="py-12 bg-white border-b">
+      {/* Media Coverage Strip - Improved */}
+      <section className="py-8 bg-white border-b">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center mb-8">
-            <p className="text-sm font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
+          <div className="text-center mb-6">
+            <p className="text-xs font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
               AS FEATURED IN
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">VANGUARD</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-70 hover:opacity-90 transition-opacity">
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">VANGUARD</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">THE SUN</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">THE SUN</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">THE NATION</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">THE NATION</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">LATEST NEWS</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">LATEST NEWS</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced Statistics Section with Icons */}
+      {/* Impact by Numbers - Refined */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Impact by Numbers</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Building lasting change across multiple sectors in Africa through strategic leadership and innovation.
-            </p>
-          </div>
-          
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4 p-6 rounded-lg hover:bg-gray-50 transition-colors group">
               <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
@@ -193,52 +184,116 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Awards Preview Section */}
+      {/* Entrepreneurial Ventures Section */}
       <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
+              BUILDING AFRICA'S FUTURE
+            </p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Entrepreneurial Ventures</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Through strategic business ventures across multiple sectors, I'm creating sustainable solutions that drive economic growth and empower communities across Africa.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
+                <Home className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2 text-center">Sinocle Nigeria Limited</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Premier real estate development and construction solutions across Nigeria</p>
+              <div className="text-center">
+                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Real Estate</span>
+              </div>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
+                <Leaf className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2 text-center">Sinocle Agrosolutions</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Innovative agricultural technology and sustainable farming solutions</p>
+              <div className="text-center">
+                <span className="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">Agriculture</span>
+              </div>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
+                <Zap className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2 text-center">Sinocle Energy Solutions</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Renewable energy infrastructure for sustainable development</p>
+              <div className="text-center">
+                <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">Coming Soon</span>
+              </div>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
+                <Lightbulb className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2 text-center">iLunar Technologies</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Cutting-edge technology solutions and digital innovation</p>
+              <div className="text-center">
+                <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">Co-founder</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Link to="/ventures">
+              <Button size="lg" className="text-white bg-primary hover:bg-primary/90">
+                Explore All Ventures
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Awards Preview Section - Simplified */}
+      <section className="py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-12">
             <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
               RECOGNIZED FOR IMPACT
             </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Awards & Recognition</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Honored for contributions to youth empowerment, entrepreneurship, and community development across Africa.
-            </p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Recognition & Awards</h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-lg border hover:shadow-md transition-shadow text-center">
               <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
                 <Award className="w-6 h-6" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">ECOWAS Youth Ambassador</h3>
+              <p className="text-sm text-muted-foreground">West Africa Leadership</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg border hover:shadow-md transition-shadow text-center">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
+                <Star className="w-6 h-6" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Humanitarian Award</h3>
               <p className="text-sm text-muted-foreground">Lions Club International</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
-                <Star className="w-6 h-6" />
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">Leadership Award</h3>
-              <p className="text-sm text-muted-foreground">Southern Youth Assembly</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-lg border hover:shadow-md transition-shadow text-center">
               <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">Golden Role Model</h3>
-              <p className="text-sm text-muted-foreground">Nigeria Youth Advocacy</p>
+              <h3 className="font-semibold text-foreground mb-2">Leadership Excellence</h3>
+              <p className="text-sm text-muted-foreground">Southern Youth Assembly</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-lg border hover:shadow-md transition-shadow text-center">
               <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-                </svg>
+                <Star className="w-6 h-6" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">ECOWAS Ambassador</h3>
-              <p className="text-sm text-muted-foreground">ECOWAS Youth Council</p>
+              <h3 className="font-semibold text-foreground mb-2">Golden Role Model</h3>
+              <p className="text-sm text-muted-foreground">Youth Advocacy Initiative</p>
             </div>
           </div>
           
@@ -252,68 +307,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Core Values Section */}
-      <section className="py-16 lg:py-20 bg-white">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
-              BUILT ON PURPOSE-DRIVEN VALUES
-            </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">Leadership Philosophy</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Every venture, every decision, and every partnership is guided by these core principles that drive meaningful change.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-4 p-6">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Integrity</h3>
-              <p className="text-muted-foreground">Doing the right thing, always, even when no one is watching.</p>
-            </div>
-            
-            <div className="text-center space-y-4 p-6">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
-                <Star className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Excellence</h3>
-              <p className="text-muted-foreground">Building with precision and passion to exceed expectations.</p>
-            </div>
-            
-            <div className="text-center space-y-4 p-6">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Impact</h3>
-              <p className="text-muted-foreground">Creating ventures that uplift communities and drive progress.</p>
-            </div>
-            
-            <div className="text-center space-y-4 p-6">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
-                <Users className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground">Empowerment</h3>
-              <p className="text-muted-foreground">Investing in people and potential to unlock opportunities.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Personal Quote Section */}
       <section className="py-16 lg:py-20 bg-primary text-white">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <svg className="w-16 h-16 mx-auto text-secondary/50" fill="currentColor" viewBox="0 0 32 32">
-                <path d="M9.563 8c-0.813 0-1.5 0.688-1.5 1.5s0.688 1.5 1.5 1.5 1.5-0.688 1.5-1.5-0.688-1.5-1.5-1.5zM22.438 8c-0.813 0-1.5 0.688-1.5 1.5s0.688 1.5 1.5 1.5 1.5-0.688 1.5-1.5-0.688-1.5-1.5-1.5zM7 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8zM17 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8z"/>
-              </svg>
-            </div>
             <blockquote className="text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight mb-8">
               "Entrepreneurship is not just a career path — it's a responsibility to build solutions for generations."
             </blockquote>
@@ -321,39 +318,8 @@ const Index = () => {
               ONYEOLU ISRAEL CHIMA
             </p>
             <p className="text-white/80">
-              CEO, Sinocle Nigeria Limited & ECOWAS Youth Ambassador
+              CEO, Sinocle Nigeria Limited & Serial Entrepreneur
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 lg:py-20 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
-              WHAT THEY'RE SAYING
-            </p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">Voices of Impact</h2>
-          </div>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white p-8 lg:p-12 rounded-lg shadow-sm">
-              <div className="text-center">
-                <div className="mb-6">
-                  <svg className="w-12 h-12 mx-auto text-primary/20" fill="currentColor" viewBox="0 0 32 32">
-                    <path d="M9.563 8c-0.813 0-1.5 0.688-1.5 1.5s0.688 1.5 1.5 1.5 1.5-0.688 1.5-1.5-0.688-1.5-1.5-1.5zM22.438 8c-0.813 0-1.5 0.688-1.5 1.5s0.688 1.5 1.5 1.5 1.5-0.688 1.5-1.5-0.688-1.5-1.5-1.5z"/>
-                  </svg>
-                </div>
-                <blockquote className="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-6 italic">
-                  "His unwavering commitment to youth empowerment has impacted thousands across West Africa. Ambassador Chima represents the kind of visionary leadership that Africa needs to unlock its full potential."
-                </blockquote>
-                <div className="border-t pt-6">
-                  <p className="font-semibold text-foreground">ECOWAS Youth Council</p>
-                  <p className="text-sm text-muted-foreground">On Onyeolu's Youth Ambassador Recognition</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -372,7 +338,7 @@ const Index = () => {
                 </h2>
               </div>
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                As CEO of Sinocle Nigeria Limited and ECOWAS Youth Ambassador, I'm committed to transforming Africa through strategic investments in real estate, agriculture, and youth empowerment initiatives. My journey represents the power of vision, determination, and strategic thinking in creating lasting change.
+                From humble beginnings to leading Sinocle Nigeria Limited, my journey has been driven by passion for transforming Africa. My work spans real estate, agriculture, energy, and technology — leaving a lasting impact across sectors and communities through strategic business ventures and youth empowerment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link to="/about">
