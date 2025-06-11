@@ -49,31 +49,32 @@ const Ventures = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-b from-white to-muted/20">
+    <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-muted/20">
       <div className="container mx-auto px-4 lg:px-6">
-        {/* Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center px-6 py-3 rounded-full mb-8 border border-primary/20" style={{ backgroundColor: 'rgba(3, 55, 43, 0.05)' }}>
+        {/* Header - Matching About section structure */}
+        <div className="text-center mb-16 lg:mb-20">
+          <div className="inline-flex items-center px-6 py-3 rounded-full mb-6 lg:mb-8 border border-primary/20 bg-muted">
             <Building2 className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-bold text-primary uppercase tracking-wider">Portfolio Overview</span>
           </div>
           
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
-            Entrepreneurial <span className="text-primary">Ventures</span>
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 lg:mb-8 leading-tight">
+            Building Africa's Future,<br />
+            <span className="text-primary">One Project at a Time</span>
           </h2>
           
-          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Building Africa's future through strategic business ventures across multiple sectors, creating sustainable solutions that drive economic growth, empower communities, and foster innovation throughout West Africa.
           </p>
         </div>
         
-        {/* Ventures Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 mb-16">
+        {/* Ventures Grid - Improved spacing and alignment */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {ventures.map((venture, index) => (
             <div key={venture.title} className="group">
-              <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl border border-border/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl border border-border/50 transition-all duration-500 hover:-translate-y-2">
                 {/* Image or Icon Header */}
-                <div className="relative h-72 overflow-hidden">
+                <div className="relative h-64 lg:h-72 overflow-hidden">
                   {venture.image ? (
                     <img 
                       src={venture.image} 
@@ -83,20 +84,20 @@ const Ventures = () => {
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center relative overflow-hidden">
                       <div className="absolute inset-0 bg-black/10"></div>
-                      <venture.icon className="w-24 h-24 text-white relative z-10" />
+                      <venture.icon className="w-20 h-20 lg:w-24 lg:h-24 text-white relative z-10" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                   )}
                   
                   {/* Tags */}
-                  <div className="absolute top-6 left-6 flex gap-2">
-                    <span className={`px-4 py-2 rounded-full text-sm font-semibold border backdrop-blur-sm ${venture.tagColor}`}>
+                  <div className="absolute top-4 lg:top-6 left-4 lg:left-6 flex gap-2">
+                    <span className={`px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs lg:text-sm font-semibold border backdrop-blur-sm ${venture.tagColor}`}>
                       {venture.tag}
                     </span>
                   </div>
 
                   {/* Status indicator */}
-                  <div className="absolute top-6 right-6">
+                  <div className="absolute top-4 lg:top-6 right-4 lg:right-6">
                     <div className={`w-3 h-3 rounded-full ${
                       venture.status === 'active' ? 'bg-green-400' :
                       venture.status === 'expanding' ? 'bg-amber-400' :
@@ -105,33 +106,35 @@ const Ventures = () => {
                   </div>
                 </div>
                 
-                {/* Content */}
-                <div className="p-8 lg:p-10">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-xl lg:text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                {/* Content - Matching typography from About section */}
+                <div className="p-6 lg:p-8">
+                  <div className="flex items-start justify-between mb-3 lg:mb-4">
+                    <h3 className="text-lg lg:text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
                       {venture.title}
                     </h3>
-                    <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                    <ExternalLink className="w-4 h-4 lg:w-5 lg:h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300 flex-shrink-0 mt-1" />
                   </div>
                   
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-base lg:text-lg">
+                  <p className="text-muted-foreground leading-relaxed mb-4 lg:mb-6 text-sm lg:text-base">
                     {venture.description}
                   </p>
 
-                  {/* Project count */}
+                  {/* Project count - Improved alignment */}
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    <span className="text-xs lg:text-sm font-semibold text-primary bg-primary/10 px-2.5 lg:px-3 py-1 rounded-full">
                       {venture.projects}
                     </span>
-                    <div className="flex items-center text-sm text-muted-foreground">
+                    <div className="flex items-center text-xs lg:text-sm text-muted-foreground">
                       <div className={`w-2 h-2 rounded-full mr-2 ${
                         venture.status === 'active' ? 'bg-green-400' :
                         venture.status === 'expanding' ? 'bg-amber-400' :
                         'bg-blue-400'
                       }`}></div>
-                      {venture.status === 'active' ? 'Active' :
-                       venture.status === 'expanding' ? 'Expanding' :
-                       'Upcoming'}
+                      <span className="capitalize">
+                        {venture.status === 'active' ? 'Active' :
+                         venture.status === 'expanding' ? 'Expanding' :
+                         'Upcoming'}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -140,34 +143,34 @@ const Ventures = () => {
           ))}
         </div>
 
-        {/* Statistics Bar */}
-        <div className="bg-white rounded-2xl shadow-lg border border-border/50 p-8 lg:p-10 mb-16">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+        {/* Statistics Bar - Improved typography and spacing */}
+        <div className="bg-white rounded-2xl shadow-lg border border-border/50 p-6 lg:p-8 mb-12 lg:mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-primary">4</div>
-              <p className="text-muted-foreground font-medium">Active Ventures</p>
+              <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">4</div>
+              <p className="text-sm lg:text-base text-muted-foreground font-medium">Active Ventures</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-primary">150+</div>
-              <p className="text-muted-foreground font-medium">Projects Delivered</p>
+              <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">150+</div>
+              <p className="text-sm lg:text-base text-muted-foreground font-medium">Projects Delivered</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-primary">10K+</div>
-              <p className="text-muted-foreground font-medium">Lives Impacted</p>
+              <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">10K+</div>
+              <p className="text-sm lg:text-base text-muted-foreground font-medium">Lives Impacted</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-primary">3</div>
-              <p className="text-muted-foreground font-medium">Countries</p>
+              <div className="text-2xl lg:text-3xl xl:text-4xl font-bold text-primary">3</div>
+              <p className="text-sm lg:text-base text-muted-foreground font-medium">Countries</p>
             </div>
           </div>
         </div>
         
-        {/* CTA */}
+        {/* CTA - Matching button styles from About section */}
         <div className="text-center">
           <Link to="/ventures">
-            <Button size="lg" className="text-white bg-primary hover:bg-primary/90 px-10 py-4 text-lg font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+            <Button size="lg" className="group text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 lg:px-10 lg:py-4 text-base lg:text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               Explore All Ventures
-              <ArrowUpRight className="w-5 h-5 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+              <ArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
             </Button>
           </Link>
         </div>
