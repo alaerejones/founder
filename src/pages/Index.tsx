@@ -36,14 +36,15 @@ const Index = () => {
       </section>
 
       {/* Media & Insights Section - Redesigned */}
-      <section id="media" className="py-24 lg:py-32 bg-gradient-to-br from-muted/50 to-white">
+      <section id="media" className="py-24 lg:py-32 bg-gradient-to-br from-muted/30 to-white">
         <div className="container mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-8">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center px-6 py-3 rounded-full mb-8 border border-primary/20 bg-white shadow-lg">
+              <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
+              <span className="text-sm font-bold text-primary uppercase tracking-wider">Media Recognition</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -160,10 +161,11 @@ const Index = () => {
         <div className="container mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-8">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center px-6 py-3 rounded-full mb-8 border border-primary/20 bg-muted shadow-lg">
+              <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
+              <span className="text-sm font-bold text-primary uppercase tracking-wider">Recognition</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -253,14 +255,15 @@ const Index = () => {
       </section>
 
       {/* Contact Section - Redesigned */}
-      <section id="contact" className="py-24 lg:py-32 bg-gradient-to-br from-muted/50 to-white">
+      <section id="contact" className="py-24 lg:py-32 bg-gradient-to-br from-muted/30 to-white">
         <div className="container mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-8">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center px-6 py-3 rounded-full mb-8 border border-primary/20 bg-white shadow-lg">
+              <svg className="w-5 h-5 mr-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
+              <span className="text-sm font-bold text-primary uppercase tracking-wider">Get in Touch</span>
             </div>
             
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6 leading-tight">
