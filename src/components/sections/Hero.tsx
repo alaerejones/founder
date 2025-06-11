@@ -9,7 +9,7 @@ const Hero = () => {
     <section 
       className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
       style={{ 
-        minHeight: 'calc(85vh - 4rem)',
+        height: '100vh',
         backgroundImage: 'url(/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png)'
       }}
     >
