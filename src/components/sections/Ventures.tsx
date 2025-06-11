@@ -2,106 +2,172 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Lightbulb, Leaf, Zap, ArrowUpRight, Building2 } from 'lucide-react';
+import { Lightbulb, Leaf, Zap, ArrowUpRight, Building2, ExternalLink } from 'lucide-react';
 
 const Ventures = () => {
   const ventures = [
     {
       icon: Building2,
       title: "Sinocle Nigeria Limited",
-      description: "Premier real estate development and construction solutions transforming Nigeria's landscape",
+      description: "Premier real estate development and construction solutions transforming Nigeria's urban landscape with innovative residential and commercial projects",
       image: "/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png",
       tag: "Real Estate",
-      tagColor: "bg-primary/10 text-primary"
-    },
-    {
-      icon: Leaf,
-      title: "Sinocle Agrosolutions",
-      description: "Revolutionary agricultural technology and sustainable farming solutions for Africa",
-      image: null,
-      tag: "Agriculture",
-      tagColor: "bg-primary/10 text-primary"
-    },
-    {
-      icon: Zap,
-      title: "Sinocle Energy Solutions",
-      description: "Next-generation renewable energy infrastructure for sustainable African development",
-      image: null,
-      tag: "Coming Soon",
-      tagColor: "bg-primary/10 text-primary"
+      tagColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
+      status: "active",
+      projects: "150+ Projects"
     },
     {
       icon: Lightbulb,
       title: "iLunar Technologies",
-      description: "Cutting-edge technology solutions driving digital transformation across industries",
+      description: "Cutting-edge technology solutions driving digital transformation across industries with AI-powered platforms and custom software development",
       image: null,
       tag: "Co-founder",
-      tagColor: "bg-primary/10 text-primary"
+      tagColor: "bg-blue-100 text-blue-700 border-blue-200",
+      status: "active",
+      projects: "25+ Solutions"
+    },
+    {
+      icon: Leaf,
+      title: "Sinocle Agrosolutions",
+      description: "Revolutionary agricultural technology and sustainable farming solutions empowering African farmers with modern techniques",
+      image: null,
+      tag: "Agriculture",
+      tagColor: "bg-green-100 text-green-700 border-green-200",
+      status: "expanding",
+      projects: "Research Phase"
+    },
+    {
+      icon: Zap,
+      title: "Sinocle Energy Solutions",
+      description: "Next-generation renewable energy infrastructure for sustainable African development, focusing on solar and clean energy projects",
+      image: null,
+      tag: "Coming Soon",
+      tagColor: "bg-amber-100 text-amber-700 border-amber-200",
+      status: "upcoming",
+      projects: "Q2 2025"
     }
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-20 lg:py-28 bg-gradient-to-b from-white to-muted/20">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full mb-6" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Portfolio</span>
+        {/* Header */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center px-6 py-3 rounded-full mb-8 border border-primary/20" style={{ backgroundColor: 'rgba(3, 55, 43, 0.05)' }}>
+            <Building2 className="w-4 h-4 mr-2 text-primary" />
+            <span className="text-sm font-bold text-primary uppercase tracking-wider">Portfolio Overview</span>
           </div>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
             Entrepreneurial <span className="text-primary">Ventures</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building Africa's future through strategic business ventures across multiple sectors, creating sustainable solutions that drive economic growth and empower communities.
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Building Africa's future through strategic business ventures across multiple sectors, creating sustainable solutions that drive economic growth, empower communities, and foster innovation throughout West Africa.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        {/* Ventures Grid */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 mb-16">
           {ventures.map((venture, index) => (
-            <div key={venture.title}>
-              <div className="bg-white rounded-3xl overflow-hidden shadow-lg border">
+            <div key={venture.title} className="group">
+              <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl border border-border/50 transition-all duration-500 hover:-translate-y-2">
                 {/* Image or Icon Header */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-72 overflow-hidden">
                   {venture.image ? (
                     <img 
                       src={venture.image} 
                       alt={venture.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   ) : (
-                    <div className="w-full h-full bg-primary flex items-center justify-center">
-                      <venture.icon className="w-20 h-20 text-white" />
+                    <div className="w-full h-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-black/10"></div>
+                      <venture.icon className="w-24 h-24 text-white relative z-10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                   )}
                   
-                  {/* Tag */}
-                  <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${venture.tagColor}`}>
+                  {/* Tags */}
+                  <div className="absolute top-6 left-6 flex gap-2">
+                    <span className={`px-4 py-2 rounded-full text-sm font-semibold border backdrop-blur-sm ${venture.tagColor}`}>
                       {venture.tag}
                     </span>
+                  </div>
+
+                  {/* Status indicator */}
+                  <div className="absolute top-6 right-6">
+                    <div className={`w-3 h-3 rounded-full ${
+                      venture.status === 'active' ? 'bg-green-400' :
+                      venture.status === 'expanding' ? 'bg-amber-400' :
+                      'bg-blue-400'
+                    } shadow-lg`}></div>
                   </div>
                 </div>
                 
                 {/* Content */}
-                <div className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-3">
-                    {venture.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <div className="p-8 lg:p-10">
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-xl lg:text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                      {venture.title}
+                    </h3>
+                    <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
+                  </div>
+                  
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-base lg:text-lg">
                     {venture.description}
                   </p>
+
+                  {/* Project count */}
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                      {venture.projects}
+                    </span>
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <div className={`w-2 h-2 rounded-full mr-2 ${
+                        venture.status === 'active' ? 'bg-green-400' :
+                        venture.status === 'expanding' ? 'bg-amber-400' :
+                        'bg-blue-400'
+                      }`}></div>
+                      {venture.status === 'active' ? 'Active' :
+                       venture.status === 'expanding' ? 'Expanding' :
+                       'Upcoming'}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Statistics Bar */}
+        <div className="bg-white rounded-2xl shadow-lg border border-border/50 p-8 lg:p-10 mb-16">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div className="space-y-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary">4</div>
+              <p className="text-muted-foreground font-medium">Active Ventures</p>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary">150+</div>
+              <p className="text-muted-foreground font-medium">Projects Delivered</p>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary">10K+</div>
+              <p className="text-muted-foreground font-medium">Lives Impacted</p>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary">3</div>
+              <p className="text-muted-foreground font-medium">Countries</p>
+            </div>
+          </div>
+        </div>
         
+        {/* CTA */}
         <div className="text-center">
           <Link to="/ventures">
-            <Button size="lg" className="text-white bg-primary hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-2xl">
+            <Button size="lg" className="text-white bg-primary hover:bg-primary/90 px-10 py-4 text-lg font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
               Explore All Ventures
-              <ArrowUpRight className="w-5 h-5 ml-2" />
+              <ArrowUpRight className="w-5 h-5 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
             </Button>
           </Link>
         </div>
