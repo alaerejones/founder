@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -9,15 +7,15 @@ const About = () => {
   return (
     <section className="py-16 lg:py-16 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           
           {/* Image Section */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative">
+          <div className="relative order-2 lg:order-1 lg:flex lg:flex-col">
+            <div className="relative lg:flex-1">
               <img 
                 src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
                 alt="Onyeolu Israel Chima" 
-                className="w-full h-[450px] lg:h-[400px] object-cover object-center rounded-2xl shadow-2xl"
+                className="w-full h-[450px] lg:h-full object-cover object-center rounded-2xl shadow-2xl"
               />
               {/* Floating inspiration badge */}
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 border border-muted">
@@ -104,4 +102,3 @@ const About = () => {
 };
 
 export default About;
-
