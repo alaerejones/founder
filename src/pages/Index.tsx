@@ -90,7 +90,7 @@ const Index = () => {
       </section>
 
       {/* Impact by Numbers - Updated */}
-      <section className="py-16 lg:py-20 bg-muted/30">
+      <section className="py-16 lg:py-20 pb-8 lg:pb-12 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid md:grid-cols-4 gap-6 text-center">
             <div className="space-y-2">
@@ -386,3 +386,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</edits_to_apply>
