@@ -69,7 +69,7 @@ const Hero = () => {
       </div>
       
       {/* Floating Achievement Badge - Bottom right with no padding/margin on mobile */}
-      <div className="absolute bottom-0 right-0 lg:bottom-6 lg:right-4 bg-background border border-border rounded-lg shadow-lg p-3 z-20">
+      <div className="absolute bottom-0 right-0 lg:bottom-6 lg:right-4 bg-background border border-border rounded-none lg:rounded-lg shadow-lg p-3 z-20">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <Building className="w-4 h-4 text-primary-foreground" />
