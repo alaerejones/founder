@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -8,7 +6,7 @@ import { Building } from 'lucide-react';
 const Hero = () => {
   return (
     <section 
-      className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
+      className="flex items-center pt-8 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
       style={{ 
         backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
@@ -20,7 +18,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-8rem)]">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center min-h-[calc(100vh-4rem)] pt-8 lg:pt-0">
           
           {/* Left Content - Enhanced */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -86,4 +84,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
