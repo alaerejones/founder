@@ -71,7 +71,7 @@ const Hero = () => {
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <Building className="w-4 h-4 text-primary-foreground" />
                   </div>
-                  <div className="text-right">
+                  <div>
                     <div className="text-xs font-semibold text-foreground">CEO</div>
                     <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
                   </div>
