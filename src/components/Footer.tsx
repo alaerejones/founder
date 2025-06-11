@@ -1,8 +1,14 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-darken py-12 lg:py-16">
       <div className="container mx-auto px-4 lg:px-6">
@@ -26,11 +32,36 @@ const Footer = () => {
           <div className="space-y-4">
             <h6 className="font-semibold text-white">Quick Links</h6>
             <div className="grid grid-cols-2 gap-2">
-              <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link>
-              <Link to="/ventures" className="text-gray-300 hover:text-white transition-colors">Ventures</Link>
-              <Link to="/awards" className="text-gray-300 hover:text-white transition-colors">Awards</Link>
-              <Link to="/media" className="text-gray-300 hover:text-white transition-colors">Media</Link>
-              <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('ventures')} 
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                Ventures
+              </button>
+              <button 
+                onClick={() => scrollToSection('awards')} 
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                Awards
+              </button>
+              <button 
+                onClick={() => scrollToSection('media')} 
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                Media
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="text-gray-300 hover:text-white transition-colors text-left"
+              >
+                Contact
+              </button>
             </div>
           </div>
           
