@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-8 lg:py-12 bg-white">
+    <section className="py-4 lg:py-8 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
@@ -15,7 +15,7 @@ const About = () => {
             <img 
               src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
               alt="Onyeolu Israel Chima" 
-              className="w-full h-screen lg:h-[480px] object-cover object-center rounded-none lg:rounded-xl"
+              className="w-full h-[400px] lg:h-screen object-cover object-center rounded-none lg:rounded-xl"
             />
           </div>
 
@@ -26,21 +26,21 @@ const About = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
+              <h2 className="text-xl lg:text-2xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
+              <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, I lead businesses that deliver infrastructure, technology, energy, and agricultural solutions across Nigeria and West Africa.
                 </p>
                 
                 <p>
-                  From overseeing major construction and real estate projects across Delta State, Lagos, Abuja, and Lomé, to driving digital transformation through innovative software solutions, my work focuses on creating lasting impact.
+                  From overseeing major construction and real estate projects to driving digital transformation through innovative software solutions, my work focuses on creating lasting impact across Delta State, Lagos, Abuja, and Lomé.
                 </p>
                 
                 <p>
-                  Beyond enterprise, my appointment as <strong>Youth Ambassador to the ECOWAS Youth Council</strong> reflects my commitment to empowering the next generation and building enduring institutions that outlive individuals.
+                  My appointment as <strong>Youth Ambassador to the ECOWAS Youth Council</strong> reflects my commitment to empowering the next generation and building enduring institutions that outlive individuals.
                 </p>
               </div>
             </div>
