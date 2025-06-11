@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -46,16 +47,16 @@ const About = () => {
               </h2>
               
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5">
-                <p className="text-base lg:text-lg text-muted-foreground">
-                  Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future — with businesses that solve problems, create opportunities, and deliver lasting value.
+                <p className="text-base lg:text-lg text-muted-foreground text-justify">
+                  Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future with businesses that solve problems, create opportunities, and deliver lasting value.
                 </p>
                 
-                <p className="text-base lg:text-lg text-muted-foreground">
+                <p className="text-base lg:text-lg text-muted-foreground text-justify">
                   As CEO of Sinocle Nigeria Limited and co-founder of Ilunar Technologies, my work is focused on developing infrastructure, driving technology adoption, and expanding into energy solutions that serve real needs across Nigeria and West Africa.
                 </p>
                 
-                <p className="text-base lg:text-lg text-muted-foreground">
-                  The appointment as Youth Ambassador by the ECOWAS Youth Council is a reflection of that commitment — not to titles, but to building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation.
+                <p className="text-base lg:text-lg text-muted-foreground text-justify">
+                  The appointment as Youth Ambassador by the ECOWAS Youth Council is a reflection of that commitment not to titles, but to building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation.
                 </p>
                 
                 <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
@@ -103,3 +104,4 @@ const About = () => {
 };
 
 export default About;
+
