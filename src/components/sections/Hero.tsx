@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center min-h-[calc(100vh-4rem)] pt-8 lg:pt-0">
           
           {/* Left Content - Enhanced */}
-          <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
+          <div className="space-y-6 lg:space-y-8 order-2 lg:order-1 lg:pt-20">
             <div className="space-y-4">
               <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-primary uppercase animate-fade-in">
                 BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
