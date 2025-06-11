@@ -10,7 +10,7 @@ const Hero = () => {
       className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
       style={{ 
         height: '100vh',
-        backgroundImage: 'url(/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png)'
+        backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
     >
       {/* Subtle background elements */}
