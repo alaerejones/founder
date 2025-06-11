@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -68,14 +67,14 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Floating Achievement Badge - Bottom right with no padding/margin on mobile */}
+      {/* Floating Achievement Badge - Updated CEO text color */}
       <div className="absolute bottom-0 right-0 lg:bottom-6 lg:right-4 rounded-none lg:rounded-lg shadow-lg p-3 z-20" style={{ backgroundColor: '#F8F9FA4D' }}>
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <Building className="w-4 h-4 text-primary-foreground" />
           </div>
           <div className="text-left">
-            <div className="text-xs font-semibold" style={{ color: '#03372b' }}>CEO</div>
+            <div className="text-xs font-semibold text-black">CEO</div>
             <div className="text-xs" style={{ color: '#03372b' }}>Sinocle Group/Ilunar Technologies</div>
           </div>
         </div>
