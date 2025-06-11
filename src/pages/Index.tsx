@@ -62,7 +62,7 @@ const Index = () => {
               <div className="relative w-full max-w-md lg:max-w-lg">
                 <div className="relative overflow-hidden rounded-lg shadow-2xl">
                   <img 
-                    src="/lovable-uploads/ceb10282-44f5-425d-8863-b8ec2966b09f.png" 
+                    src="/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png" 
                     alt="Onyeolu Israel Chima - Professional Portrait" 
                     className="w-full h-auto object-cover aspect-[3/4]"
                   />
@@ -129,42 +129,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Media Coverage Strip - Improved */}
-      <section className="py-8 bg-white border-b">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center mb-6">
-            <p className="text-xs font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
-              FEATURED IN
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-70 hover:opacity-90 transition-opacity">
-              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
-                <div className="text-base font-bold text-foreground">VANGUARD</div>
-                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
-              </div>
-              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
-                <div className="text-base font-bold text-foreground">THE SUN</div>
-                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
-              </div>
-              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
-                <div className="text-base font-bold text-foreground">THE NATION</div>
-                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
-              </div>
-              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
-                <div className="text-base font-bold text-foreground">LATEST NEWS</div>
-                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Preview Section */}
       <section className="py-16 lg:py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-1 lg:order-1">
               <img 
-                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                src="/assets/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
                 alt="Onyeolu Israel Chima in Professional Setting" 
                 className="w-full rounded-lg shadow-xl"
               />
@@ -199,40 +170,30 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Impact by Numbers - Updated */}
-      <section className="py-8 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-6 text-center">
-            <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center text-primary mb-3" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <Home className="w-6 h-6" />
+      {/* Media Coverage Strip - Improved */}
+      <section className="py-8 bg-white border-b">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="text-center mb-6">
+            <p className="text-xs font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
+              FEATURED IN
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-70 hover:opacity-90 transition-opacity">
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">VANGUARD</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-2xl font-bold text-foreground">150+</div>
-              <p className="text-sm text-muted-foreground">Real estate development Projects delivered through sinocle across west africa</p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center text-primary mb-3" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <Building className="w-6 h-6" />
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">THE SUN</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-2xl font-bold text-foreground">4</div>
-              <p className="text-sm text-muted-foreground">Major Sectors of operation</p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center text-primary mb-3" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <Users className="w-6 h-6" />
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">THE NATION</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-2xl font-bold text-foreground">10,000+</div>
-              <p className="text-sm text-muted-foreground">Lives Impacted</p>
-            </div>
-            
-            <div className="space-y-2">
-              <div className="w-12 h-12 mx-auto rounded-full flex items-center justify-center text-primary mb-3" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <Award className="w-6 h-6" />
+              <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div className="text-base font-bold text-foreground">LATEST NEWS</div>
+                <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
               </div>
-              <div className="text-2xl font-bold text-foreground">15+</div>
-              <p className="text-sm text-muted-foreground">Awards Received</p>
             </div>
           </div>
         </div>
@@ -255,7 +216,7 @@ const Index = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="w-full h-32 mx-auto mb-4 rounded-lg overflow-hidden">
                 <img 
-                  src="/lovable-uploads/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
+                  src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
                   alt="Sinocle Nigeria Limited Team" 
                   className="w-full h-full object-cover"
                 />
