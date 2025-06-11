@@ -9,7 +9,7 @@ const Hero = () => {
     <section 
       className="flex items-center pt-16 pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-center bg-no-repeat" 
       style={{ 
-        minHeight: 'calc(75vh - 4rem)',
+        minHeight: 'calc(85vh - 4rem)',
         backgroundImage: 'url(/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png)'
       }}
     >
@@ -66,7 +66,7 @@ const Hero = () => {
               </div>
               
               {/* Floating Achievement Badge */}
-              <div className="absolute -bottom-6 -right-6 bg-background border border-border rounded-lg shadow-lg p-3">
+              <div className="absolute -bottom-6 right-0 bg-background border border-border rounded-lg shadow-lg p-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <Building className="w-4 h-4 text-primary-foreground" />
