@@ -9,18 +9,6 @@ const About = () => {
     <section className="py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image Section */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative">
-              <div className="bg-white rounded-2xl p-2 shadow-lg border">
-                <img 
-                  src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
-                  alt="Onyeolu Israel Chima" 
-                  className="w-full h-[480px] object-cover object-center rounded-xl"
-                />
-              </div>
-            </div>
-          </div>
           
           {/* Content Section */}
           <div className="space-y-8 order-1 lg:order-2">
@@ -32,6 +20,19 @@ const About = () => {
               <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
+              
+              {/* Image Section - moved here from separate grid column */}
+              <div className="relative lg:hidden">
+                <div className="relative">
+                  <div className="bg-white rounded-2xl p-2 shadow-lg border">
+                    <img 
+                      src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
+                      alt="Onyeolu Israel Chima" 
+                      className="w-full h-[480px] object-cover object-center rounded-xl"
+                    />
+                  </div>
+                </div>
+              </div>
               
               <div className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4 lg:space-y-6">
                 <p>
@@ -60,6 +61,19 @@ const About = () => {
                   Partner with Me
                 </Button>
               </Link>
+            </div>
+          </div>
+
+          {/* Image Section - only visible on desktop */}
+          <div className="relative order-2 lg:order-1 hidden lg:block">
+            <div className="relative">
+              <div className="bg-white rounded-2xl p-2 shadow-lg border">
+                <img 
+                  src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" 
+                  alt="Onyeolu Israel Chima" 
+                  className="w-full h-[480px] object-cover object-center rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
