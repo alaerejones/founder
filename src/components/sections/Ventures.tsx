@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,7 @@ const Ventures = () => {
       icon: Lightbulb,
       title: "iLunar Technologies",
       description: "Cutting-edge technology solutions driving digital transformation across industries with AI-powered platforms and custom software development",
-      image: null,
+      image: "/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png",
       tag: "Co-founder",
       tagColor: "bg-blue-100 text-blue-700 border-blue-200",
       status: "active",
