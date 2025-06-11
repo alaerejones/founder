@@ -12,8 +12,8 @@ const Ventures = () => {
       description: "Premier real estate development and construction solutions transforming Nigeria's landscape",
       image: "/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png",
       tag: "Real Estate",
-      tagColor: "bg-blue-100 text-blue-700",
-      gradient: "from-blue-500 to-blue-600"
+      tagColor: "bg-primary/10 text-primary",
+      gradient: "from-primary to-primary"
     },
     {
       icon: Leaf,
@@ -21,8 +21,8 @@ const Ventures = () => {
       description: "Revolutionary agricultural technology and sustainable farming solutions for Africa",
       image: null,
       tag: "Agriculture",
-      tagColor: "bg-green-100 text-green-700",
-      gradient: "from-green-500 to-green-600"
+      tagColor: "bg-secondary/20 text-primary",
+      gradient: "from-primary to-secondary"
     },
     {
       icon: Zap,
@@ -30,8 +30,8 @@ const Ventures = () => {
       description: "Next-generation renewable energy infrastructure for sustainable African development",
       image: null,
       tag: "Coming Soon",
-      tagColor: "bg-yellow-100 text-yellow-700",
-      gradient: "from-yellow-500 to-yellow-600"
+      tagColor: "bg-primary/10 text-primary",
+      gradient: "from-secondary to-primary"
     },
     {
       icon: Lightbulb,
@@ -39,8 +39,8 @@ const Ventures = () => {
       description: "Cutting-edge technology solutions driving digital transformation across industries",
       image: null,
       tag: "Co-founder",
-      tagColor: "bg-purple-100 text-purple-700",
-      gradient: "from-purple-500 to-purple-600"
+      tagColor: "bg-secondary/20 text-primary",
+      gradient: "from-primary to-secondary"
     }
   ];
 

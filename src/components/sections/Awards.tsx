@@ -11,32 +11,32 @@ const Awards = () => {
       title: "ECOWAS Youth Ambassador",
       organization: "West Africa Leadership",
       year: "2024",
-      color: "from-yellow-400 to-yellow-600",
-      bgColor: "bg-yellow-50"
+      gradient: "from-primary to-primary",
+      bgColor: "bg-primary/5"
     },
     {
       icon: Medal,
       title: "Humanitarian Award",
       organization: "Lions Club International",
       year: "2023",
-      color: "from-blue-400 to-blue-600",
-      bgColor: "bg-blue-50"
+      gradient: "from-primary to-secondary",
+      bgColor: "bg-primary/5"
     },
     {
       icon: Award,
       title: "Leadership Excellence",
       organization: "Southern Youth Assembly",
       year: "2023",
-      color: "from-green-400 to-green-600",
-      bgColor: "bg-green-50"
+      gradient: "from-secondary to-primary",
+      bgColor: "bg-secondary/10"
     },
     {
       icon: Star,
       title: "Golden Role Model",
       organization: "Youth Advocacy Initiative",
       year: "2022",
-      color: "from-purple-400 to-purple-600",
-      bgColor: "bg-purple-50"
+      gradient: "from-primary to-secondary",
+      bgColor: "bg-primary/5"
     }
   ];
 
@@ -70,11 +70,11 @@ const Awards = () => {
             <div key={award.title} className="group relative">
               <div className={`${award.bgColor} rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/50 backdrop-blur-sm relative overflow-hidden`}>
                 {/* Background Gradient Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${award.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}></div>
                 
                 {/* Icon */}
                 <div className="relative z-10">
-                  <div className={`w-16 h-16 mx-auto bg-gradient-to-br ${award.color} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <div className={`w-16 h-16 mx-auto bg-gradient-to-br ${award.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <award.icon className="w-8 h-8" />
                   </div>
                   
@@ -94,7 +94,7 @@ const Awards = () => {
                 </div>
                 
                 {/* Hover Border Effect */}
-                <div className={`absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-gradient-to-r group-hover:${award.color} opacity-0 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none`}></div>
+                <div className={`absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-primary/20 opacity-0 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none`}></div>
               </div>
             </div>
           ))}

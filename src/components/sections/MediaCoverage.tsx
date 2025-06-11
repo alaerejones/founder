@@ -4,10 +4,10 @@ import { Star, Quote } from 'lucide-react';
 
 const MediaCoverage = () => {
   const mediaLogos = [
-    { name: "VANGUARD", color: "text-blue-600" },
-    { name: "THE SUN", color: "text-orange-600" },
-    { name: "THE NATION", color: "text-green-600" },
-    { name: "LATEST NEWS", color: "text-purple-600" },
+    { name: "VANGUARD", color: "text-primary" },
+    { name: "THE SUN", color: "text-primary" },
+    { name: "THE NATION", color: "text-primary" },
+    { name: "LATEST NEWS", color: "text-primary" },
   ];
 
   return (
