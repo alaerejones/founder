@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -44,7 +45,7 @@ const Hero = () => {
                   Explore My Ventures
                 </Button>
               </Link>
-              <Link to="/contact" className="hidden sm:block">
+              <Link to="/contact" className="invisible sm:visible">
                 <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 lg:px-8 hover-scale">
                   Partner with Me
                 </Button>
