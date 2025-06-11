@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -40,12 +38,12 @@ const Ventures = () => {
     {
       icon: Zap,
       title: "Sinocle Energy Solutions",
-      description: "Next-generation renewable energy infrastructure for sustainable African development, focusing on solar and clean energy projects",
-      image: null,
-      tag: "Coming Soon",
+      description: "Comprehensive energy infrastructure for sustainable African development, spanning renewable energy, oil and gas, and clean energy projects",
+      image: "/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png",
+      tag: "Oil and Gas",
       tagColor: "bg-amber-100 text-amber-700 border-amber-200",
-      status: "upcoming",
-      projects: "Q2 2025"
+      status: "launching",
+      projects: "Q2 2026"
     }
   ];
 
@@ -102,6 +100,7 @@ const Ventures = () => {
                     <div className={`w-3 h-3 rounded-full ${
                       venture.status === 'active' ? 'bg-green-400' :
                       venture.status === 'expanding' ? 'bg-amber-400' :
+                      venture.status === 'launching' ? 'bg-orange-400' :
                       'bg-blue-400'
                     } shadow-lg`}></div>
                   </div>
@@ -129,11 +128,13 @@ const Ventures = () => {
                       <div className={`w-2 h-2 rounded-full mr-2 ${
                         venture.status === 'active' ? 'bg-green-400' :
                         venture.status === 'expanding' ? 'bg-amber-400' :
+                        venture.status === 'launching' ? 'bg-orange-400' :
                         'bg-blue-400'
                       }`}></div>
                       <span className="capitalize">
                         {venture.status === 'active' ? 'Active' :
                          venture.status === 'expanding' ? 'Expanding' :
+                         venture.status === 'launching' ? 'Launching Soon' :
                          'Upcoming'}
                       </span>
                     </div>
@@ -181,4 +182,3 @@ const Ventures = () => {
 };
 
 export default Ventures;
-
