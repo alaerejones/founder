@@ -183,29 +183,56 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Media Coverage Strip */}
-      <section className="py-12 bg-white border-b">
+      {/* Animated Media Coverage Strip */}
+      <section className="py-12 bg-white border-b overflow-hidden">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-8">
             <p className="text-sm font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
               AS FEATURED IN
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">VANGUARD</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+          </div>
+          
+          {/* Scrolling logos container */}
+          <div className="relative">
+            <div className="flex animate-scroll-right space-x-16 items-center">
+              {/* First set of logos */}
+              <div className="flex items-center space-x-16 min-w-max">
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-red-600 mb-1">VANGUARD</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-orange-500 mb-1">THE SUN</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-blue-700 mb-1">THE NATION</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-green-600 mb-1">LATEST NEWS</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">THE SUN</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">THE NATION</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
-              </div>
-              <div className="text-center">
-                <div className="text-lg font-bold text-foreground">LATEST NEWS</div>
-                <div className="text-xs text-muted-foreground">Nigeria</div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex items-center space-x-16 min-w-max">
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-red-600 mb-1">VANGUARD</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-orange-500 mb-1">THE SUN</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-blue-700 mb-1">THE NATION</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
+                <div className="text-center flex-shrink-0">
+                  <div className="text-2xl font-bold text-green-600 mb-1">LATEST NEWS</div>
+                  <div className="text-xs text-gray-500">Nigeria</div>
+                </div>
               </div>
             </div>
           </div>
