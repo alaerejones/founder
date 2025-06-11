@@ -119,7 +119,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-6">
             <p className="text-xs font-semibold tracking-[2px] text-muted-foreground uppercase mb-4">
-              AS FEATURED IN
+              FEATURED IN
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center opacity-70 hover:opacity-90 transition-opacity">
               <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
@@ -137,6 +137,47 @@ const Index = () => {
               <div className="text-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
                 <div className="text-base font-bold text-foreground">LATEST NEWS</div>
                 <div className="text-xs text-muted-foreground mt-1">Nigeria</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview Section */}
+      <section className="py-16 lg:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 lg:order-1">
+              <img 
+                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                alt="Onyeolu Israel Chima in Professional Setting" 
+                className="w-full rounded-lg shadow-xl"
+              />
+            </div>
+            
+            <div className="space-y-6 order-1 lg:order-2">
+              <div className="space-y-4">
+                <p className="text-sm font-semibold tracking-[2px] text-primary uppercase">
+                  ABOUT AMBASSADOR CHIMA
+                </p>
+                <h2 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground leading-tight">
+                  Building Africa's Future Through Strategic Leadership
+                </h2>
+              </div>
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
+                From humble beginnings to leading Sinocle Nigeria Limited, my journey has been driven by passion for transforming Africa. My work spans real estate, agriculture, energy, and technology — leaving a lasting impact across sectors and communities through strategic business ventures and youth empowerment.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link to="/about">
+                  <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90">
+                    Learn More About My Journey
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white">
+                    Start a Conversation
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
