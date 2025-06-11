@@ -29,11 +29,11 @@ const About = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
-              <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
+              <h2 className="text-xl lg:text-2xl xl:text-3xl font-bold text-foreground leading-tight">
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-lg text-muted-foreground leading-relaxed space-y-6">
+              <div className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4 lg:space-y-6">
                 <p>
                   At <strong>Sinocle Nigeria Limited</strong>, I lead diverse real estate, construction, and infrastructure projects across Delta State, Lagos, Abuja, and Lomé, Togo. Each project reflects my belief that development transforms lives and empowers communities.
                 </p>
