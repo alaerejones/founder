@@ -23,15 +23,27 @@ const About = () => {
               
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-4 lg:space-y-6">
                 <p>
-                  At <strong>Sinocle Nigeria Limited</strong>, I lead diverse real estate, construction, and infrastructure projects across Delta State, Lagos, Abuja, and Lomé, Togo. Each project reflects my belief that development transforms lives and empowers communities.
+                  As <strong>CEO of Sinocle Nigeria Limited</strong> and <strong>co-founder of Ilunar Technologies</strong>, my mission has always been to <strong>build businesses that create real solutions, drive job creation, and support sustainable growth</strong> across <strong>Nigeria and West Africa</strong>.
                 </p>
                 
                 <p>
-                  Through <strong>Ilunar Technologies</strong> and the upcoming <strong>Sinocle Energy Solutions</strong>, I help businesses embrace digital transformation while providing clean, sustainable energy solutions for Africa's future.
+                  At <strong>Sinocle Nigeria Limited</strong>, I've led a diverse portfolio of <strong>real estate, construction, and infrastructure projects</strong>, delivering <strong>malls, hospitals, estates, and institutional developments</strong> across <strong>Delta State, Lagos, Abuja, and Lomé, Togo</strong>. Each project reflects my belief that <strong>development is not just about structures, but about transforming lives and empowering communities</strong>.
                 </p>
                 
                 <p>
-                  As a <strong>Youth Ambassador for the West African Youth Council (ECOWAS)</strong>, I remain committed to youth empowerment and regional peace-building, focusing on creating institutions that outlast individuals and raising the next generation of African leaders.
+                  Through <strong>Ilunar Technologies</strong>, I help businesses and institutions embrace <strong>digital transformation</strong>, <strong>bridge technology gaps</strong>, and <strong>unlock new growth opportunities</strong> in an evolving digital economy.
+                </p>
+                
+                <p>
+                  Expanding this vision further, I am launching <strong>Sinocle Energy Solutions</strong>, focused on providing <strong>clean, sustainable energy solutions</strong> to meet <strong>Africa's growing energy demands</strong> — combining <strong>infrastructure, technology, agriculture, and energy</strong> into one unified mission for the continent's future.
+                </p>
+                
+                <p>
+                  Beyond business, I am deeply committed to <strong>youth empowerment and regional peace-building</strong>, a dedication recognized through my appointment as a <strong>Youth Ambassador by the West African Youth Council (ECOWAS Youth Council)</strong>.
+                </p>
+                
+                <p>
+                  For me, <strong>true success is measured by impact</strong> — the lives touched, the opportunities created, and the futures shaped. My focus remains on <strong>building businesses that serve real needs, creating institutions that outlast individuals, and raising the next generation of African leaders</strong>.
                 </p>
               </div>
               
