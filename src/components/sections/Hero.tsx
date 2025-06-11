@@ -18,12 +18,12 @@ const Hero = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="container mx-auto px-4 lg:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center min-h-[calc(100vh-4rem)] pt-8 lg:pt-0">
+      <div className="container mx-auto px-4 lg:px-6 relative z-10 h-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center h-full min-h-[calc(100vh-8rem)] lg:min-h-[calc(100vh-4rem)] pt-4 lg:pt-0">
           
           {/* Left Content - Enhanced */}
-          <div className="space-y-6 lg:space-y-8 order-2 lg:order-1 lg:pt-20">
-            <div className="space-y-4">
+          <div className="space-y-4 lg:space-y-8 order-2 lg:order-1 lg:pt-20 flex flex-col justify-center h-full">
+            <div className="space-y-3 lg:space-y-4">
               <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-primary uppercase animate-fade-in">
                 BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
               </p>
@@ -68,8 +68,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Floating Achievement Badge - Bottom right on all devices */}
-      <div className="absolute bottom-6 right-4 bg-background border border-border rounded-lg shadow-lg p-3 z-20">
+      {/* Floating Achievement Badge - Bottom right with no padding on mobile */}
+      <div className="absolute bottom-0 right-4 lg:bottom-6 bg-background border border-border rounded-lg shadow-lg p-3 z-20">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
             <Building className="w-4 h-4 text-primary-foreground" />
