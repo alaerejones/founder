@@ -3,7 +3,7 @@ import React from 'react';
 
 const MediaCoverage = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center">
           <p className="text-xs font-medium tracking-wider text-muted-foreground uppercase mb-6">

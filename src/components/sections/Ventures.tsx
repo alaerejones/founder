@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -6,7 +5,7 @@ import { Lightbulb, Leaf, Zap } from 'lucide-react';
 
 const Ventures = () => {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-8 lg:py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-12">
           <p className="text-sm font-semibold tracking-[2px] text-primary uppercase mb-4">
