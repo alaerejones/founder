@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -185,41 +184,47 @@ const Index = () => {
       </section>
 
       {/* Impact by Numbers - Refined */}
-      <section className="py-16 lg:py-20 bg-white">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-4 p-6 rounded-lg hover:bg-gray-50 transition-colors group">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                <Building className="w-8 h-8" />
-              </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-foreground animate-counter">150+</h3>
-              <p className="text-sm lg:text-base text-muted-foreground font-medium">Projects Completed</p>
-            </div>
-            
-            <div className="text-center space-y-4 p-6 rounded-lg hover:bg-gray-50 transition-colors group">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"></path>
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-6 text-center">
+            <div className="space-y-2">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
                 </svg>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-foreground animate-counter">4</h3>
-              <p className="text-sm lg:text-base text-muted-foreground font-medium">Major Sectors</p>
+              <div className="text-2xl font-bold text-foreground">500+</div>
+              <p className="text-sm text-muted-foreground">Youth Empowered</p>
             </div>
             
-            <div className="text-center space-y-4 p-6 rounded-lg hover:bg-gray-50 transition-colors group">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                <Users className="w-8 h-8" />
+            <div className="space-y-2">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm3 2a1 1 0 000 2h6a1 1 0 100-2H7z"></path>
+                </svg>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-foreground animate-counter">10,000+</h3>
-              <p className="text-sm lg:text-base text-muted-foreground font-medium">Lives Impacted</p>
+              <div className="text-2xl font-bold text-foreground">₦50M+</div>
+              <p className="text-sm text-muted-foreground">Investments Made</p>
             </div>
             
-            <div className="text-center space-y-4 p-6 rounded-lg hover:bg-gray-50 transition-colors group">
-              <div className="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                <Award className="w-8 h-8" />
+            <div className="space-y-2">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
               </div>
-              <h3 className="text-3xl lg:text-4xl font-bold text-foreground animate-counter">15+</h3>
-              <p className="text-sm lg:text-base text-muted-foreground font-medium">Awards Received</p>
+              <div className="text-2xl font-bold text-foreground">4</div>
+              <p className="text-sm text-muted-foreground">Active Ventures</p>
+            </div>
+            
+            <div className="space-y-2">
+              <div className="w-12 h-12 mx-auto bg-primary rounded-full flex items-center justify-center text-white mb-3">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path>
+                </svg>
+              </div>
+              <div className="text-2xl font-bold text-foreground">15</div>
+              <p className="text-sm text-muted-foreground">Communities Reached</p>
             </div>
           </div>
         </div>
@@ -478,7 +483,7 @@ const Index = () => {
               <div className="flex space-x-4">
                 <a href="https://www.instagram.com/ionyeolu?igsh=MXJtaTFyaXVhdnVpaw==" target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275.501-.715.334-1.336.795-1.861 1.378-.525.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334 1.336-.795 1.861-1.378.525-.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
                   </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/israel-chima-onyeolu-025aab1a0?" target="_blank" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all">
@@ -514,3 +519,5 @@ const Index = () => {
 };
 
 export default Index;
+
+</initial_code>
