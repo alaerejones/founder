@@ -6,7 +6,7 @@ import { ArrowRight, Calendar, Trophy } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-6 lg:py-8 bg-white">
+    <section className="py-0 lg:py-8 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
