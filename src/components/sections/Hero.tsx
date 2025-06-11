@@ -13,9 +13,6 @@ const Hero = () => {
         backgroundImage: 'url(/assets/ceb10282-44f5-425d-8863-b8ec2966b09f.png)'
       }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
       {/* Subtle background elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
@@ -28,10 +25,10 @@ const Hero = () => {
           {/* Left Content - Enhanced */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
             <div className="space-y-4">
-              <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-white uppercase animate-fade-in">
+              <p className="text-xs lg:text-sm font-semibold tracking-[2px] lg:tracking-[3px] text-primary uppercase animate-fade-in">
                 BELIEVER IN AFRICA'S BOUNDLESS POTENTIAL
               </p>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-foreground animate-fade-in">
                 Founder <span className="text-secondary">Builder</span><br />
                 Entrepreneur & Youth<br />
                 Advocate
@@ -40,34 +37,47 @@ const Hero = () => {
                 <p className="text-lg lg:text-xl text-secondary font-semibold animate-fade-in">
                   Driving Africa's growth through vision, entrepreneurship, leadership, and empowered youth.
                 </p>
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed animate-fade-in">
+                  As CEO of Sinocle Nigeria Limited and serial entrepreneur, I'm transforming Africa through strategic business ventures across multiple sectors and youth empowerment initiatives.
+                </p>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in">
               <Link to="/ventures">
-                <Button size="lg" className="w-full sm:w-auto text-white bg-primary hover:bg-primary/90 px-6 lg:px-8 hover-scale">
+                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 lg:px-8 hover-scale">
                   Explore My Ventures
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary px-6 lg:px-8 hover-scale">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 lg:px-8 hover-scale">
                   Partner with Me
                 </Button>
               </Link>
             </div>
           </div>
           
-          {/* Right side - Now empty since image is background */}
+          {/* Right side - Professional headshot */}
           <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
-            {/* Floating Achievement Badge */}
-            <div className="bg-white rounded-lg shadow-lg p-3 border">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                  <Building className="w-4 h-4 text-white" />
-                </div>
-                <div>
-                  <div className="text-xs font-semibold text-gray-900">CEO</div>
-                  <div className="text-xs text-gray-600">Sinocle Group/Ilunar Technologies</div>
+            {/* Main profile image container */}
+            <div className="relative group">
+              {/* Profile image - now hidden since it's the background */}
+              <div className="w-80 h-80 lg:w-96 lg:h-96 relative opacity-0">
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary/20 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-300"></div>
+                <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl rotate-2 group-hover:-rotate-1 transition-transform duration-300"></div>
+              </div>
+              
+              {/* Floating Achievement Badge */}
+              <div className="absolute -bottom-6 -left-6 bg-background border border-border rounded-lg shadow-lg p-3">
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                    <Building className="w-4 h-4 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold text-foreground">CEO</div>
+                    <div className="text-xs text-muted-foreground">Sinocle Group/Ilunar Technologies</div>
+                  </div>
                 </div>
               </div>
             </div>
