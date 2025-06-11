@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -58,11 +57,9 @@ const About = () => {
                   The appointment as Youth Ambassador by the ECOWAS Youth Council is a reflection of that commitment — not to titles, but to building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation.
                 </p>
                 
-                <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
-                  <p className="italic text-foreground font-medium">
-                    "At every stage, my focus remains clear: to build companies that outlive individuals, drive growth that lasts, and create spaces where people and communities thrive."
-                  </p>
-                </div>
+                <p className="text-base lg:text-lg text-muted-foreground">
+                  At every stage, my focus remains clear: to build companies that outlive individuals, drive growth that lasts, and create spaces where people and communities thrive.
+                </p>
               </div>
             </div>
             
