@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -286,7 +287,7 @@ const Index = () => {
             <div className="text-center space-y-4 p-6">
               <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8zM17 12v2c0 2.219 1.781 4 4 4s4-1.781 4-4v-2h-8z"/>
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-foreground">Impact</h3>
@@ -506,5 +507,3 @@ const Index = () => {
 };
 
 export default Index;
-
-</edits_to_apply>
