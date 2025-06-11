@@ -58,7 +58,7 @@ const About = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                 Building Africa's Future Through Vision & Purpose
               </h2>
-              <div className="space-y-4 text-base text-muted-foreground text-justify">
+              <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
                   As a dynamic entrepreneur and CEO of Sinocle Nigeria Limited, I have made significant strides in real estate development, agriculture, and youth empowerment. My recognition as a West Africa Youth Ambassador by the ECOWAS Youth Council underscores my influence and commitment to societal development.
                 </p>
@@ -131,10 +131,10 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <blockquote className="text-2xl lg:text-3xl font-bold text-foreground italic text-justify">
-              "Entrepreneurship is not just a career path it's a responsibility to build solutions for generations."
+            <blockquote className="text-2xl lg:text-3xl font-bold text-foreground italic">
+              "Entrepreneurship is not just a career path — it's a responsibility to build solutions for generations."
             </blockquote>
-            <p className="text-lg text-muted-foreground mt-4">Onyeolu Israel Chima</p>
+            <p className="text-lg text-muted-foreground mt-4">— Onyeolu Israel Chima</p>
           </div>
         </div>
       </section>

@@ -46,7 +46,7 @@ const About = () => {
                 Building Africa's <span className="text-primary">Tomorrow</span> Today
               </h2>
               
-              <div className="text-base text-muted-foreground leading-relaxed space-y-4 text-justify">
+              <div className="text-base text-muted-foreground leading-relaxed space-y-4">
                 <p>
                   At <strong>Sinocle Nigeria Limited</strong>, I've led a diverse portfolio of <strong>real estate, construction, and infrastructure projects</strong>, delivering <strong>malls, hospitals, estates, and institutional developments</strong> across <strong>Delta State, Lagos, Abuja, and Lomé, Togo</strong>. Each project reflects my belief that <strong>development is not just about structures, but about transforming lives and empowering communities</strong>.
                 </p>
@@ -56,7 +56,7 @@ const About = () => {
                 </p>
                 
                 <p>
-                  Expanding this vision further, I am launching <strong>Sinocle Energy Solutions</strong>, focused on providing <strong>clean, sustainable energy solutions</strong> to meet <strong>Africa's growing energy demands</strong> combining <strong>infrastructure, technology, agriculture, and energy</strong> into one unified mission for the continent's future.
+                  Expanding this vision further, I am launching <strong>Sinocle Energy Solutions</strong>, focused on providing <strong>clean, sustainable energy solutions</strong> to meet <strong>Africa's growing energy demands</strong> — combining <strong>infrastructure, technology, agriculture, and energy</strong> into one unified mission for the continent's future.
                 </p>
                 
                 <p>
@@ -64,7 +64,7 @@ const About = () => {
                 </p>
                 
                 <p>
-                  For me, <strong>true success is measured by impact</strong> the lives touched, the opportunities created, and the futures shaped. My focus remains on <strong>building businesses that serve real needs, creating institutions that outlast individuals, and raising the next generation of African leaders</strong>.
+                  For me, <strong>true success is measured by impact</strong> — the lives touched, the opportunities created, and the futures shaped. My focus remains on <strong>building businesses that serve real needs, creating institutions that outlast individuals, and raising the next generation of African leaders</strong>.
                 </p>
               </div>
             </div>
