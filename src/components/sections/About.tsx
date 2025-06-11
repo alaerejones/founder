@@ -26,7 +26,7 @@ const About = () => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6">
               <div className="inline-flex items-center px-4 py-2 rounded-full" style={{ backgroundColor: 'rgba(3, 55, 43, 0.1)' }}>
-                <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Amb. Onyeolu Israel Chima</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Onyeolu Israel Chima</span>
               </div>
               
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
