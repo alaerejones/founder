@@ -65,8 +65,8 @@ const Hero = () => {
                 <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl rotate-2 group-hover:-rotate-1 transition-transform duration-300"></div>
               </div>
               
-              {/* Floating Achievement Badge */}
-              <div className="absolute -bottom-6 right-0 bg-background border border-border rounded-lg shadow-lg p-3">
+              {/* Floating Achievement Badge - repositioned for mobile */}
+              <div className="absolute bottom-4 right-4 lg:-bottom-6 lg:right-0 bg-background border border-border rounded-lg shadow-lg p-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <Building className="w-4 h-4 text-primary-foreground" />
