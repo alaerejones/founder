@@ -11,6 +11,7 @@ import Stats from '@/components/sections/Stats';
 import CallToAction from '@/components/sections/CallToAction';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -65,6 +66,7 @@ const Index = () => {
       </main>
       
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
