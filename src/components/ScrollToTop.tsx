@@ -24,7 +24,7 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'auto' // Changed from 'smooth' to 'auto' for faster scroll
     });
   };
 
@@ -38,12 +38,12 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 group"
+      className="fixed bottom-6 right-6 z-[9999] group"
       aria-label="Scroll to top"
     >
       <div className="relative">
         <svg
-          className="w-12 h-12 transform -rotate-90"
+          className="w-12 h-12 transform -rotate-90 pointer-events-none"
           viewBox="0 0 36 36"
         >
           <path
