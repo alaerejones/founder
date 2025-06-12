@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/sections/Hero';
@@ -118,12 +117,12 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* iLuna Technologies */}
+              {/* iLunar Technologies */}
               <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img 
                     src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
-                    alt="iLuna Technologies"
+                    alt="iLunar Technologies"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
@@ -132,10 +131,10 @@ const Index = () => {
                 </div>
                 <div className="p-6 lg:p-8">
                   <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
-                    iLuna Technologies
+                    iLunar Technologies
                   </h3>
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
-                    Technology holds the key to accelerating growth across sectors. Through iLuna Technologies, I am building digital solutions that simplify complex business processes and enable operational excellence. Our focus is on enterprise software, business automation, and digital platforms that serve organizations across multiple industries. As our initial product lines launch, iLuna will deliver the tools businesses need to optimize workflows, improve efficiency, and scale confidently in the modern economy.
+                    Technology holds the key to accelerating growth across sectors. Through iLunar Technologies, I am building digital solutions that simplify complex business processes and enable operational excellence. Our focus is on enterprise software, business automation, and digital platforms that serve organizations across multiple industries. As our initial product lines launch, iLunar will deliver the tools businesses need to optimize workflows, improve efficiency, and scale confidently in the modern economy.
                   </p>
                   <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                     Visit Website
