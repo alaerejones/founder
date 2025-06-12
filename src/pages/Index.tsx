@@ -19,7 +19,11 @@ const Index = () => {
           <Hero />
         </section>
         
-        <section id="about">
+        <section id="stats" className="hidden lg:block">
+          <Stats />
+        </section>
+        
+        <section id="about" className="lg:pt-16">
           <About />
         </section>
         
@@ -203,7 +207,7 @@ const Index = () => {
           <Awards />
         </section>
         
-        <section id="stats">
+        <section id="stats" className="block lg:hidden">
           <Stats />
         </section>
         
