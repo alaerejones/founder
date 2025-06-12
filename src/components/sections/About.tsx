@@ -1,10 +1,16 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
 
 const About = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 lg:pb-16 lg:pt-0 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
@@ -56,34 +62,44 @@ const About = () => {
             
             {/* Desktop Buttons - Aligned with text content */}
             <div className="hidden lg:flex flex-col sm:flex-row gap-6">
-              <Link to="/about">
-                <Button size="lg" className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                  Discover My Journey
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300">
-                  Let's Build Together
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                onClick={() => scrollToSection('ventures')}
+              >
+                Discover My Journey
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300"
+                onClick={() => scrollToSection('contact')}
+              >
+                Let's Build Together
+              </Button>
             </div>
           </div>
         </div>
         
         {/* Mobile Buttons */}
         <div className="flex lg:hidden flex-col sm:flex-row gap-4 justify-center mt-12">
-          <Link to="/about">
-            <Button size="lg" className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg">
-              Discover My Journey
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-          <Link to="/contact">
-            <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300">
-              Let's Build Together
-            </Button>
-          </Link>
+          <Button 
+            size="lg" 
+            className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg"
+            onClick={() => scrollToSection('ventures')}
+          >
+            Discover My Journey
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300"
+            onClick={() => scrollToSection('contact')}
+          >
+            Let's Build Together
+          </Button>
         </div>
       </div>
     </section>
