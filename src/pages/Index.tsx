@@ -23,7 +23,7 @@ const Index = () => {
         </section>
         
         <ScrollReveal delay={100}>
-          <section id="about" className="pt-1 pb-8 lg:pt-16 lg:pb-12">
+          <section id="about" className="pt-10 pb-8 lg:pt-106 lg:pb-12">
             <About />
           </section>
         </ScrollReveal>
@@ -41,19 +41,19 @@ const Index = () => {
         <QuoteSection />
         
         <ScrollReveal delay={100}>
-          <section id="media" className="pt-8 pb-12 lg:pt-1 lg:pb-16">
+          <section id="media" className="pt-8 pb-12 lg:pt-10 lg:pb-16">
             <MediaCoverage />
           </section>
         </ScrollReveal>
         
         <ScrollReveal delay={150}>
-          <section id="awards" className="pt-8 pb-12 lg:pt-1 lg:pb-16">
+          <section id="awards" className="pt-8 pb-12 lg:pt-10 lg:pb-16">
             <Awards />
           </section>
         </ScrollReveal>
         
         <ScrollReveal delay={100}>
-          <section id="contact" className="pt-8 pb-12 lg:pt-1 lg:pb-16">
+          <section id="contact" className="pt-8 pb-12 lg:pt-10 lg:pb-16">
             <CallToAction />
           </section>
         </ScrollReveal>

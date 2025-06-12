@@ -27,7 +27,7 @@ const Ventures = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-16 bg-muted/30">
+      <section className="min-h-screen flex items-center pt-106 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold tracking-[3px] text-primary uppercase mb-4">
