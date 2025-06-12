@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Building2, ArrowUpRight } from 'lucide-react';
+import { Building2, ArrowUpRight, Quote } from 'lucide-react';
 
 const Ventures = () => {
   const ventures = [
@@ -50,7 +50,7 @@ const Ventures = () => {
         </div>
         
         {/* Ventures List */}
-        <div className="space-y-16 lg:space-y-20 mb-12 lg:mb-16">
+        <div className="space-y-16 lg:space-y-20 mb-16 lg:mb-20">
           {ventures.map((venture, index) => (
             <div key={venture.title} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}>
               {/* Image */}
@@ -80,6 +80,40 @@ const Ventures = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Premium Leadership Quote Section */}
+        <div className="relative bg-white rounded-2xl shadow-lg border border-border/30 overflow-hidden mb-12 lg:mb-16">
+          {/* Subtle gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/3 via-transparent to-secondary/3"></div>
+          
+          {/* Content */}
+          <div className="relative px-8 py-12 lg:px-16 lg:py-16">
+            {/* Quote Icon */}
+            <div className="flex justify-center mb-8">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                <Quote className="w-8 h-8 text-primary" />
+              </div>
+            </div>
+            
+            {/* Quote Text */}
+            <div className="text-center max-w-4xl mx-auto">
+              <blockquote className="text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-foreground">
+                "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
+              </blockquote>
+              
+              {/* Attribution */}
+              <div className="space-y-3">
+                <div className="w-20 h-px bg-primary mx-auto mb-6"></div>
+                <p className="text-primary font-bold text-lg tracking-wider">
+                  AMB. ONYEOLU ISRAEL CHIMA
+                </p>
+                <p className="text-muted-foreground font-medium">
+                  CEO, Sinocle Nigeria Limited & ECOWAS Youth Ambassador
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Statistics Bar */}

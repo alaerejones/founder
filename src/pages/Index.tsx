@@ -1,10 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Hero from '@/components/sections/Hero';
 import Stats from '@/components/sections/Stats';
 import About from '@/components/sections/About';
-import Quote from '@/components/sections/Quote';
 import CallToAction from '@/components/sections/CallToAction';
 
 const Index = () => {
