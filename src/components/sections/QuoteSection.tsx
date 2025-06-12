@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 const QuoteSection = () => {
   return (
     <ScrollReveal delay={200}>
-      <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 pt-8 pb-12 lg:pt-12 lg:pb-16">
+      <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 pt-8 pb-12 lg:pt-1 lg:pb-16">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
