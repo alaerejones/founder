@@ -18,16 +18,7 @@ const About = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           
-          {/* Image Section */}
-          <ScrollReveal direction="left" delay={200}>
-            <div className="relative order-2 lg:order-1 lg:flex lg:flex-col">
-              <div className="relative lg:flex-1">
-                <img src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[450px] lg:h-full object-cover object-center rounded-2xl shadow-2xl" />
-              </div>
-            </div>
-          </ScrollReveal>
-
-          {/* Content Section */}
+          {/* Content Section - Always first on mobile, second on desktop */}
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-6 text-center lg:text-left">
               <ScrollReveal delay={100}>
@@ -41,6 +32,13 @@ const About = () => {
                   Building Africa's Future,<br />
                   <span className="text-primary">One Project at a Time</span>
                 </h2>
+              </ScrollReveal>
+              
+              {/* Mobile Image - Between heading and text content */}
+              <ScrollReveal direction="left" delay={250}>
+                <div className="relative lg:hidden mb-8">
+                  <img src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
+                </div>
               </ScrollReveal>
               
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5 text-left">
@@ -72,9 +70,9 @@ const About = () => {
               </div>
             </div>
             
-            {/* Desktop Buttons - Aligned with text content */}
+            {/* Buttons for all devices */}
             <ScrollReveal delay={700}>
-              <div className="hidden lg:flex flex-col sm:flex-row gap-6">
+              <div className="flex flex-col sm:flex-row gap-6">
                 <Button size="lg" className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => scrollToSection('ventures')}>
                   Discover My Journey
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -85,20 +83,16 @@ const About = () => {
               </div>
             </ScrollReveal>
           </div>
+
+          {/* Desktop Image Section - Hidden on mobile */}
+          <ScrollReveal direction="left" delay={200}>
+            <div className="relative order-2 lg:order-1 lg:flex lg:flex-col hidden lg:block">
+              <div className="relative lg:flex-1">
+                <img src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[450px] lg:h-full object-cover object-center rounded-2xl shadow-2xl" />
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
-        
-        {/* Mobile Buttons */}
-        <ScrollReveal delay={300}>
-          <div className="flex lg:hidden flex-col sm:flex-row gap-4 justify-center mt-12">
-            <Button size="lg" className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg" onClick={() => scrollToSection('ventures')}>
-              Discover My Journey
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300" onClick={() => scrollToSection('contact')}>
-              Let's Build Together
-            </Button>
-          </div>
-        </ScrollReveal>
       </div>
     </div>
   );

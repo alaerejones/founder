@@ -22,15 +22,15 @@ const Index = () => {
           <Hero />
         </section>
         
-        <ScrollReveal>
-          <section id="stats" className="hidden lg:block pt-8 pb-12">
-            <Stats />
-          </section>
-        </ScrollReveal>
-        
         <ScrollReveal delay={100}>
           <section id="about" className="pt-12 pb-8 lg:pt-16 lg:pb-12">
             <About />
+          </section>
+        </ScrollReveal>
+        
+        <ScrollReveal>
+          <section id="stats" className="pt-8 pb-12">
+            <Stats />
           </section>
         </ScrollReveal>
         
@@ -49,12 +49,6 @@ const Index = () => {
         <ScrollReveal delay={150}>
           <section id="awards" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
             <Awards />
-          </section>
-        </ScrollReveal>
-        
-        <ScrollReveal>
-          <section id="stats" className="block lg:hidden pt-8 pb-12">
-            <Stats />
           </section>
         </ScrollReveal>
         
