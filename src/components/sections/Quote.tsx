@@ -7,7 +7,7 @@ const Quote = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Quote */}
-          <blockquote className="text-2xl lg:text-3xl font-light leading-relaxed mb-8 text-foreground">
+          <blockquote className="text-lg lg:text-xl font-normal italic leading-relaxed mb-8 text-foreground">
             "We've created over 500 jobs across Nigeria through our ventures and empowered 2,000+ young entrepreneurs with practical business skills."
           </blockquote>
           
