@@ -9,7 +9,7 @@ const Stats = () => {
     awards: 0
   });
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   const finalCounts = {
     projects: 150,
