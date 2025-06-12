@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -7,31 +6,27 @@ import Stats from '@/components/sections/Stats';
 import About from '@/components/sections/About';
 import Quote from '@/components/sections/Quote';
 import CallToAction from '@/components/sections/CallToAction';
-
 const Index = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-      
+      const scrollPercent = scrollTop / docHeight * 100;
       setScrollProgress(scrollPercent);
       setIsVisible(scrollTop > 300); // Show button after scrolling 300px
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       <Hero />
       
@@ -52,7 +47,7 @@ const Index = () => {
       </div>
       
       {/* Ventures & Leadership Section */}
-      <section id="ventures" className="py-20 lg:py-20 bg-white">
+      <section id="ventures" className="py-20 bg-white lg:py-[10px]">
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
@@ -69,11 +64,7 @@ const Index = () => {
             {/* Sinocle Nigeria Limited - Real Estate */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
-                <img 
-                  src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
-                  alt="Sinocle Nigeria Limited - Real Estate Development"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" alt="Sinocle Nigeria Limited - Real Estate Development" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle Nigeria Limited</h3>
@@ -84,12 +75,7 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Full-service real estate development and civil engineering projects across Nigeria, transforming urban landscapes with innovative residential and commercial developments.
                 </p>
-                <a 
-                  href="https://buildwithsinocle.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
-                >
+                <a href="https://buildwithsinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                   Visit Website
                   <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -101,11 +87,7 @@ const Index = () => {
             {/* Sinocle Energy Solutions */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
-                  alt="Sinocle Energy Solutions - Oil & Gas Infrastructure"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" alt="Sinocle Energy Solutions - Oil & Gas Infrastructure" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle Energy Solutions</h3>
@@ -116,12 +98,7 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Specialized in energy infrastructure, pipeline works, and comprehensive oil & gas services, powering Nigeria's energy sector development.
                 </p>
-                <a 
-                  href="https://sinoclegroup.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
-                >
+                <a href="https://sinoclegroup.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                   Visit Website
                   <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -133,11 +110,7 @@ const Index = () => {
             {/* iLunar Technologies */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
-                  alt="iLunar Technologies - Digital Innovation"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" alt="iLunar Technologies - Digital Innovation" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2">iLunar Technologies</h3>
@@ -148,12 +121,7 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Digital innovation and software development arm, delivering cutting-edge technology solutions and AI-powered platforms for African businesses.
                 </p>
-                <a 
-                  href="https://ilunartech.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
-                >
+                <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                   Visit Website
                   <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002 2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -165,11 +133,7 @@ const Index = () => {
             {/* Sinocle AgroSolutions */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
-                  alt="Sinocle AgroSolutions - Agricultural Innovation"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" alt="Sinocle AgroSolutions - Agricultural Innovation" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle AgroSolutions</h3>
@@ -180,12 +144,7 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Large-scale poultry, egg, and crop production empowering food security across Nigeria with modern agricultural techniques and sustainable farming.
                 </p>
-                <a 
-                  href="https://sinocleagro.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
-                >
+                <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                   Visit Website
                   <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -239,17 +198,9 @@ const Index = () => {
               </p>
             </div>
             <div className="relative overflow-hidden rounded-xl shadow-lg">
-              <iframe 
-                width="100%" 
-                height="400" 
-                src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=1&mute=1&controls=1" 
-                title="Featured Interview - Building Africa's Future" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="w-full"
-                style={{ aspectRatio: '16/9' }}
-              ></iframe>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=1&mute=1&controls=1" title="Featured Interview - Building Africa's Future" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-full" style={{
+              aspectRatio: '16/9'
+            }}></iframe>
             </div>
           </div>
 
@@ -263,12 +214,7 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Vanguard Article 1 */}
-              <a 
-                href="https://www.vanguardngr.com/2023/11/onyeolu-israel-chima-bags-award/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block"
-              >
+              <a href="https://www.vanguardngr.com/2023/11/onyeolu-israel-chima-bags-award/" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block">
                 <div className="space-y-4">
                   <div className="text-primary font-bold text-sm">VANGUARD</div>
                   <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
@@ -285,12 +231,7 @@ const Index = () => {
               </a>
               
               {/* The Sun Article */}
-              <a 
-                href="https://sunnewsonline.com/godfatherism-cause-of-leadership-failure-onyeolu/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block"
-              >
+              <a href="https://sunnewsonline.com/godfatherism-cause-of-leadership-failure-onyeolu/" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block">
                 <div className="space-y-4">
                   <div className="text-primary font-bold text-sm">THE SUN</div>
                   <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
@@ -307,12 +248,7 @@ const Index = () => {
               </a>
               
               {/* Vanguard Article 2 */}
-              <a 
-                href="https://www.vanguardngr.com/2025/03/entrepreneurial-trait-gaining-recognition/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block"
-              >
+              <a href="https://www.vanguardngr.com/2025/03/entrepreneurial-trait-gaining-recognition/" target="_blank" rel="noopener noreferrer" className="group bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 block">
                 <div className="space-y-4">
                   <div className="text-primary font-bold text-sm">VANGUARD</div>
                   <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-tight">
@@ -350,11 +286,7 @@ const Index = () => {
             {/* ECOWAS Youth Ambassador */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png" 
-                  alt="ECOWAS Youth Ambassador Award"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png" alt="ECOWAS Youth Ambassador Award" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-primary text-white rounded-full px-3 py-1">
                   <span className="text-xs font-bold">2024</span>
                 </div>
@@ -371,11 +303,7 @@ const Index = () => {
             {/* Humanitarian Award */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/d13faf9a-2263-483a-a703-a13cb588d81c.png" 
-                  alt="Humanitarian Award"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/d13faf9a-2263-483a-a703-a13cb588d81c.png" alt="Humanitarian Award" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-primary text-white rounded-full px-3 py-1">
                   <span className="text-xs font-bold">2023</span>
                 </div>
@@ -392,11 +320,7 @@ const Index = () => {
             {/* Leadership Excellence */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src="/lovable-uploads/ba70c25b-3758-4ab6-be0a-a068feb953bf.png" 
-                  alt="Leadership Excellence Award"
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/ba70c25b-3758-4ab6-be0a-a068feb953bf.png" alt="Leadership Excellence Award" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-primary text-white rounded-full px-3 py-1">
                   <span className="text-xs font-bold">2023</span>
                 </div>
@@ -426,22 +350,13 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
-            <a 
-              href="#contact" 
-              className="w-full sm:w-auto bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors text-center"
-            >
+            <a href="#contact" className="w-full sm:w-auto bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors text-center">
               Partner With Me
             </a>
-            <a 
-              href="#ventures" 
-              className="w-full sm:w-auto bg-white text-primary border-2 border-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary hover:text-white transition-colors text-center"
-            >
+            <a href="#ventures" className="w-full sm:w-auto bg-white text-primary border-2 border-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary hover:text-white transition-colors text-center">
               Explore My Ventures
             </a>
-            <a 
-              href="#contact" 
-              className="w-full sm:w-auto bg-white text-foreground border-2 border-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-center"
-            >
+            <a href="#contact" className="w-full sm:w-auto bg-white text-foreground border-2 border-gray-300 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-center">
               Book Me To Speak
             </a>
           </div>
@@ -468,30 +383,17 @@ const Index = () => {
                 <form className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                      placeholder="Your full name"
-                    />
+                    <input type="text" id="name" className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="Your full name" />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                      placeholder="your@email.com"
-                    />
+                    <input type="email" id="email" className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="your@email.com" />
                   </div>
                   
                   <div>
                     <label htmlFor="inquiry" className="block text-sm font-medium text-foreground mb-2">Reason for Contact</label>
-                    <select 
-                      id="inquiry" 
-                      className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                    >
+                    <select id="inquiry" className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors">
                       <option value="">Select inquiry type</option>
                       <option value="partnership">Partnership</option>
                       <option value="youth-empowerment">Youth Empowerment</option>
@@ -502,18 +404,10 @@ const Index = () => {
                   
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">Message</label>
-                    <textarea 
-                      id="message" 
-                      rows={5}
-                      className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                      placeholder="Tell me about your project or inquiry..."
-                    ></textarea>
+                    <textarea id="message" rows={5} className="w-full p-4 border border-border rounded-xl focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="Tell me about your project or inquiry..."></textarea>
                   </div>
                   
-                  <button 
-                    type="submit" 
-                    className="w-full bg-primary text-primary-foreground py-4 px-6 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
-                  >
+                  <button type="submit" className="w-full bg-primary text-primary-foreground py-4 px-6 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
                     Send Message
                   </button>
                 </form>
@@ -528,7 +422,7 @@ const Index = () => {
                     <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-primary-foreground">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
                       </div>
                       <div>
@@ -543,22 +437,22 @@ const Index = () => {
                     <div className="flex space-x-4">
                       <a href="https://linktr.ee/sinocle_nigeria_limited" target="_blank" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-foreground hover:bg-primary/90 transition-colors">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                       </a>
                       <a href="https://www.linkedin.com/in/israel-chima-onyeolu-025aab1a0?" target="_blank" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-foreground hover:bg-primary/90 transition-colors">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                       </a>
                       <a href="https://x.com/israelonyeolu?s=11" target="_blank" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-foreground hover:bg-primary/90 transition-colors">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                         </svg>
                       </a>
                       <a href="https://www.instagram.com/ionyeolu?igsh=MXJtaTFyaXVhdnVpaw==" target="_blank" className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-foreground hover:bg-primary/90 transition-colors">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334 1.336-.795 1.861-1.378.525-.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
+                          <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334 1.336-.795 1.861-1.378.525-.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z" />
                         </svg>
                       </a>
                     </div>
@@ -571,43 +465,21 @@ const Index = () => {
       </section>
 
       {/* Enhanced Scroll to Top Button with Progress Ring - Smaller Size */}
-      {isVisible && (
-        <button 
-          onClick={scrollToTop}
-          className="fixed bottom-4 right-4 w-10 h-10 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
-          aria-label="Scroll to top"
-        >
+      {isVisible && <button onClick={scrollToTop} className="fixed bottom-4 right-4 w-10 h-10 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center" aria-label="Scroll to top">
           {/* Progress Ring */}
           <svg className="absolute inset-0 w-10 h-10 transform -rotate-90" viewBox="0 0 40 40">
             {/* Background circle */}
-            <circle
-              cx="20"
-              cy="20"
-              r="16"
-              fill="none"
-              stroke="rgba(255, 255, 255, 0.2)"
-              strokeWidth="2"
-            />
+            <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(255, 255, 255, 0.2)" strokeWidth="2" />
             {/* Progress circle */}
-            <circle
-              cx="20"
-              cy="20"
-              r="16"
-              fill="none"
-              stroke="rgba(255, 255, 255, 0.8)"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeDasharray={`${2 * Math.PI * 16}`}
-              strokeDashoffset={`${2 * Math.PI * 16 * (1 - scrollProgress / 100)}`}
-              style={{ transition: 'stroke-dashoffset 0.1s ease-out' }}
-            />
+            <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(255, 255, 255, 0.8)" strokeWidth="2" strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 16}`} strokeDashoffset={`${2 * Math.PI * 16 * (1 - scrollProgress / 100)}`} style={{
+          transition: 'stroke-dashoffset 0.1s ease-out'
+        }} />
           </svg>
           {/* Arrow Icon */}
           <svg className="w-3 h-3 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
-        </button>
-      )}
+        </button>}
 
       {/* Footer - Light Background, No Quick Links */}
       <footer className="bg-muted/30 py-12 lg:py-16">
@@ -623,22 +495,22 @@ const Index = () => {
             <div className="flex justify-center space-x-6 mb-6">
               <a href="https://linktr.ee/sinocle_nigeria_limited" target="_blank" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
               </a>
               <a href="https://www.linkedin.com/in/israel-chima-onyeolu-025aab1a0?" target="_blank" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
               <a href="https://x.com/israelonyeolu?s=11" target="_blank" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                 </svg>
               </a>
               <a href="https://www.instagram.com/ionyeolu?igsh=MXJtaTFyaXVhdnVpaw==" target="_blank" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334 1.336-.795 1.861-1.378.525-.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z"/>
+                  <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.986 11.988 11.986s11.987-5.368 11.987-11.986C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.736 13.718 3.736 12.4c0-1.297.462-2.449 1.39-3.324.928-.875 2.026-1.312 3.323-1.312 1.297 0 2.449.437 3.324 1.312.875.875 1.312 2.027 1.312 3.324 0 1.318-.437 2.495-1.312 3.291-.875.807-2.027 1.297-3.324 1.297zm11.25-6.151c-.273-.783-.68-1.473-1.205-2.055-.525-.583-1.146-1.044-1.861-1.378-.715-.334-1.473-.501-2.275-.501-.802 0-1.56.167-2.275-.501-.715-.334 1.336-.795 1.861-1.378.525-.582-.932 1.272-1.205 2.055-.273.783-.409 1.616-.409 2.496 0 .88.136 1.713.409 2.496.273.783.68 1.473 1.205 2.055.525.582 1.146 1.044 1.861 1.378.715.334 1.473.501 2.275.501.802 0 1.56-.167 2.275-.501.715-.334 1.336-.795 1.861-1.378.525-.582.932-1.272 1.205-2.055.273-.783.409-1.616.409-2.496 0-.88-.136-1.713-.409-2.496z" />
                 </svg>
               </a>
             </div>
@@ -651,8 +523,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
