@@ -53,8 +53,7 @@ const ScrollToTop = () => {
           />
           {/* Progress circle */}
           <path
-            className="text-secondary"
-            stroke="currentColor"
+            stroke="#03372b"
             strokeWidth="2"
             fill="transparent"
             strokeDasharray={circumference}
