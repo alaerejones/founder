@@ -8,7 +8,7 @@ const Quote = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Quote */}
           <blockquote className="text-xl lg:text-2xl font-normal leading-relaxed mb-6 text-muted-foreground italic">
-            "Entrepreneurship is not just a career path — it's a responsibility to build solutions for generations."
+            "We've created over 500 jobs across Nigeria through our ventures and empowered 2,000+ young entrepreneurs with practical business skills."
           </blockquote>
           
           {/* Attribution */}
