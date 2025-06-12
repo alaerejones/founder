@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/sections/Hero';
@@ -40,7 +39,7 @@ const Index = () => {
               </h2>
               
               <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Through Sinocle Group and its expanding subsidiaries, I drive business ventures that contribute to Nigeria's infrastructure, agriculture, technology, and energy sectors.
+                Across my entrepreneurial journey, I've built and led businesses that are designed to create real solutions, sustainable impact, and long-term value. Each venture reflects a commitment to solving real challenges, building enduring institutions, and contributing to Africa's economic future across multiple industries.
               </p>
             </div>
 
@@ -59,8 +58,8 @@ const Index = () => {
                   <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle Nigeria Limited
                   </h3>
-                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
-                    Full-service construction and real estate development company delivering high-end residential, commercial, and government infrastructure projects across Nigeria.
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+                    Through Sinocle Nigeria Limited, I've established a construction and real estate development company that delivers full-scale building solutions across residential, commercial, and government sectors. From architectural design to complete property development, we provide turnkey solutions for individuals, organizations, and public sector clients seeking durable, high-quality, and future-ready structures. Our work contributes directly to infrastructure expansion, urban growth, and modern real estate transformation in Nigeria.
                   </p>
                   <a href="https://sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                     Visit Website
@@ -84,8 +83,8 @@ const Index = () => {
                   <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle AgroSolutions
                   </h3>
-                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
-                    Advancing Africa's food security through modern poultry farming, crop cultivation, and integrated agribusiness solutions across Nigeria.
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+                    With Sinocle AgroSolutions, I'm building an integrated agricultural system that addresses food security, job creation, and rural development. Our operations span poultry farming, frozen chicken processing, egg production, and staple crop cultivation. We serve both bulk buyers and retail outlets, supplying quality agricultural products that feed thousands of households, institutions, and businesses. More importantly, we are developing scalable farming models that empower young farmers, create employment, and strengthen Africa's food supply chain.
                   </p>
                   <a href="https://agrosolutions.sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                     Learn More
@@ -112,8 +111,8 @@ const Index = () => {
                   <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle Energy Solutions
                   </h3>
-                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                    Positioned to deliver energy infrastructure, scalable power generation, and clean energy solutions across Nigeria's growing industries.
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                    Energy is at the center of Africa's industrial future. Sinocle Energy Solutions is positioned to develop power infrastructure that supports commercial, industrial, and urban expansion across Nigeria. Our upcoming projects are focused on scalable, efficient, and sustainable energy solutions that meet growing power demands while unlocking opportunities for manufacturing, commerce, and regional growth.
                   </p>
                 </div>
               </div>
@@ -134,8 +133,8 @@ const Index = () => {
                   <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     iLuna Technologies
                   </h3>
-                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
-                    Developing software-driven solutions across multiple sectors with upcoming technology platforms for business automation and digital transformation.
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+                    Technology holds the key to accelerating growth across sectors. Through iLuna Technologies, I am building digital solutions that simplify complex business processes and enable operational excellence. Our focus is on enterprise software, business automation, and digital platforms that serve organizations across multiple industries. As our initial product lines launch, iLuna will deliver the tools businesses need to optimize workflows, improve efficiency, and scale confidently in the modern economy.
                   </p>
                   <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                     Visit Website
@@ -162,25 +161,25 @@ const Index = () => {
           <div className="relative max-w-6xl mx-auto px-4 lg:px-6 text-center">
             {/* Quote Icon */}
             <div className="flex justify-center mb-6">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                 </svg>
               </div>
             </div>
             
             {/* Quote Text */}
-            <blockquote className="text-lg md:text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-foreground italic">
+            <blockquote className="text-base md:text-lg lg:text-xl font-medium leading-relaxed mb-8 text-foreground italic">
               "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
             </blockquote>
             
             {/* Attribution */}
             <div className="space-y-3">
               <div className="w-16 h-px bg-primary mx-auto mb-6"></div>
-              <p className="text-primary font-bold text-lg lg:text-xl tracking-wider">
+              <p className="text-primary font-bold text-base lg:text-lg tracking-wider">
                 AMB. ONYEOLU ISRAEL CHIMA
               </p>
-              <p className="text-muted-foreground font-medium text-base">
+              <p className="text-muted-foreground font-medium text-sm">
                 CEO, Sinocle Nigeria Limited & ECOWAS Youth Ambassador
               </p>
             </div>
