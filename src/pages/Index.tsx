@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -66,7 +67,12 @@ const Index = () => {
           {/* Ventures Grid - Visual Cards with Real Images */}
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
             {/* Sinocle Nigeria Limited - Real Estate */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <a 
+              href="https://buildwithsinocle.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
+            >
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
@@ -84,10 +90,15 @@ const Index = () => {
                   Full-service real estate development and civil engineering projects across Nigeria, transforming urban landscapes with innovative residential and commercial developments.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Sinocle Energy Solutions */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <a 
+              href="https://sinoclegroup.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
+            >
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
@@ -105,10 +116,15 @@ const Index = () => {
                   Specialized in energy infrastructure, pipeline works, and comprehensive oil & gas services, powering Nigeria's energy sector development.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* iLunar Technologies */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <a 
+              href="https://ilunartech.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
+            >
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
@@ -126,10 +142,15 @@ const Index = () => {
                   Digital innovation and software development arm, delivering cutting-edge technology solutions and AI-powered platforms for African businesses.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Sinocle AgroSolutions */}
-            <div className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <a 
+              href="https://sinocleagro.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
+            >
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
@@ -147,7 +168,7 @@ const Index = () => {
                   Large-scale poultry, egg, and crop production empowering food security across Nigeria with modern agricultural techniques and sustainable farming.
                 </p>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* Statistics Bar */}
