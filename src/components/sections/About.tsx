@@ -32,11 +32,6 @@ const About = () => {
               <span className="text-primary">One Project at a Time</span>
             </h2>
 
-            {/* Mobile Image */}
-            <div className="lg:hidden mb-8">
-              <img src="/assets/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
-            </div>
-
             <div className="space-y-5 text-[#333333] text-[16px] text-justify leading-relaxed">
               <p>
                 Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future with businesses that solve problems, create opportunities, and deliver lasting value.
@@ -53,6 +48,11 @@ const About = () => {
                   At every stage, my focus remains clear: to build companies that outlive individuals, drive growth that lasts, and create spaces where people and communities thrive.
                 </p>
               </div>
+            </div>
+
+            {/* Mobile Image */}
+            <div className="lg:hidden mb-8">
+              <img src="/assets/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
