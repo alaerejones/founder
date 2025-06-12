@@ -7,7 +7,6 @@ import VenturesOverview from '@/components/sections/VenturesOverview';
 import QuoteSection from '@/components/sections/QuoteSection';
 import MediaCoverage from '@/components/sections/MediaCoverage';
 import Awards from '@/components/sections/Awards';
-import Stats from '@/components/sections/Stats';
 import CallToAction from '@/components/sections/CallToAction';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -28,14 +27,10 @@ const Index = () => {
           </section>
         </ScrollReveal>
         
-        <ScrollReveal>
-          <section id="stats" className="pt-8 pb-12">
-            <Stats />
-          </section>
-        </ScrollReveal>
-        
         <ScrollReveal delay={150}>
-          <VenturesOverview />
+          <section id="ventures">
+            <VenturesOverview />
+          </section>
         </ScrollReveal>
 
         <QuoteSection />

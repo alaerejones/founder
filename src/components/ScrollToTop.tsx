@@ -32,18 +32,20 @@ const ScrollToTop = () => {
     return null;
   }
 
-  const circumference = 2 * Math.PI * 16; // radius of 16
+  const circumference = 2 * Math.PI * 16;
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <button
+      onClick={scrollToTop}
+      className="fixed bottom-6 right-6 z-50 group"
+      aria-label="Scroll to top"
+    >
       <div className="relative">
-        {/* Progress ring */}
         <svg
-          className="absolute inset-0 w-10 h-10 transform -rotate-90"
+          className="w-12 h-12 transform -rotate-90"
           viewBox="0 0 36 36"
         >
-          {/* Background circle */}
           <path
             className="text-gray-200"
             stroke="currentColor"
@@ -51,7 +53,6 @@ const ScrollToTop = () => {
             fill="transparent"
             d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
           />
-          {/* Progress circle */}
           <path
             stroke="#03372b"
             strokeWidth="2"
@@ -63,17 +64,11 @@ const ScrollToTop = () => {
           />
         </svg>
         
-        {/* Button */}
-        <Button
-          onClick={scrollToTop}
-          className="w-10 h-10 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300"
-          size="icon"
-          aria-label="Scroll to top"
-        >
-          <ArrowUp className="w-4 h-4" />
-        </Button>
+        <div className="absolute inset-0 w-12 h-12 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group-hover:scale-105">
+          <ArrowUp className="w-5 h-5" />
+        </div>
       </div>
-    </div>
+    </button>
   );
 };
 
