@@ -22,6 +22,7 @@ const ScrollToTop = () => {
   }, []);
 
   const scrollToTop = () => {
+    console.log('Scroll to top clicked'); // Debug log
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -36,11 +37,11 @@ const ScrollToTop = () => {
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-[9999]">
       <div className="relative">
         {/* Progress ring */}
         <svg
-          className="absolute inset-0 w-10 h-10 transform -rotate-90"
+          className="absolute inset-0 w-10 h-10 transform -rotate-90 pointer-events-none"
           viewBox="0 0 36 36"
         >
           {/* Background circle */}
@@ -66,7 +67,7 @@ const ScrollToTop = () => {
         {/* Button */}
         <Button
           onClick={scrollToTop}
-          className="w-10 h-10 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300"
+          className="w-10 h-10 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 relative z-10"
           size="icon"
           aria-label="Scroll to top"
         >
