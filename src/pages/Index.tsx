@@ -40,7 +40,7 @@ const Index = () => {
               </h2>
               
               <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-justify">
-                Across my entrepreneurial journey, I've built and led businesses that are designed to create real solutions, sustainable impact, and long-term value. Each venture reflects a commitment to solving real challenges, building enduring institutions, and contributing to Africa's economic future across multiple industries.
+                Each venture reflects my commitment to solving real challenges, building enduring institutions, and contributing to Africa's economic future across multiple industries.
               </p>
             </div>
 
