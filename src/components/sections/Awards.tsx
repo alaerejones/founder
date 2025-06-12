@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Award, Star, Trophy, Medal, ArrowRight } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const Awards = () => {
   const awards = [
@@ -35,24 +36,26 @@ const Awards = () => {
   return (
     <div className="bg-muted/30 py-0">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-lg mb-6 border">
-            <Trophy className="w-4 h-4 text-primary mr-2" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Recognition</span>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-lg mb-6 border">
+              <Trophy className="w-4 h-4 text-primary mr-2" />
+              <span className="text-sm font-semibold text-primary uppercase tracking-wider">Recognition</span>
+            </div>
+            
+            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Awards & <span className="text-primary">Recognition</span>
+            </h2>
+            
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Honored for leadership excellence and meaningful contributions to youth empowerment and community development across Africa.
+            </p>
           </div>
-          
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Awards & <span className="text-primary">Recognition</span>
-          </h2>
-          
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Honored for leadership excellence and meaningful contributions to youth empowerment and community development across Africa.
-          </p>
-        </div>
+        </ScrollReveal>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {awards.map((award, index) => (
-            <div key={award.title}>
+            <ScrollReveal key={award.title} delay={100 + (index * 100)}>
               <div className="bg-white rounded-3xl p-8 shadow-lg border relative">
                 {/* Icon */}
                 <div className="w-16 h-16 mx-auto bg-primary rounded-2xl flex items-center justify-center text-white mb-6">
@@ -73,18 +76,20 @@ const Awards = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
         
-        <div className="text-center">
-          <Link to="/awards">
-            <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-2xl">
-              View All Awards
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
-        </div>
+        <ScrollReveal delay={500}>
+          <div className="text-center">
+            <Link to="/awards">
+              <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-2xl">
+                View All Awards
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   );
