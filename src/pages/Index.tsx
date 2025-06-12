@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -67,17 +66,12 @@ const Index = () => {
           {/* Ventures Grid - Visual Cards with Real Images */}
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
             {/* Sinocle Nigeria Limited - Real Estate */}
-            <a 
-              href="https://buildwithsinocle.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
-            >
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
                   alt="Sinocle Nigeria Limited - Real Estate Development"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -86,24 +80,30 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Full-service real estate development and civil engineering projects across Nigeria, transforming urban landscapes with innovative residential and commercial developments.
                 </p>
+                <a 
+                  href="https://buildwithsinocle.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                >
+                  Visit Website
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
-            </a>
+            </div>
 
             {/* Sinocle Energy Solutions */}
-            <a 
-              href="https://sinoclegroup.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
-            >
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
                   alt="Sinocle Energy Solutions - Oil & Gas Infrastructure"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -112,24 +112,30 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Specialized in energy infrastructure, pipeline works, and comprehensive oil & gas services, powering Nigeria's energy sector development.
                 </p>
+                <a 
+                  href="https://sinoclegroup.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                >
+                  Visit Website
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
-            </a>
+            </div>
 
             {/* iLunar Technologies */}
-            <a 
-              href="https://ilunartech.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
-            >
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
                   alt="iLunar Technologies - Digital Innovation"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -138,24 +144,30 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Digital innovation and software development arm, delivering cutting-edge technology solutions and AI-powered platforms for African businesses.
                 </p>
+                <a 
+                  href="https://ilunartech.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                >
+                  Visit Website
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
-            </a>
+            </div>
 
             {/* Sinocle AgroSolutions */}
-            <a 
-              href="https://sinocleagro.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 block"
-            >
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative h-64 lg:h-80 overflow-hidden">
                 <img 
                   src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
                   alt="Sinocle AgroSolutions - Agricultural Innovation"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
@@ -164,11 +176,22 @@ const Index = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Large-scale poultry, egg, and crop production empowering food security across Nigeria with modern agricultural techniques and sustainable farming.
                 </p>
+                <a 
+                  href="https://sinocleagro.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                >
+                  Visit Website
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
 
           {/* Statistics Bar */}
