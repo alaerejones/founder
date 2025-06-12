@@ -60,7 +60,7 @@ const Index = () => {
                     Sinocle Nigeria Limited
                   </h3>
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
-                    Through Sinocle Nigeria Limited, I've established a construction and real estate development company that delivers full-scale building solutions across residential, commercial, and government sectors. From architectural design to complete property development, we provide turnkey solutions for individuals, organizations, and public sector clients seeking durable, high-quality, and future-ready structures. Our work contributes directly to infrastructure expansion, urban growth, and modern real estate transformation in Nigeria.
+                    Through Sinocle Nigeria Limited, I've established a construction and real estate development company that delivers full-scale building solutions across residential, commercial, and government sectors. From architectural design to complete property development, we provide turnkey solutions for individuals, organizations, real estate companies and public sector clients seeking durable, high-quality, and future-ready structures. Our work contributes directly to infrastructure expansion, urban growth, and modern real estate transformation across West Africa.
                   </p>
                   <a href="https://sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
                     Visit Website
