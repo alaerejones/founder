@@ -13,7 +13,7 @@ const About = () => {
   };
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-white py-7">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Desktop Image */}
@@ -56,10 +56,6 @@ const About = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Button size="lg" className="group w-full sm:w-auto text-primary-foreground bg-primary hover:bg-primary/90 px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => scrollToSection('ventures')}>
-                Discover My Journey
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
               <Button variant="outline" size="lg" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-xl transition-all duration-300" onClick={() => scrollToSection('contact')}>
                 Let's Build Together
               </Button>
