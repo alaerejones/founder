@@ -53,150 +53,115 @@ const Index = () => {
       </div>
       
       {/* Ventures & Leadership Section */}
-      <section id="ventures" className="py-20 lg:py-20 bg-white">
+      <section id="ventures" className="bg-white lg:py-[10px] py-[32px]">
         <div className="container mx-auto px-4 lg:px-6">
-          {/* Section Header - Matching About section style */}
+          {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Ventures & Leadership
             </h2>
-            <p className="text-base lg:text-lg text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-              Through Sinocle Group and its expanding subsidiaries, Amb. Onyeolu Israel Chima drives business ventures that contribute to Nigeria's infrastructure, agriculture, technology, and energy sectors—building solutions that empower people, grow communities, and shape Africa's economic future.
+            <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Building Africa's future through strategic business ventures across multiple sectors, creating sustainable solutions that drive economic growth and foster innovation throughout West Africa.
             </p>
           </div>
           
-          {/* Ventures - Clean Biography Style Layout */}
-          <div className="space-y-20 lg:space-y-24">
-            
-            {/* Sinocle Nigeria Limited */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="relative">
-                  <img 
-                    src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
-                    alt="Sinocle Nigeria Limited Construction Projects" 
-                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
-                  />
+          {/* Ventures Grid - Visual Cards with Real Images */}
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+            {/* Sinocle Nigeria Limited - Real Estate */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-64 lg:h-80 overflow-hidden">
+                <img src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" alt="Sinocle Nigeria Limited - Real Estate Development" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle Nigeria Limited</h3>
+                  <p className="text-sm opacity-90">Premier Real Estate Development</p>
                 </div>
               </div>
-              <div className="order-1 lg:order-2 space-y-6">
-                <h3 className="text-xl lg:text-2xl font-bold text-foreground">
-                  Sinocle Nigeria Limited
-                </h3>
-                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
-                  Sinocle Nigeria Limited is a full-service construction and real estate development company delivering high-end residential, commercial, and government infrastructure projects across Nigeria. From architectural design to project execution, Sinocle delivers turnkey development solutions—blending modern engineering, quality craftsmanship, and client-focused service.
+              <div className="p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Full-service real estate development and civil engineering projects across Nigeria, transforming urban landscapes with innovative residential and commercial developments.
                 </p>
-                <div className="pt-2">
-                  <a href="https://buildwithsinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                    Visit Website
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Sinocle AgroSolutions */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 lg:order-2">
-                <div className="relative">
-                  <img 
-                    src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
-                    alt="Sinocle AgroSolutions Modern Agriculture" 
-                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="order-1 lg:order-1 space-y-6">
-                <h3 className="text-xl lg:text-2xl font-bold text-foreground">
-                  Sinocle AgroSolutions
-                </h3>
-                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
-                  Sinocle AgroSolutions is advancing Africa's food security through modern poultry farming, crop cultivation, and integrated agribusiness solutions. Its operations span from broiler production, frozen chicken packaging, table eggs, to staple crop farming—empowering youth, growing communities, and driving sustainable agriculture across Nigeria.
-                </p>
-                <div className="pt-2">
-                  <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                    Visit Website
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
+                <a href="https://buildwithsinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Visit Website
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
 
             {/* Sinocle Energy Solutions */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="relative">
-                  <img 
-                    src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
-                    alt="Sinocle Energy Solutions Infrastructure" 
-                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
-                  />
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-64 lg:h-80 overflow-hidden">
+                <img src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" alt="Sinocle Energy Solutions - Oil & Gas Infrastructure" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle Energy Solutions</h3>
+                  <p className="text-sm opacity-90">Oil & Gas Infrastructure</p>
                 </div>
               </div>
-              <div className="order-1 lg:order-2 space-y-6">
-                <div className="flex items-center gap-3">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground">
-                    Sinocle Energy Solutions
-                  </h3>
-                  <span className="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">
-                    Launching Soon
-                  </span>
-                </div>
-                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
-                  Sinocle Energy Solutions is positioned to deliver energy infrastructure, scalable power generation, and clean energy solutions across Nigeria's growing industries. Its upcoming projects will target industrial energy accessibility and regional power development.
+              <div className="p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Specialized in energy infrastructure, pipeline works, and comprehensive oil & gas services, powering Nigeria's energy sector development.
                 </p>
-                <div className="pt-2">
-                  <a href="https://sinoclegroup.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                    Visit Website
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
+                <a href="https://sinoclegroup.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Visit Website
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
 
-            {/* iLuna Technologies */}
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 lg:order-2">
-                <div className="relative">
-                  <img 
-                    src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
-                    alt="iLuna Technologies Software Development" 
-                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
-                  />
+            {/* iLunar Technologies */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-64 lg:h-80 overflow-hidden">
+                <img src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" alt="iLunar Technologies - Digital Innovation" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-xl lg:text-2xl font-bold mb-2">iLunar Technologies</h3>
+                  <p className="text-sm opacity-90">Digital Innovation Hub</p>
                 </div>
               </div>
-              <div className="order-1 lg:order-1 space-y-6">
-                <div className="flex items-center gap-3">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground">
-                    iLuna Technologies
-                  </h3>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
-                    Launching Soon
-                  </span>
-                </div>
-                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
-                  iLuna Technologies develops software-driven solutions across multiple sectors. Its upcoming technology platforms are designed to power business automation, digital transformation, and enterprise innovation for modern African businesses.
+              <div className="p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Digital innovation and software development arm, delivering cutting-edge technology solutions and AI-powered platforms for African businesses.
                 </p>
-                <div className="pt-2">
-                  <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
-                    Visit Website
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
+                <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Visit Website
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002 2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Sinocle AgroSolutions */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="relative h-64 lg:h-80 overflow-hidden">
+                <img src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" alt="Sinocle AgroSolutions - Agricultural Innovation" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-xl lg:text-2xl font-bold mb-2">Sinocle AgroSolutions</h3>
+                  <p className="text-sm opacity-90">Food Security Initiative</p>
                 </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Large-scale poultry, egg, and crop production empowering food security across Nigeria with modern agricultural techniques and sustainable farming.
+                </p>
+                <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Visit Website
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Quote Statement */}
-          <div className="mt-20 lg:mt-24 bg-muted rounded-xl p-8 lg:p-12 border border-border/50 text-center">
+          {/* Quote Statement - Replacing Statistics Bar */}
+          <div className="bg-muted/30 rounded-xl p-8 lg:p-12 border border-gray-100 text-center">
             <div className="max-w-4xl mx-auto">
               <blockquote className="text-lg lg:text-xl font-medium leading-relaxed mb-6 text-foreground">
                 "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
