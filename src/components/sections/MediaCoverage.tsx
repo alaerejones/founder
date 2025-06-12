@@ -50,8 +50,8 @@ const MediaCoverage = () => {
               <Quote className="w-6 h-6 text-white" />
             </div>
             
-            <blockquote className="text-xl lg:text-2xl font-medium text-foreground italic mb-6 leading-relaxed">
-              "A visionary leader who embodies the spirit of African entrepreneurship and youth empowerment"
+            <blockquote className="text-lg lg:text-xl font-normal italic leading-relaxed mb-6 text-foreground">
+              "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
             </blockquote>
             <div className="text-primary font-semibold">— African Business Magazine</div>
           </div>
