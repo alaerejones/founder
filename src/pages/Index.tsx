@@ -354,7 +354,7 @@ const Index = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                  src="/lovable-uploads/bfc68233-fc0b-452a-8e64-1661bcedad37.png" 
                   alt="ECOWAS Youth Ambassador Award"
                   className="w-full h-full object-cover"
                 />
