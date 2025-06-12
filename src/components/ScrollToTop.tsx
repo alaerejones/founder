@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
 import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
@@ -21,9 +22,10 @@ const ScrollToTop = () => {
   }, []);
 
   const scrollToTop = () => {
+    console.log('Scroll to top clicked'); // Debug log
     window.scrollTo({
       top: 0,
-      behavior: 'auto'
+      behavior: 'smooth'
     });
   };
 
@@ -31,27 +33,26 @@ const ScrollToTop = () => {
     return null;
   }
 
-  const circumference = 2 * Math.PI * 10;
+  const circumference = 2 * Math.PI * 16; // radius of 16
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
-    <button
-      onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-[9999] group"
-      aria-label="Scroll to top"
-    >
+    <div className="fixed bottom-6 right-6 z-[9999]">
       <div className="relative">
+        {/* Progress ring */}
         <svg
-          className="w-7 h-7 transform -rotate-90 pointer-events-none"
-          viewBox="0 0 24 24"
+          className="absolute inset-0 w-10 h-10 transform -rotate-90 pointer-events-none"
+          viewBox="0 0 36 36"
         >
+          {/* Background circle */}
           <path
-            className="text-muted-foreground/30"
+            className="text-gray-200"
             stroke="currentColor"
             strokeWidth="2"
             fill="transparent"
-            d="M12 2 a 10 10 0 0 1 0 20 a 10 10 0 0 1 0 -20"
+            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
           />
+          {/* Progress circle */}
           <path
             stroke="#03372b"
             strokeWidth="2"
@@ -59,15 +60,21 @@ const ScrollToTop = () => {
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
             strokeLinecap="round"
-            d="M12 2 a 10 10 0 0 1 0 20 a 10 10 0 0 1 0 -20"
+            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
           />
         </svg>
         
-        <div className="absolute inset-0 w-7 h-7 rounded-full bg-background border border-muted-foreground/20 hover:border-primary/50 transition-all duration-300 flex items-center justify-center group-hover:shadow-sm">
-          <ArrowUp className="w-3 h-3 text-muted-foreground group-hover:text-primary transition-colors" />
-        </div>
+        {/* Button */}
+        <Button
+          onClick={scrollToTop}
+          className="w-10 h-10 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 relative z-10"
+          size="icon"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-4 h-4" />
+        </Button>
       </div>
-    </button>
+    </div>
   );
 };
 

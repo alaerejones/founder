@@ -1,87 +1,79 @@
 
 import React from 'react';
-import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import ScrollReveal from '@/components/ScrollReveal';
+import { ArrowRight, Rocket, Globe, Users } from 'lucide-react';
 
 const CallToAction = () => {
-  const contactInfo = [
+  const features = [
     {
-      icon: Mail,
-      label: "Email",
-      value: "contact@onyeoluisraelchima.com",
-      href: "mailto:contact@onyeoluisraelchima.com"
+      icon: Rocket,
+      title: "Innovation",
+      description: "Cutting-edge solutions"
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+234 (0) 123 456 7890",
-      href: "tel:+2341234567890"
+      icon: Globe,
+      title: "Impact",
+      description: "Continental reach"
     },
     {
-      icon: MapPin,
-      label: "Location",
-      value: "Lagos, Nigeria",
-      href: "#"
+      icon: Users,
+      title: "Partnership",
+      description: "Collaborative growth"
     }
   ];
 
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <div className="bg-white py-0">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="max-w-4xl mx-auto">
-          <ScrollReveal>
-            <div className="text-center mb-12">
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Let's Work <span className="text-primary">Together</span>
-              </h2>
-              
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Ready to explore partnerships, investments, or collaborative opportunities? Let's connect and build Africa's future together.
-              </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-6 py-3 bg-primary rounded-full mb-8">
+              <span className="text-sm font-bold text-white uppercase tracking-wider">Ready to Build Africa Together?</span>
             </div>
-          </ScrollReveal>
+            
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-8 leading-tight">
+              Let's Create <span className="text-primary">Africa's Future</span><br />
+              <span className="text-primary">Together</span>
+            </h2>
+            
+            <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+              Whether you're looking to partner on transformative projects, explore investment opportunities, or join the movement for youth empowerment across Africa.
+            </p>
+          </div>
           
-          <ScrollReveal delay={200}>
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              {contactInfo.map((contact, index) => (
-                <a
-                  key={contact.label}
-                  href={contact.href}
-                  className="flex flex-col items-center p-6 bg-muted/20 rounded-2xl hover:bg-muted/30 transition-all duration-300 hover:scale-105 group"
-                >
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <contact.icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">{contact.label}</h3>
-                  <p className="text-muted-foreground text-center text-sm">{contact.value}</p>
-                </a>
-              ))}
-            </div>
-          </ScrollReveal>
+          {/* Feature Icons */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {features.map((feature, index) => (
+              <div key={feature.title} className="text-center">
+                <div className="w-20 h-20 mx-auto bg-primary rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg">
+                  <feature.icon className="w-10 h-10" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
+          </div>
           
-          <ScrollReveal delay={300}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary text-white hover:bg-primary/90 px-8 py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                Start a Partnership
-                <ArrowRight className="w-5 h-5 ml-2" />
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link to="/ventures">
+              <Button size="lg" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 px-10 py-4 text-xl font-bold rounded-2xl shadow-lg">
+                Explore My Ventures
+                <ArrowRight className="w-6 h-6 ml-3" />
               </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                View My Ventures
+            </Link>
+            
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-xl font-bold rounded-2xl shadow-lg">
+                Partner with Me
+                <Users className="w-6 h-6 ml-3" />
               </Button>
-            </div>
-          </ScrollReveal>
+            </Link>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

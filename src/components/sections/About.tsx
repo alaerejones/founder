@@ -34,6 +34,13 @@ const About = () => {
                 </h2>
               </ScrollReveal>
               
+              {/* Mobile Image - Between heading and text content */}
+              <ScrollReveal direction="left" delay={250}>
+                <div className="relative lg:hidden mb-8">
+                  <img src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
+                </div>
+              </ScrollReveal>
+              
               <div className="text-base lg:text-lg text-muted-foreground leading-relaxed space-y-5 text-left">
                 <ScrollReveal delay={300}>
                   <p className="text-base lg:text-lg text-muted-foreground text-justify">
@@ -61,13 +68,6 @@ const About = () => {
                   </div>
                 </ScrollReveal>
               </div>
-              
-              {/* Mobile Image - After all text content */}
-              <ScrollReveal direction="left" delay={650}>
-                <div className="relative lg:hidden mt-8">
-                  <img src="/lovable-uploads/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
-                </div>
-              </ScrollReveal>
             </div>
             
             {/* Buttons for all devices */}
