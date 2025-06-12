@@ -10,7 +10,8 @@ const About = () => {
       });
     }
   };
-  return <section className="lg:pb-16 lg:pt-0 bg-white py-[32px]">
+  return (
+    <div className="bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           
@@ -78,6 +79,7 @@ const About = () => {
           </Button>
         </div>
       </div>
-    </section>;
+    </div>
+  );
 };
 export default About;

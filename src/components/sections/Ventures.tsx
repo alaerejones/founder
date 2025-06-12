@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -31,7 +30,7 @@ const Ventures = () => {
   ];
 
   return (
-    <section className="py-8 md:py-12 lg:py-16 bg-muted/20">
+    <div className="bg-muted/20">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
         {/* Section Header */}
         <div className="mb-12 lg:mb-16 text-center">
@@ -148,7 +147,7 @@ const Ventures = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

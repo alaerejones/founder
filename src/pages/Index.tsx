@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/sections/Hero';
@@ -19,16 +18,16 @@ const Index = () => {
           <Hero />
         </section>
         
-        <section id="stats" className="hidden lg:block">
+        <section id="stats" className="hidden lg:block py-16 lg:py-20">
           <Stats />
         </section>
         
-        <section id="about" className="lg:pt-16">
+        <section id="about" className="py-16 lg:py-20">
           <About />
         </section>
         
         {/* Ventures Overview Section */}
-        <section id="ventures" className="py-8 md:py-12 lg:py-16 bg-muted/20">
+        <section id="ventures" className="py-16 lg:py-20 bg-muted/20">
           <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
             {/* Section Header */}
             <div className="text-center mb-12 lg:mb-16">
@@ -162,7 +161,7 @@ const Index = () => {
         </section>
 
         {/* Premium Quote Section - Full Width */}
-        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-8 md:py-12 lg:py-16">
+        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-16 lg:py-20">
           {/* Subtle background pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -199,19 +198,19 @@ const Index = () => {
           </div>
         </section>
         
-        <section id="media">
+        <section id="media" className="py-16 lg:py-20">
           <MediaCoverage />
         </section>
         
-        <section id="awards">
+        <section id="awards" className="py-16 lg:py-20">
           <Awards />
         </section>
         
-        <section id="stats" className="block lg:hidden">
+        <section id="stats" className="block lg:hidden py-16 lg:py-20">
           <Stats />
         </section>
         
-        <section id="contact">
+        <section id="contact" className="py-16 lg:py-20">
           <CallToAction />
         </section>
       </main>
