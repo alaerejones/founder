@@ -87,7 +87,7 @@ const Index = () => {
                   href="https://buildwithsinocle.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                  className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-semibold"
                 >
                   Visit Website
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +119,7 @@ const Index = () => {
                   href="https://sinoclegroup.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                  className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-semibold"
                 >
                   Visit Website
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ const Index = () => {
                   href="https://ilunartech.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                  className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-semibold"
                 >
                   Visit Website
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@ const Index = () => {
                   href="https://sinocleagro.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                  className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-semibold"
                 >
                   Visit Website
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -573,40 +573,40 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Scroll to Top Button with Progress Ring */}
+      {/* Enhanced Scroll to Top Button with Progress Ring - Smaller Size */}
       {isVisible && (
         <button 
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-16 h-16 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
+          className="fixed bottom-6 right-6 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
           aria-label="Scroll to top"
         >
           {/* Progress Ring */}
-          <svg className="absolute inset-0 w-16 h-16 transform -rotate-90" viewBox="0 0 64 64">
+          <svg className="absolute inset-0 w-12 h-12 transform -rotate-90" viewBox="0 0 48 48">
             {/* Background circle */}
             <circle
-              cx="32"
-              cy="32"
-              r="28"
+              cx="24"
+              cy="24"
+              r="20"
               fill="none"
               stroke="rgba(255, 255, 255, 0.2)"
-              strokeWidth="3"
+              strokeWidth="2"
             />
             {/* Progress circle */}
             <circle
-              cx="32"
-              cy="32"
-              r="28"
+              cx="24"
+              cy="24"
+              r="20"
               fill="none"
               stroke="rgba(255, 255, 255, 0.8)"
-              strokeWidth="3"
+              strokeWidth="2"
               strokeLinecap="round"
-              strokeDasharray={`${2 * Math.PI * 28}`}
-              strokeDashoffset={`${2 * Math.PI * 28 * (1 - scrollProgress / 100)}`}
+              strokeDasharray={`${2 * Math.PI * 20}`}
+              strokeDashoffset={`${2 * Math.PI * 20 * (1 - scrollProgress / 100)}`}
               style={{ transition: 'stroke-dashoffset 0.1s ease-out' }}
             />
           </svg>
           {/* Arrow Icon */}
-          <svg className="w-6 h-6 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
         </button>
