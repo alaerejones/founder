@@ -185,7 +185,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Media & Insights
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -279,7 +279,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Awards & Recognition
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -347,7 +347,7 @@ const Index = () => {
       <section className="py-20 lg:py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Let's Build Africa's Future Together
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
@@ -374,7 +374,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Get In Touch
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
