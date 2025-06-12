@@ -1,16 +1,9 @@
 
 import React from 'react';
-import { Globe, Instagram, Linkedin, Twitter, ArrowUp } from 'lucide-react';
+import { Globe, Instagram, Linkedin, Twitter } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const Footer = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const socialLinks = [
     {
       icon: Globe,
@@ -78,19 +71,10 @@ const Footer = () => {
         
         <ScrollReveal delay={200}>
           <div className="border-t border-primary/20 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-center">
               <p className="text-muted-foreground text-base">
                 &copy; 2024 Onyeolu Israel Chima. All rights reserved.
               </p>
-              <div className="flex items-center space-x-6 text-muted-foreground">
-                <button
-                  onClick={() => scrollToSection('hero')}
-                  className="flex items-center space-x-2 hover:text-primary transition-colors"
-                >
-                  <span>Back to Top</span>
-                  <ArrowUp className="w-4 h-4" />
-                </button>
-              </div>
             </div>
           </div>
         </ScrollReveal>
