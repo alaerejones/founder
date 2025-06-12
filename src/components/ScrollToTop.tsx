@@ -31,7 +31,7 @@ const ScrollToTop = () => {
     return null;
   }
 
-  const circumference = 2 * Math.PI * 14;
+  const circumference = 2 * Math.PI * 10;
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
@@ -42,15 +42,15 @@ const ScrollToTop = () => {
     >
       <div className="relative">
         <svg
-          className="w-10 h-10 transform -rotate-90 pointer-events-none"
-          viewBox="0 0 32 32"
+          className="w-7 h-7 transform -rotate-90 pointer-events-none"
+          viewBox="0 0 24 24"
         >
           <path
-            className="text-border"
+            className="text-muted-foreground/30"
             stroke="currentColor"
             strokeWidth="2"
             fill="transparent"
-            d="M16 2 a 14 14 0 0 1 0 28 a 14 14 0 0 1 0 -28"
+            d="M12 2 a 10 10 0 0 1 0 20 a 10 10 0 0 1 0 -20"
           />
           <path
             stroke="#03372b"
@@ -59,12 +59,12 @@ const ScrollToTop = () => {
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
             strokeLinecap="round"
-            d="M16 2 a 14 14 0 0 1 0 28 a 14 14 0 0 1 0 -28"
+            d="M12 2 a 10 10 0 0 1 0 20 a 10 10 0 0 1 0 -20"
           />
         </svg>
         
-        <div className="absolute inset-0 w-10 h-10 rounded-full bg-background border border-border hover:border-primary/30 transition-all duration-300 flex items-center justify-center group-hover:shadow-md">
-          <ArrowUp className="w-4 h-4 text-foreground group-hover:text-primary transition-colors" />
+        <div className="absolute inset-0 w-7 h-7 rounded-full bg-background border border-muted-foreground/20 hover:border-primary/50 transition-all duration-300 flex items-center justify-center group-hover:shadow-sm">
+          <ArrowUp className="w-3 h-3 text-muted-foreground group-hover:text-primary transition-colors" />
         </div>
       </div>
     </button>
