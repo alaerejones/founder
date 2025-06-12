@@ -354,7 +354,7 @@ const Index = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/bfc68233-fc0b-452a-8e64-1661bcedad37.png" 
+                  src="/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png" 
                   alt="ECOWAS Youth Ambassador Award"
                   className="w-full h-full object-cover"
                 />
@@ -375,7 +375,7 @@ const Index = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative h-64 overflow-hidden">
                 <img 
-                  src="/lovable-uploads/6f2a5535-255f-478e-8d2c-9d5c00cb3143.png" 
+                  src="/lovable-uploads/d13faf9a-2263-483a-a703-a13cb588d81c.png" 
                   alt="Humanitarian Award"
                   className="w-full h-full object-cover"
                 />
