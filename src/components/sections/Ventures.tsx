@@ -98,7 +98,7 @@ const Ventures = () => {
             
             {/* Quote Text */}
             <div className="text-center max-w-4xl mx-auto">
-              <blockquote className="text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-foreground">
+              <blockquote className="text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-foreground italic">
                 "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
               </blockquote>
               
