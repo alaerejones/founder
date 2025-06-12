@@ -12,62 +12,63 @@ import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import ScrollToTop from '@/components/ScrollToTop';
 import Stats from '@/components/sections/Stats';
+import SectionNavigator from '@/components/SectionNavigator';
+import { useFullPageScroll } from '@/hooks/useFullPageScroll';
 
 const Index = () => {
+  const sections = ['hero', 'about', 'stats', 'ventures', 'quote', 'media', 'awards', 'contact'];
+  const { currentSection, scrollToSection } = useFullPageScroll({ sections });
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Navigation />
+      <SectionNavigator 
+        sections={sections}
+        currentSection={currentSection}
+        onSectionClick={scrollToSection}
+      />
+      
       <main>
-        <section id="hero">
+        <section id="hero" className="min-h-screen">
           <Hero />
         </section>
         
-        {/* Stats section - positioned after hero on desktop only */}
-        <div className="hidden lg:block">
-          <ScrollReveal delay={50}>
-            <section className="py-12">
-              <Stats />
-            </section>
-          </ScrollReveal>
-        </div>
-        
         <ScrollReveal delay={100}>
-          <section id="about" className="pt-12 pb-8 lg:pt-16 lg:pb-12">
+          <section id="about" className="min-h-screen pt-12 pb-8 lg:pt-16 lg:pb-12 flex items-center">
             <About />
           </section>
         </ScrollReveal>
         
-        {/* Stats section - positioned after about on mobile only */}
-        <div className="lg:hidden">
-          <ScrollReveal delay={50}>
-            <section className="py-8">
-              <Stats />
-            </section>
-          </ScrollReveal>
-        </div>
+        <ScrollReveal delay={50}>
+          <section id="stats" className="min-h-screen flex items-center py-12">
+            <Stats />
+          </section>
+        </ScrollReveal>
         
         <ScrollReveal delay={150}>
-          <section id="ventures">
+          <section id="ventures" className="min-h-screen">
             <VenturesOverview />
           </section>
         </ScrollReveal>
 
-        <QuoteSection />
+        <section id="quote" className="min-h-screen">
+          <QuoteSection />
+        </section>
         
         <ScrollReveal delay={100}>
-          <section id="media" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
+          <section id="media" className="min-h-screen pt-8 pb-12 lg:pt-12 lg:pb-16 flex items-center">
             <MediaCoverage />
           </section>
         </ScrollReveal>
         
         <ScrollReveal delay={150}>
-          <section id="awards" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
+          <section id="awards" className="min-h-screen pt-8 pb-12 lg:pt-12 lg:pb-16 flex items-center">
             <Awards />
           </section>
         </ScrollReveal>
         
         <ScrollReveal delay={100}>
-          <section id="contact" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
+          <section id="contact" className="min-h-screen pt-8 pb-12 lg:pt-12 lg:pb-16 flex items-center">
             <CallToAction />
           </section>
         </ScrollReveal>
