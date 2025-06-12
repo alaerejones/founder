@@ -47,7 +47,7 @@ const Index = () => {
       </div>
       
       {/* Ventures & Leadership Section */}
-      <section id="ventures" className="bg-white lg:py-[10px] py-[10px]">
+      <section id="ventures" className="bg-white lg:py-[10px] py-[32px]">
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
