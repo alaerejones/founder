@@ -18,16 +18,16 @@ const Index = () => {
           <Hero />
         </section>
         
-        <section id="stats" className="hidden lg:block py-16 lg:py-20">
+        <section id="stats" className="hidden lg:block pt-8 pb-12">
           <Stats />
         </section>
         
-        <section id="about" className="py-16 lg:py-20">
+        <section id="about" className="pt-12 pb-8 lg:pt-16 lg:pb-12">
           <About />
         </section>
         
         {/* Ventures Overview Section */}
-        <section id="ventures" className="py-16 lg:py-20 bg-muted/20">
+        <section id="ventures" className="pt-8 pb-12 lg:pt-12 lg:pb-16 bg-muted/20">
           <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
             {/* Section Header */}
             <div className="text-center mb-12 lg:mb-16">
@@ -161,7 +161,7 @@ const Index = () => {
         </section>
 
         {/* Premium Quote Section - Full Width */}
-        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-16 lg:py-20">
+        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 pt-8 pb-12 lg:pt-12 lg:pb-16">
           {/* Subtle background pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -198,19 +198,19 @@ const Index = () => {
           </div>
         </section>
         
-        <section id="media" className="py-16 lg:py-20">
+        <section id="media" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
           <MediaCoverage />
         </section>
         
-        <section id="awards" className="py-16 lg:py-20">
+        <section id="awards" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
           <Awards />
         </section>
         
-        <section id="stats" className="block lg:hidden py-16 lg:py-20">
+        <section id="stats" className="block lg:hidden pt-8 pb-12">
           <Stats />
         </section>
         
-        <section id="contact" className="py-16 lg:py-20">
+        <section id="contact" className="pt-8 pb-12 lg:pt-12 lg:pb-16">
           <CallToAction />
         </section>
       </main>

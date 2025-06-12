@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ const CallToAction = () => {
   ];
 
   return (
-    <div className="bg-white py-16 lg:py-20">
+    <div className="bg-white py-0">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">

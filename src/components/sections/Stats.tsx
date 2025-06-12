@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Building, Users, Home } from 'lucide-react';
 
@@ -67,7 +68,7 @@ const Stats = () => {
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className="bg-muted/30 py-16 lg:py-20">
+    <div ref={sectionRef} className="bg-muted/30 py-0">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid md:grid-cols-4 gap-6 text-center">
           <div className="space-y-2">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
@@ -11,7 +12,7 @@ const About = () => {
     }
   };
   return (
-    <div className="bg-white">
+    <div className="bg-white py-0">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           
