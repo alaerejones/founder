@@ -24,7 +24,7 @@ const Index = () => {
         </section>
         
         {/* Ventures Overview Section */}
-        <section id="ventures" className="py-16 lg:py-20 bg-muted/20">
+        <section id="ventures" className="py-8 md:py-12 lg:py-16 bg-muted/20">
           <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
             {/* Section Header */}
             <div className="text-center mb-12 lg:mb-16">
@@ -35,11 +35,11 @@ const Index = () => {
                 <span className="text-sm font-semibold text-primary uppercase tracking-wider">Portfolio Overview</span>
               </div>
               
-              <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
                 Ventures & <span className="text-primary">Leadership</span>
               </h2>
               
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Through Sinocle Group and its expanding subsidiaries, I drive business ventures that contribute to Nigeria's infrastructure, agriculture, technology, and energy sectors.
               </p>
             </div>
@@ -56,10 +56,10 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4 leading-tight">
+                  <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle Nigeria Limited
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
                     Full-service construction and real estate development company delivering high-end residential, commercial, and government infrastructure projects across Nigeria.
                   </p>
                   <a href="https://sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
@@ -81,10 +81,10 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4 leading-tight">
+                  <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle AgroSolutions
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
                     Advancing Africa's food security through modern poultry farming, crop cultivation, and integrated agribusiness solutions across Nigeria.
                   </p>
                   <a href="https://agrosolutions.sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
@@ -109,10 +109,10 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4 leading-tight">
+                  <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     Sinocle Energy Solutions
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
                     Positioned to deliver energy infrastructure, scalable power generation, and clean energy solutions across Nigeria's growing industries.
                   </p>
                 </div>
@@ -131,10 +131,10 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="p-6 lg:p-8">
-                  <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4 leading-tight">
+                  <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
                     iLuna Technologies
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-sm lg:text-base text-muted-foreground leading-relaxed mb-6">
                     Developing software-driven solutions across multiple sectors with upcoming technology platforms for business automation and digital transformation.
                   </p>
                   <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
@@ -149,8 +149,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Full Width Premium Quote Section */}
-        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-16 lg:py-20">
+        {/* Premium Quote Section - Full Width */}
+        <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-8 md:py-12 lg:py-16">
           {/* Subtle background pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute inset-0" style={{
@@ -159,28 +159,28 @@ const Index = () => {
           </div>
           
           {/* Content */}
-          <div className="relative max-w-5xl mx-auto px-4 lg:px-6 text-center">
+          <div className="relative max-w-6xl mx-auto px-4 lg:px-6 text-center">
             {/* Quote Icon */}
-            <div className="flex justify-center mb-8">
-              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center">
-                <svg className="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <div className="flex justify-center mb-6">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                 </svg>
               </div>
             </div>
             
             {/* Quote Text */}
-            <blockquote className="text-2xl lg:text-3xl xl:text-4xl font-medium leading-relaxed mb-12 text-foreground italic">
+            <blockquote className="text-lg md:text-xl lg:text-2xl font-medium leading-relaxed mb-8 text-foreground italic">
               "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
             </blockquote>
             
             {/* Attribution */}
-            <div className="space-y-4">
-              <div className="w-24 h-px bg-primary mx-auto mb-8"></div>
-              <p className="text-primary font-bold text-xl lg:text-2xl tracking-wider">
+            <div className="space-y-3">
+              <div className="w-16 h-px bg-primary mx-auto mb-6"></div>
+              <p className="text-primary font-bold text-lg lg:text-xl tracking-wider">
                 AMB. ONYEOLU ISRAEL CHIMA
               </p>
-              <p className="text-muted-foreground font-medium text-lg">
+              <p className="text-muted-foreground font-medium text-base">
                 CEO, Sinocle Nigeria Limited & ECOWAS Youth Ambassador
               </p>
             </div>
