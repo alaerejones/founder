@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -54,38 +53,38 @@ const Index = () => {
       </div>
       
       {/* Ventures & Leadership Section */}
-      <section id="ventures" className="py-20 lg:py-20 bg-muted/20">
-        <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
-          {/* Section Header */}
+      <section id="ventures" className="py-20 lg:py-20 bg-white">
+        <div className="container mx-auto px-4 lg:px-6">
+          {/* Section Header - Matching About section style */}
           <div className="text-center mb-16 lg:mb-20">
             <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Ventures & Leadership
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-              As a visionary entrepreneur, Amb. Onyeolu Israel Chima leads a growing portfolio of companies across real estate, agriculture, energy, and technology. Through these ventures, he is delivering real solutions to infrastructure gaps, food security challenges, and digital transformation opportunities across Africa.
+              Through Sinocle Group and its expanding subsidiaries, Amb. Onyeolu Israel Chima drives business ventures that contribute to Nigeria's infrastructure, agriculture, technology, and energy sectors—building solutions that empower people, grow communities, and shape Africa's economic future.
             </p>
           </div>
           
-          {/* Ventures Grid */}
-          <div className="space-y-16 lg:space-y-20">
+          {/* Ventures - Clean Biography Style Layout */}
+          <div className="space-y-20 lg:space-y-24">
             
             {/* Sinocle Nigeria Limited */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <div className="rounded-lg overflow-hidden">
+                <div className="relative">
                   <img 
                     src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" 
-                    alt="Sinocle Nigeria Limited - Construction and Real Estate Development" 
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg"
+                    alt="Sinocle Nigeria Limited Construction Projects" 
+                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
                   />
                 </div>
               </div>
-              <div className="order-1 lg:order-2 space-y-4 lg:space-y-6">
+              <div className="order-1 lg:order-2 space-y-6">
                 <h3 className="text-xl lg:text-2xl font-bold text-foreground">
                   Sinocle Nigeria Limited
                 </h3>
-                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                  Sinocle Nigeria Limited specializes in full-scale construction and real estate development solutions. From architectural design to complete project execution, the company handles commercial, residential, and government infrastructure projects across Nigeria. Sinocle provides turnkey solutions that meet client expectations for quality, professionalism, and timely delivery.
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
+                  Sinocle Nigeria Limited is a full-service construction and real estate development company delivering high-end residential, commercial, and government infrastructure projects across Nigeria. From architectural design to project execution, Sinocle delivers turnkey development solutions—blending modern engineering, quality craftsmanship, and client-focused service.
                 </p>
                 <div className="pt-2">
                   <a href="https://buildwithsinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
@@ -99,22 +98,22 @@ const Index = () => {
             </div>
 
             {/* Sinocle AgroSolutions */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-2">
-                <div className="rounded-lg overflow-hidden">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
-                    alt="Sinocle AgroSolutions - Modern Agribusiness and Food Production" 
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg"
+                    alt="Sinocle AgroSolutions Modern Agriculture" 
+                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
                   />
                 </div>
               </div>
-              <div className="order-1 lg:order-1 space-y-4 lg:space-y-6">
+              <div className="order-1 lg:order-1 space-y-6">
                 <h3 className="text-xl lg:text-2xl font-bold text-foreground">
                   Sinocle AgroSolutions
                 </h3>
-                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                  Sinocle AgroSolutions operates as a modern agribusiness focused on scalable food production, poultry farming, and agricultural value chain development. The company supplies healthy broiler chickens, frozen chicken packs, table eggs, and staple crops, while contributing to food security, youth participation, and economic empowerment in Nigeria's agricultural sector.
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
+                  Sinocle AgroSolutions is advancing Africa's food security through modern poultry farming, crop cultivation, and integrated agribusiness solutions. Its operations span from broiler production, frozen chicken packaging, table eggs, to staple crop farming—empowering youth, growing communities, and driving sustainable agriculture across Nigeria.
                 </p>
                 <div className="pt-2">
                   <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
@@ -128,17 +127,17 @@ const Index = () => {
             </div>
 
             {/* Sinocle Energy Solutions */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-1">
-                <div className="rounded-lg overflow-hidden">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
-                    alt="Sinocle Energy Solutions - Power and Industrial Energy Infrastructure" 
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg"
+                    alt="Sinocle Energy Solutions Infrastructure" 
+                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
                   />
                 </div>
               </div>
-              <div className="order-1 lg:order-2 space-y-4 lg:space-y-6">
+              <div className="order-1 lg:order-2 space-y-6">
                 <div className="flex items-center gap-3">
                   <h3 className="text-xl lg:text-2xl font-bold text-foreground">
                     Sinocle Energy Solutions
@@ -147,8 +146,8 @@ const Index = () => {
                     Launching Soon
                   </span>
                 </div>
-                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                  Sinocle Energy Solutions is positioned to enter Nigeria's energy sector, with upcoming projects focused on providing innovative power solutions, industrial energy infrastructure, and scalable energy accessibility. The division will support regional development through clean energy technologies and sustainable energy distribution networks.
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
+                  Sinocle Energy Solutions is positioned to deliver energy infrastructure, scalable power generation, and clean energy solutions across Nigeria's growing industries. Its upcoming projects will target industrial energy accessibility and regional power development.
                 </p>
                 <div className="pt-2">
                   <a href="https://sinoclegroup.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
@@ -162,17 +161,17 @@ const Index = () => {
             </div>
 
             {/* iLuna Technologies */}
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 lg:order-2">
-                <div className="rounded-lg overflow-hidden">
+                <div className="relative">
                   <img 
                     src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
-                    alt="iLuna Technologies - Enterprise Software and Digital Solutions" 
-                    className="w-full h-64 lg:h-80 object-cover rounded-lg"
+                    alt="iLuna Technologies Software Development" 
+                    className="w-full h-[450px] lg:h-full object-cover object-center rounded-lg"
                   />
                 </div>
               </div>
-              <div className="order-1 lg:order-1 space-y-4 lg:space-y-6">
+              <div className="order-1 lg:order-1 space-y-6">
                 <div className="flex items-center gap-3">
                   <h3 className="text-xl lg:text-2xl font-bold text-foreground">
                     iLuna Technologies
@@ -181,8 +180,8 @@ const Index = () => {
                     Launching Soon
                   </span>
                 </div>
-                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
-                  iLuna Technologies is building technology-driven solutions across multiple sectors in Africa. The company is preparing to launch its first proprietary software product, with a vision to deliver enterprise software solutions, digital transformation platforms, and business automation products that power modern African industries.
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify">
+                  iLuna Technologies develops software-driven solutions across multiple sectors. Its upcoming technology platforms are designed to power business automation, digital transformation, and enterprise innovation for modern African businesses.
                 </p>
                 <div className="pt-2">
                   <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
@@ -197,7 +196,7 @@ const Index = () => {
           </div>
 
           {/* Quote Statement */}
-          <div className="mt-16 lg:mt-20 bg-white rounded-xl p-8 lg:p-12 border border-gray-100 text-center shadow-sm">
+          <div className="mt-20 lg:mt-24 bg-muted rounded-xl p-8 lg:p-12 border border-border/50 text-center">
             <div className="max-w-4xl mx-auto">
               <blockquote className="text-lg lg:text-xl font-medium leading-relaxed mb-6 text-foreground">
                 "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
