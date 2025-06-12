@@ -41,7 +41,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
 
   return (
     <div
-      ref={elementRef}
+      ref={elementRef as React.RefObject<HTMLDivElement>}
       className={cn(className)}
       style={{
         opacity: isVisible ? 1 : 0,
