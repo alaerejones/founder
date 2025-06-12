@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -195,24 +194,20 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Statistics Bar */}
-          <div className="bg-muted/30 rounded-xl p-6 lg:p-8 border border-gray-100">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 text-center">
+          {/* Quote Statement - Replacing Statistics Bar */}
+          <div className="bg-muted/30 rounded-xl p-8 lg:p-12 border border-gray-100 text-center">
+            <div className="max-w-4xl mx-auto">
+              <blockquote className="text-lg lg:text-xl font-medium leading-relaxed mb-6 text-foreground">
+                "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
+              </blockquote>
+              
               <div className="space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-primary">4</div>
-                <p className="text-sm lg:text-base text-muted-foreground font-medium">Active Ventures</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-primary">150+</div>
-                <p className="text-sm lg:text-base text-muted-foreground font-medium">Projects Delivered</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-primary">10K+</div>
-                <p className="text-sm lg:text-base text-muted-foreground font-medium">Lives Impacted</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl lg:text-4xl font-bold text-primary">3</div>
-                <p className="text-sm lg:text-base text-muted-foreground font-medium">Countries</p>
+                <p className="text-primary font-bold text-lg tracking-wider">
+                  AMB. ONYEOLU ISRAEL CHIMA
+                </p>
+                <p className="text-muted-foreground">
+                  CEO, Sinocle Nigeria Limited & ECOWAS Youth Ambassador
+                </p>
               </div>
             </div>
           </div>
