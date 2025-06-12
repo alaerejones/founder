@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
@@ -24,7 +23,7 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'auto' // Changed from 'smooth' to 'auto' for faster scroll
+      behavior: 'auto'
     });
   };
 
@@ -32,7 +31,7 @@ const ScrollToTop = () => {
     return null;
   }
 
-  const circumference = 2 * Math.PI * 16;
+  const circumference = 2 * Math.PI * 14;
   const strokeDashoffset = circumference - (scrollProgress / 100) * circumference;
 
   return (
@@ -43,15 +42,15 @@ const ScrollToTop = () => {
     >
       <div className="relative">
         <svg
-          className="w-12 h-12 transform -rotate-90 pointer-events-none"
-          viewBox="0 0 36 36"
+          className="w-10 h-10 transform -rotate-90 pointer-events-none"
+          viewBox="0 0 32 32"
         >
           <path
-            className="text-gray-200"
+            className="text-border"
             stroke="currentColor"
             strokeWidth="2"
             fill="transparent"
-            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            d="M16 2 a 14 14 0 0 1 0 28 a 14 14 0 0 1 0 -28"
           />
           <path
             stroke="#03372b"
@@ -60,12 +59,12 @@ const ScrollToTop = () => {
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
             strokeLinecap="round"
-            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            d="M16 2 a 14 14 0 0 1 0 28 a 14 14 0 0 1 0 -28"
           />
         </svg>
         
-        <div className="absolute inset-0 w-12 h-12 rounded-full bg-white text-foreground border border-gray-200 hover:bg-gray-50 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group-hover:scale-105">
-          <ArrowUp className="w-5 h-5" />
+        <div className="absolute inset-0 w-10 h-10 rounded-full bg-background border border-border hover:border-primary/30 transition-all duration-300 flex items-center justify-center group-hover:shadow-md">
+          <ArrowUp className="w-4 h-4 text-foreground group-hover:text-primary transition-colors" />
         </div>
       </div>
     </button>
