@@ -43,7 +43,7 @@ const Index = () => {
                 Ventures & <span className="text-primary">Leadership</span>
               </h2>
               
-              <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-left">
+              <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-center">
                 Each venture reflects my commitment to solving real challenges, building enduring institutions, and contributing to Africa's economic future across multiple industries.
               </p>
             </div>
