@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -573,36 +574,36 @@ const Index = () => {
       {isVisible && (
         <button 
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
+          className="fixed bottom-4 right-4 w-10 h-10 bg-primary text-primary-foreground rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center"
           aria-label="Scroll to top"
         >
           {/* Progress Ring */}
-          <svg className="absolute inset-0 w-12 h-12 transform -rotate-90" viewBox="0 0 48 48">
+          <svg className="absolute inset-0 w-10 h-10 transform -rotate-90" viewBox="0 0 40 40">
             {/* Background circle */}
             <circle
-              cx="24"
-              cy="24"
-              r="20"
+              cx="20"
+              cy="20"
+              r="16"
               fill="none"
               stroke="rgba(255, 255, 255, 0.2)"
               strokeWidth="2"
             />
             {/* Progress circle */}
             <circle
-              cx="24"
-              cy="24"
-              r="20"
+              cx="20"
+              cy="20"
+              r="16"
               fill="none"
               stroke="rgba(255, 255, 255, 0.8)"
               strokeWidth="2"
               strokeLinecap="round"
-              strokeDasharray={`${2 * Math.PI * 20}`}
-              strokeDashoffset={`${2 * Math.PI * 20 * (1 - scrollProgress / 100)}`}
+              strokeDasharray={`${2 * Math.PI * 16}`}
+              strokeDashoffset={`${2 * Math.PI * 16 * (1 - scrollProgress / 100)}`}
               style={{ transition: 'stroke-dashoffset 0.1s ease-out' }}
             />
           </svg>
           {/* Arrow Icon */}
-          <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-3 h-3 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
         </button>
