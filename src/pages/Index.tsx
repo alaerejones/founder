@@ -6,9 +6,11 @@ import Stats from '@/components/sections/Stats';
 import About from '@/components/sections/About';
 import Quote from '@/components/sections/Quote';
 import CallToAction from '@/components/sections/CallToAction';
+
 const Index = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -17,16 +19,20 @@ const Index = () => {
       setScrollProgress(scrollPercent);
       setIsVisible(scrollTop > 300); // Show button after scrolling 300px
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
-  return <div className="min-h-screen">
+
+  return (
+    <div className="min-h-screen">
       <Navigation />
       <Hero />
       
@@ -51,7 +57,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           {/* Section Header */}
           <div className="text-center mb-16 lg:mb-20">
-            <h2 className="text-xl lg:text-2xl font-bold text-foreground mb-6 leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
               Ventures & Leadership
             </h2>
             <p className="text-base lg:text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -523,6 +529,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
