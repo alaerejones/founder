@@ -16,7 +16,7 @@ const Hero = () => {
       id="hero"
       className="flex items-center pt-8 pb-0 lg:pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
       style={{ 
-        backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
+        backgroundImage: 'url(/assets/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
       }}
     >
       {/* Subtle background elements */}

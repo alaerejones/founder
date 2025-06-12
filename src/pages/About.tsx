@@ -48,7 +48,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img 
-                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                src="/assets/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
                 alt="Onyeolu Israel Chima in Office" 
                 className="w-full rounded-lg shadow-xl"
               />

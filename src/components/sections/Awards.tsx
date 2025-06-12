@@ -1,95 +1,66 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
-import { Award, Star, Trophy, Medal, ArrowRight } from 'lucide-react';
-import ScrollReveal from '@/components/ScrollReveal';
+import { Trophy } from 'lucide-react';
 
 const Awards = () => {
   const awards = [
     {
-      icon: Trophy,
-      title: "ECOWAS Youth Ambassador",
-      organization: "West Africa Leadership",
-      year: "2024"
+      title: "ECOWAS Youth Ambassador Recognition",
+      organization: "ECOWAS Youth Council",
+      year: "2024",
+      image: "/assets/ecowas.png",
     },
     {
-      icon: Medal,
-      title: "Humanitarian Award",
+      title: "Golden Role Model Award",
+      organization: "NYAGGI",
+      year: "2023",
+      image: "/assets/golden-role.png",
+    },
+    {
+      title: "Lions Club Humanitarian Award",
       organization: "Lions Club International",
-      year: "2023"
+      year: "2023",
+      image: "/assets/lionsclub.png",
     },
     {
-      icon: Award,
-      title: "Leadership Excellence",
-      organization: "Southern Youth Assembly",
-      year: "2023"
+      title: "Leadership Award",
+      organization: "Southern Youth Assembly of Nigeria (SYAN)",
+      year: "2022",
+      image: "/assets/syan.png",
     },
-    {
-      icon: Star,
-      title: "Golden Role Model",
-      organization: "Youth Advocacy Initiative",
-      year: "2022"
-    }
   ];
 
   return (
-    <div className="bg-muted/30 py-0">
+    <div className="bg-white py-20">
       <div className="container mx-auto px-4 lg:px-6">
-        <ScrollReveal>
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-lg mb-6 border">
-              <Trophy className="w-4 h-4 text-primary mr-2" />
-              <span className="text-sm font-semibold text-primary uppercase tracking-wider">Recognition</span>
-            </div>
-            
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Awards & <span className="text-primary">Recognition</span>
-            </h2>
-            
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Honored for leadership excellence and meaningful contributions to youth empowerment and community development across Africa.
-            </p>
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-white rounded-full border border-primary/20 mb-6">
+            <Trophy className="w-4 h-4 text-primary mr-2" />
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Awards & Recognition</span>
           </div>
-        </ScrollReveal>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+          <h2 className="text-[24px] md:text-[24px] font-bold text-[#111111] mb-4">
+            Awards & <span className="text-primary">Recognition</span>
+          </h2>
+
+          <p className="text-[16px] text-[#333333] max-w-3xl mx-auto leading-relaxed">
+            These are a few among multiple awards and recognitions received for my business leadership and youth empowerment work.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {awards.map((award, index) => (
-            <ScrollReveal key={award.title} delay={100 + (index * 100)}>
-              <div className="bg-white rounded-3xl p-8 shadow-lg border relative">
-                {/* Icon */}
-                <div className="w-16 h-16 mx-auto bg-primary rounded-2xl flex items-center justify-center text-white mb-6">
-                  <award.icon className="w-8 h-8" />
-                </div>
-                
-                {/* Year Badge */}
-                <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 shadow-md border">
-                  <span className="text-xs font-bold text-primary">{award.year}</span>
-                </div>
-                
-                <div className="text-center">
-                  <h3 className="font-bold text-foreground mb-2 leading-tight">
-                    {award.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground font-medium">
-                    {award.organization}
-                  </p>
-                </div>
+            <div key={index} className="bg-white rounded-2xl shadow-xl p-6 text-center transition-transform duration-300 hover:-translate-y-2 relative">
+              <div className="w-full h-32 mb-6">
+                <img src={award.image} alt={award.title} className="w-full h-full object-contain rounded-xl" />
               </div>
-            </ScrollReveal>
+              <h3 className="text-[16px] font-semibold text-[#111111] mb-1">{award.title}</h3>
+              <p className="text-[14px] text-[#333333] mb-2">{award.organization}</p>
+              <div className="absolute top-4 right-4 bg-white border border-primary px-3 py-1 rounded-full shadow text-xs font-bold text-primary">
+                {award.year}
+              </div>
+            </div>
           ))}
         </div>
-        
-        <ScrollReveal delay={500}>
-          <div className="text-center">
-            <Link to="/awards">
-              <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-2xl">
-                View All Awards
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
-          </div>
-        </ScrollReveal>
       </div>
     </div>
   );

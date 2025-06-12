@@ -1,77 +1,100 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Rocket, Globe, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { Linkedin, Instagram, Twitter, Globe } from 'lucide-react';
 
 const CallToAction = () => {
-  const features = [
-    {
-      icon: Rocket,
-      title: "Innovation",
-      description: "Cutting-edge solutions"
-    },
-    {
-      icon: Globe,
-      title: "Impact",
-      description: "Continental reach"
-    },
-    {
-      icon: Users,
-      title: "Partnership",
-      description: "Collaborative growth"
-    }
-  ];
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    project: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = () => {
+    const { name, email, phone, project } = formData;
+    const message = `New Building Project Submission:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Description: ${project}`;
+    const whatsappLink = `https://wa.me/2348123456789?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  };
 
   return (
-    <div className="bg-white py-0">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center px-6 py-3 bg-primary rounded-full mb-8">
-              <span className="text-sm font-bold text-white uppercase tracking-wider">Ready to Build Africa Together?</span>
-            </div>
-            
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-8 leading-tight">
-              Let's Create <span className="text-primary">Africa's Future</span><br />
-              <span className="text-primary">Together</span>
-            </h2>
-            
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Whether you're looking to partner on transformative projects, explore investment opportunities, or join the movement for youth empowerment across Africa.
-            </p>
-          </div>
-          
-          {/* Feature Icons */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {features.map((feature, index) => (
-              <div key={feature.title} className="text-center">
-                <div className="w-20 h-20 mx-auto bg-primary rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg">
-                  <feature.icon className="w-10 h-10" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link to="/ventures">
-              <Button size="lg" className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 px-10 py-4 text-xl font-bold rounded-2xl shadow-lg">
-                Explore My Ventures
-                <ArrowRight className="w-6 h-6 ml-3" />
-              </Button>
-            </Link>
-            
-            <Link to="/contact">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 text-xl font-bold rounded-2xl shadow-lg">
-                Partner with Me
-                <Users className="w-6 h-6 ml-3" />
-              </Button>
-            </Link>
-          </div>
+    <div className="bg-white py-24">
+      <div className="container mx-auto px-4 lg:px-6 max-w-4xl">
+
+        {/* Section Heading */}
+        <div className="text-center mb-20">
+          <h2 className="text-[24px] font-bold text-[#111111] mb-4">
+            Partnership & Inquiries
+          </h2>
+          <p className="text-[16px] text-[#333333] leading-relaxed max-w-2xl mx-auto">
+            For project submissions, collaborations or partnerships, kindly provide your details below. Our office will review and respond accordingly.
+          </p>
         </div>
+
+        {/* Form */}
+        <div className="grid gap-5 mb-20">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            onChange={handleChange}
+            className="border border-[#E0E0E0] bg-[#FAFAFA] p-4 rounded-lg w-full text-[#111111] focus:outline-none focus:ring-2 focus:ring-primary transition"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            onChange={handleChange}
+            className="border border-[#E0E0E0] bg-[#FAFAFA] p-4 rounded-lg w-full text-[#111111] focus:outline-none focus:ring-2 focus:ring-primary transition"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            onChange={handleChange}
+            className="border border-[#E0E0E0] bg-[#FAFAFA] p-4 rounded-lg w-full text-[#111111] focus:outline-none focus:ring-2 focus:ring-primary transition"
+          />
+          <textarea
+            name="project"
+            placeholder="Project Description"
+            onChange={handleChange}
+            className="border border-[#E0E0E0] bg-[#FAFAFA] p-4 rounded-lg w-full h-36 text-[#111111] focus:outline-none focus:ring-2 focus:ring-primary transition"
+          />
+          <button
+            className="bg-[#03372B] text-white py-3 rounded-lg font-medium text-[16px] hover:bg-[#022B22] transition"
+            onClick={handleSubmit}
+          >
+            Submit via WhatsApp
+          </button>
+        </div>
+
+        {/* Management Contact */}
+        <div className="text-center mb-14">
+          <h3 className="text-[18px] font-semibold text-[#111111] mb-2">Contact My Management</h3>
+          <p className="text-[16px] text-[#333333] leading-relaxed">
+            contactonyeolu@outlook.com <br /> onyeolusmgt@outlook.com
+          </p>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-8">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Linkedin className="w-6 h-6 text-[#111111] hover:text-primary transition" />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <Instagram className="w-6 h-6 text-[#111111] hover:text-primary transition" />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Twitter className="w-6 h-6 text-[#111111] hover:text-primary transition" />
+          </a>
+          <a href="https://website.com" target="_blank" rel="noopener noreferrer">
+            <Globe className="w-6 h-6 text-[#111111] hover:text-primary transition" />
+          </a>
+        </div>
+
       </div>
     </div>
   );

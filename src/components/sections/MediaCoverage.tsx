@@ -1,60 +1,69 @@
-
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const MediaCoverage = () => {
-  const mediaLogos = [
-    { name: "VANGUARD", color: "text-primary" },
-    { name: "THE SUN", color: "text-primary" },
-    { name: "THE NATION", color: "text-primary" },
-    { name: "LATEST NEWS", color: "text-primary" },
+  const mediaArticles = [
+    {
+      source: "Vanguard",
+      title: "Entrepreneurial Drive in Nigeria",
+      summary: "Exploring Onyeolu Chima’s innovative approach to entrepreneurship and youth empowerment.",
+      link: "https://example.com/vanguard-article",
+      image: "/assets/vanguard.jpg",
+    },
+    {
+      source: "The Sun",
+      title: "Leadership Impact",
+      summary: "Recognizing the growing influence and leadership of Onyeolu Israel Chima across Africa.",
+      link: "https://example.com/sun-article",
+      image: "/assets/thesun.jpg",
+    },
+    {
+      source: "The Nation",
+      title: "Building Future Solutions",
+      summary: "Highlights of transformative ventures led by Onyeolu Chima driving sustainable growth.",
+      link: "https://example.com/nation-article",
+      image: "/assets/thenation.jpg",
+    },
+    {
+      source: "Latest News",
+      title: "Youth Empowerment Leadership",
+      summary: "Honoring exceptional youth development efforts and capacity-building projects.",
+      link: "https://example.com/latestnews-article",
+      image: "/assets/latestnews.jpg",
+    },
   ];
 
   return (
-    <section className="py-0 bg-muted/30">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-white rounded-full shadow-lg mb-6 border">
+          <div className="inline-flex items-center px-4 py-2 bg-white rounded-full border border-primary/20 mb-6">
             <Star className="w-4 h-4 text-primary mr-2" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media Recognition</span>
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
           </div>
-          
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Featured Across Leading <span className="text-primary">African Media</span>
+
+          <h2 className="text-[24px] md:text-[24px] font-bold text-[#111111] mb-4">
+            Featured Media Highlights
           </h2>
-          
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            Recognized by major publications for entrepreneurial excellence and youth advocacy across West Africa
+
+          <p className="text-[16px] text-[#333333] max-w-3xl mx-auto leading-relaxed">
+            Below are a few featured media highlights showcasing my entrepreneurial work, leadership insights, and public engagements.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {mediaLogos.map((media, index) => (
-            <div key={media.name}>
-              <div className="bg-white rounded-2xl p-8 shadow-lg border">
-                <div className="text-center">
-                  <div className={`text-2xl font-bold ${media.color} mb-2`}>
-                    {media.name}
-                  </div>
-                  <div className="w-12 h-1 bg-primary mx-auto rounded-full"></div>
-                </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {mediaArticles.map((article, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2">
+              <img src={article.image} alt={article.title} className="h-40 w-full object-cover" />
+              <div className="p-6">
+                <h3 className="text-[16px] font-semibold text-[#111111] mb-2">{article.source}</h3>
+                <p className="text-[14px] text-[#333333] mb-4">{article.summary}</p>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-[#03372B] font-semibold">
+                  Read Full Article
+                </a>
               </div>
             </div>
           ))}
-        </div>
-        
-        {/* Quote Section */}
-        <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg border">
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-              <Quote className="w-6 h-6 text-white" />
-            </div>
-            
-            <blockquote className="text-lg lg:text-xl font-normal italic leading-relaxed mb-6 text-foreground">
-              "Success in business is not just about profit—it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
-            </blockquote>
-            <div className="text-primary font-semibold">— African Business Magazine</div>
-          </div>
         </div>
       </div>
     </section>

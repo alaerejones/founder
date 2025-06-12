@@ -60,7 +60,7 @@ const VenturesOverview = () => {
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
-                  src="/lovable-uploads/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
+                  src="/assets/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
                   alt="Sinocle AgroSolutions"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -89,7 +89,7 @@ const VenturesOverview = () => {
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img 
-                  src="/lovable-uploads/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
+                  src="/assets/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
                   alt="Sinocle Energy Solutions"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -115,7 +115,7 @@ const VenturesOverview = () => {
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden relative">
                 <img 
-                  src="/lovable-uploads/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
+                  src="/assets/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
                   alt="iLunar Technologies"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

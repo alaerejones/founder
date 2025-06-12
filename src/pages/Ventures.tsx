@@ -60,7 +60,7 @@ const Ventures = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="/lovable-uploads/6f2a5535-255f-478e-8d2c-9d5c00cb3143.png" 
+                src="/assets/6f2a5535-255f-478e-8d2c-9d5c00cb3143.png" 
                 alt="Construction Project 1" 
                 className="w-full h-64 object-cover"
               />
@@ -74,7 +74,7 @@ const Ventures = () => {
             
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                src="/assets/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
                 alt="Construction Project 2" 
                 className="w-full h-64 object-cover"
               />
@@ -88,7 +88,7 @@ const Ventures = () => {
             
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="/lovable-uploads/6f2a5535-255f-478e-8d2c-9d5c00cb3143.png" 
+                src="/assets/6f2a5535-255f-478e-8d2c-9d5c00cb3143.png" 
                 alt="Construction Project 3" 
                 className="w-full h-64 object-cover"
               />
@@ -138,7 +138,7 @@ const Ventures = () => {
             
             <div className="relative">
               <img 
-                src="/lovable-uploads/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
+                src="/assets/d69f1a2b-e9c2-41f7-aa1e-009a85cd5a24.png" 
                 alt="Agricultural Development" 
                 className="w-full rounded-lg shadow-xl"
               />
