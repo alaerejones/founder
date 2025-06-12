@@ -1,11 +1,19 @@
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Building } from 'lucide-react';
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section 
+      id="hero"
       className="flex items-center pt-8 pb-0 lg:pb-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat min-h-screen" 
       style={{ 
         backgroundImage: 'url(/lovable-uploads/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
@@ -39,16 +47,21 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in">
-              <Link to="/ventures">
-                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 lg:px-8 hover-scale">
-                  Explore My Ventures
-                </Button>
-              </Link>
-              <Link to="/contact" className="invisible sm:visible">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 lg:px-8 hover-scale">
-                  Partner with Me
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 lg:px-8 hover-scale"
+                onClick={() => scrollToSection('ventures')}
+              >
+                Explore My Ventures
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:w-auto px-6 lg:px-8 hover-scale invisible sm:visible"
+                onClick={() => scrollToSection('contact')}
+              >
+                Partner with Me
+              </Button>
             </div>
           </div>
           
