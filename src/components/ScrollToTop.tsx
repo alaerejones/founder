@@ -45,7 +45,7 @@ const ScrollToTop = () => {
         >
           {/* Background circle */}
           <path
-            className="text-primary/20"
+            className="text-gray-300"
             stroke="currentColor"
             strokeWidth="2"
             fill="transparent"
@@ -53,7 +53,7 @@ const ScrollToTop = () => {
           />
           {/* Progress circle */}
           <path
-            className="text-primary"
+            className="text-white"
             stroke="currentColor"
             strokeWidth="2"
             fill="transparent"
@@ -67,7 +67,11 @@ const ScrollToTop = () => {
         {/* Button */}
         <Button
           onClick={scrollToTop}
-          className="w-10 h-10 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+          className="w-10 h-10 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+          style={{ 
+            backgroundColor: '#03372b',
+            color: '#a0f669'
+          }}
           size="icon"
           aria-label="Scroll to top"
         >
