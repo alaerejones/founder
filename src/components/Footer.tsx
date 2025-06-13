@@ -31,20 +31,19 @@ const Footer = () => {
         <div>
           <h6 className="text-lg font-semibold mb-4">Contact</h6>
           <p className="text-sm text-white/80 mb-4">
-            Email: contactonyeolu@outlook.com <br />
             Management: onyeolusmgt@outlook.com
           </p>
           <div className="flex space-x-6">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/israel-chima-onyeolu-025aab1a0?" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5 hover:text-secondary transition" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ionyeolu?igsh=MTQzNmt5c25sc2o4YQ==" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-5 h-5 hover:text-secondary transition" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/israelonyeolu?s=11" target="_blank" rel="noopener noreferrer">
               <Twitter className="w-5 h-5 hover:text-secondary transition" />
             </a>
-            <a href="mailto:contactonyeolu@outlook.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:onyeolusmgt@outlook.com" target="_blank" rel="noopener noreferrer">
               <Mail className="w-5 h-5 hover:text-secondary transition" />
             </a>
           </div>
