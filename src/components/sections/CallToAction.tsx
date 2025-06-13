@@ -7,11 +7,11 @@ const CallToAction = () => {
       <div className="max-w-5xl mx-auto px-4 lg:px-8">
 
         <div className="mb-12 text-center space-y-5">
-          <h2 className="text-[24px] lg:text-[28px] font-bold text-[#111] leading-snug">
+          <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             Partnership & Institutional Engagements
           </h2>
 
-          <p className="text-base md:text-lg text-[#333] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
             For strategic partnerships, institutional collaborations, policy consultations, investment discussions, or leadership engagements, please contact my office via the management team. All correspondence is reviewed and handled with utmost discretion.
           </p>
         </div>
@@ -22,14 +22,14 @@ const CallToAction = () => {
               <Mail className="w-7 h-7 text-white" />
             </div>
             <div className="text-left">
-              <p className="text-base font-semibold text-[#111] mb-1">Office of Management</p>
-              <a href="mailto:contactonyeolu@outlook.com" className="text-primary text-lg font-medium">
+              <p className="text-[16px] font-semibold text-[#111111] mb-1">Office of Management</p>
+              <a href="mailto:contactonyeolu@outlook.com" className="text-primary text-[18px] font-medium">
                 contactonyeolu@outlook.com
               </a>
             </div>
           </div>
 
-          <p className="text-sm text-[#777] text-center max-w-md">
+          <p className="text-sm text-[#777777] text-center max-w-md">
             Kindly note: Personal inquiries are not processed through this channel.
           </p>
         </div>
