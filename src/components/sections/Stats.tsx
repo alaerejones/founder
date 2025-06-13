@@ -11,7 +11,7 @@ const Stats = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting && !isVisible) setIsVisible(true);
-    }, { threshold: 0.2 });
+    }, { threshold: 0.3 });
 
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -24,7 +24,7 @@ const Stats = () => {
     const steps = 50;
     const stepTime = duration / steps;
 
-    const counters = Object.keys(finalCounts).map(key => {
+    const counters = Object.keys(finalCounts).map((key) => {
       const finalValue = finalCounts[key as keyof typeof finalCounts];
       const increment = finalValue / steps;
       let currentCount = 0;
@@ -35,7 +35,7 @@ const Stats = () => {
           currentCount = finalValue;
           clearInterval(counters.find(c => c === counters[Object.keys(finalCounts).indexOf(key)]));
         }
-        setCounts(prev => ({ ...prev, [key]: Math.floor(currentCount) }));
+        setCounts((prev) => ({ ...prev, [key]: Math.floor(currentCount) }));
       }, stepTime);
     });
 
@@ -43,22 +43,35 @@ const Stats = () => {
   }, [isVisible]);
 
   return (
-    <div ref={sectionRef} className="py-12 bg-muted/30">
-      <div className="container mx-auto px-4 lg:px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-        <Stat icon={<Home />} count={counts.projects} label="Projects Delivered"/>
-        <Stat icon={<Building />} count={counts.sectors} label="Major Sectors"/>
-        <Stat icon={<Users />} count={counts.lives.toLocaleString()} label="Lives Impacted"/>
-        <Stat icon={<Award />} count={counts.awards} label="Awards Received"/>
+    <section className="bg-[#F9F9F9] py-16" ref={sectionRef}>
+      <div className="max-w-6xl mx-auto px-4 lg:px-8">
+
+        <div className="mb-12 text-center space-y-5">
+          <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
+            My Impact in <span className="text-primary">Numbers</span>
+          </h2>
+          <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
+            These numbers reflect my commitment to driving growth, creating sustainable opportunities, and empowering communities across Africa.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+          <Stat icon={<Home className="w-8 h-8 text-primary" />} count={counts.projects} label="Projects Delivered" />
+          <Stat icon={<Building className="w-8 h-8 text-primary" />} count={counts.sectors} label="Major Sectors" />
+          <Stat icon={<Users className="w-8 h-8 text-primary" />} count={counts.lives.toLocaleString()} label="Lives Impacted" />
+          <Stat icon={<Award className="w-8 h-8 text-primary" />} count={counts.awards} label="Awards Received" />
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 
 const Stat = ({ icon, count, label }: any) => (
-  <div className="space-y-3">
-    <div className="w-14 h-14 mx-auto bg-primary/10 flex items-center justify-center rounded-full">{icon}</div>
-    <div className="text-3xl font-bold text-foreground">{count}+</div>
-    <p className="text-sm text-muted-foreground">{label}</p>
+  <div className="space-y-4">
+    <div className="w-16 h-16 mx-auto bg-primary/10 flex items-center justify-center rounded-full">{icon}</div>
+    <div className="text-[32px] font-bold text-[#111111]">{count}+</div>
+    <p className="text-sm text-[#777777]">{label}</p>
   </div>
 );
 
