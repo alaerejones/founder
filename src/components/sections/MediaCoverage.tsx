@@ -58,16 +58,20 @@ const MediaCoverage = () => {
 
         {/* YouTube Video */}
         <div className="relative mb-12">
-          <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-lg">
-            <div id="youtube-player" className="w-full h-full"></div>
+          <div className="w-full rounded-xl overflow-hidden shadow-lg relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
           </div>
+
           {/* Mute Toggle Button */}
           <button
             onClick={toggleMute}
-            className="absolute top-4 right-4 bg-white p-3 rounded-full shadow-md hover:bg-primary hover:text-white transition"
+            className={`absolute top-4 right-4 p-3 rounded-full shadow-md transition ${
+              isMuted ? 'bg-white' : 'bg-[#EDEDED]'
+            }`}
           >
-            {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+            {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
           </button>
+
           <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
             Interview feature at the Nigerian SME Awards highlighting leadership, real estate development, and the national impact journey.
           </p>
@@ -128,8 +132,8 @@ const MediaCoverage = () => {
               </a>
             </div>
           </div>
-
         </div>
+
       </div>
     </section>
   );
