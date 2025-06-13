@@ -39,7 +39,7 @@ const MediaCoverage = () => {
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
         {/* Section Heading */}
-        <div className="mb-12 text-center space-y-5">
+        <div className="mb-6 text-center space-y-5">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             Featured <span className="text-primary">Media & Insights</span>
           </h2>
