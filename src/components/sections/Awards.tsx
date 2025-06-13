@@ -1,60 +1,81 @@
 import React from 'react';
-import { Trophy, Star, Award } from 'lucide-react';
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css";
+import { Trophy } from 'lucide-react';
 
 const Awards = () => {
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: false,
+    breakpoints: {
+      "(min-width: 1024px)": {
+        slides: { perView: 3, spacing: 20 },
+      },
+      "(min-width: 640px)": {
+        slides: { perView: 2, spacing: 15 },
+      },
+      "(max-width: 639px)": {
+        slides: { perView: 1.2, spacing: 10 },
+      },
+    },
+  });
+
   const awards = [
     {
       title: "ECOWAS Youth Ambassador Recognition",
       organization: "ECOWAS Youth Council",
       year: "2024",
-      icon: <Award className="w-5 h-5 text-primary" />
+      image: "/assets/ecowas.png",
     },
     {
       title: "Golden Role Model Award",
       organization: "NYAGGI",
       year: "2023",
-      icon: <Star className="w-5 h-5 text-primary" />
+      image: "/assets/golden-role.png",
     },
     {
       title: "Lions Club Humanitarian Award",
       organization: "Lions Club International",
       year: "2023",
-      icon: <Trophy className="w-5 h-5 text-primary" />
+      image: "/assets/lionsclub.png",
     },
     {
       title: "Leadership Award",
       organization: "Southern Youth Assembly of Nigeria (SYAN)",
       year: "2022",
-      icon: <Award className="w-5 h-5 text-primary" />
+      image: "/assets/syan.png",
     },
   ];
 
   return (
-    <section id="awards" className="py-12 lg:py-16 bg-muted/20">
+    <section id="awards" className="py-8 lg:py-12 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
 
         {/* Section Header */}
-        <div className="text-center mb-12 lg:mb-14">
+        <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
             <Trophy className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Awards & Recognition</span>
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+              Awards & Recognition
+            </span>
           </div>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">Key Recognitions</h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
+            Recognitions Along The Journey
+          </h2>
           <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Honoring awards received for leadership, entrepreneurship, youth empowerment and national contribution.
+            A few notable recognitions received across the course of work in business leadership, youth empowerment, and economic growth.
           </p>
         </div>
 
-        {/* Awards List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        {/* Carousel */}
+        <div ref={sliderRef} className="keen-slider">
           {awards.map((award, index) => (
-            <div key={index} className="flex flex-col items-center gap-4 bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition">
-              <div className="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full">
-                {award.icon}
+            <div key={index} className="keen-slider__slide bg-white rounded-xl shadow-md border border-gray-100 p-8 text-center">
+              <div className="w-28 h-28 mb-6 mx-auto bg-muted rounded-xl flex items-center justify-center">
+                <img src={award.image} alt={award.title} className="object-contain w-full h-full" />
               </div>
-              <h3 className="text-[15px] font-semibold text-foreground">{award.title}</h3>
-              <p className="text-sm text-muted-foreground">{award.organization}</p>
-              <div className="text-primary font-bold text-xs border border-primary rounded-full px-4 py-1 mt-2">{award.year}</div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{award.title}</h3>
+              <p className="text-sm text-muted-foreground mb-1">{award.organization}</p>
+              <div className="mt-3 px-5 py-1 text-sm font-bold text-primary border border-primary rounded-full">{award.year}</div>
             </div>
           ))}
         </div>
