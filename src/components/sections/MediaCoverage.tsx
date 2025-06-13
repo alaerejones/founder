@@ -28,19 +28,19 @@ const MediaCoverage = () => {
   const mediaArticles = [
     {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
-      summary: "Vanguard spotlights Onyeolu Israel Chima's business leadership and national impact journey.",
+      summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries, while addressing national developmental gaps.",
       link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
       image: "/assets/vanguard.jpg"
     },
     {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
-      summary: "The Nation profiles his entrepreneurial ventures across real estate, agriculture, technology and youth empowerment.",
+      summary: "The Nation profiles Chima Onyeolu’s entrepreneurial trajectory, his expanding ventures in real estate, agriculture, technology, and his sustained focus on job creation, youth engagement, and long-term institution building as key pillars for Africa's next generation.",
       link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
       image: "/assets/side.JPG"
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
-      summary: "The Sun reports on ECOWAS Youth Ambassadorial recognition for regional development and impact.",
+      summary: "The Sun reports on Chima Onyeolu’s ECOWAS Youth Council Ambassadorial recognition, underscoring his commitment to youth leadership, entrepreneurship advocacy, and regional development initiatives driving positive socio-economic change in Nigeria and across West Africa.",
       link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
       image: "/assets/attach5.jpg"
     }
@@ -57,7 +57,7 @@ const MediaCoverage = () => {
           </div>
           <h2 className="text-3xl font-bold text-foreground mb-4">Featured Media Coverage</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Selected highlights showcasing recent entrepreneurial recognitions, leadership engagements, and public impact.
+            Selected features highlighting some of the recent entrepreneurial recognitions, leadership engagements, and public impact work.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ const MediaCoverage = () => {
             {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
           </button>
           <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
-            Interview feature at Nigerian SME Awards highlighting leadership, real estate, and national impact.
+            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development and national impact.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const MediaCoverage = () => {
           {mediaArticles.map((article, index) => (
             <div key={index} className="bg-white border border-gray-100 rounded-xl shadow-lg p-6 flex flex-col">
               <div className="aspect-[4/3] mb-4 overflow-hidden rounded-lg">
-                <img src={article.image} alt={article.title} className="object-contain w-full h-full bg-white p-4" />
+                <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
               </div>
               <h3 className="font-bold text-lg text-foreground mb-2">{article.title}</h3>
               <p className="text-sm text-muted-foreground mb-4 text-justify">{article.summary}</p>
