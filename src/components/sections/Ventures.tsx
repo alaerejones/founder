@@ -16,7 +16,7 @@ const Ventures = () => {
       image: "/assets/f218aff5-6866-45a9-b57a-89bda6dda12d.png"
     },
     {
-      title: "iLuna Technologies",
+      title: "iLunar Technologies",
       image: "/assets/567f24d0-a065-43b2-96ba-7ceb22ee3239.png"
     }
   ];
@@ -30,7 +30,7 @@ const Ventures = () => {
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">Portfolio Overview</span>
           </div>
 
-          <h2 className="text-[32px] font-bold text-[#111111] leading-tight mb-4">
+          <h2 className="text-[24px] font-bold text-[#111111] leading-tight mb-4">
             Ventures & <span className="text-primary">Leadership</span>
           </h2>
 
