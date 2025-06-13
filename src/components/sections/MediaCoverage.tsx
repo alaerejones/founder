@@ -14,24 +14,14 @@ const MediaCoverage = () => {
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player('youtube-player', {
         videoId: '-ehcCk1PP74',
-        playerVars: {
-          autoplay: 1,
-          mute: 1,
-          controls: 1,
-          modestbranding: 1,
-          rel: 0,
-        },
+        playerVars: { autoplay: 1, mute: 1, controls: 1, modestbranding: 1, rel: 0 },
       });
     };
   }, []);
 
   const toggleMute = () => {
     if (!playerRef.current) return;
-    if (isMuted) {
-      playerRef.current.unMute();
-    } else {
-      playerRef.current.mute();
-    }
+    isMuted ? playerRef.current.unMute() : playerRef.current.mute();
     setIsMuted(!isMuted);
   };
 
@@ -59,8 +49,6 @@ const MediaCoverage = () => {
   return (
     <section id="media" className="py-16 bg-white">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
-
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
             <Star className="w-4 h-4 mr-2 text-primary" />
@@ -74,7 +62,6 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* YouTube */}
         <div className="relative mb-24">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
@@ -90,7 +77,6 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Articles */}
         <div className="space-y-32">
           {mediaArticles.map((article, index) => (
             <div key={index} className={`flex flex-col lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''} gap-12 items-center`}>
@@ -107,7 +93,6 @@ const MediaCoverage = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
