@@ -15,76 +15,72 @@ const CallToAction = () => {
 
   const handleSubmit = () => {
     const { name, email, phone, project } = formData;
-    const message = `New Building Project Submission:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject Description: ${project}`;
+    const message = `New Project Inquiry:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nProject: ${project}`;
     const whatsappLink = `https://wa.me/2348123456789?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
   };
 
   return (
-    <section id="contact" className="section-spacing bg-muted/10">
-      <div className="container mx-auto px-4 lg:px-6 max-w-5xl">
+    <section id="contact" className="section-spacing bg-[#F9FAFB]">
+      <div className="container mx-auto px-4 lg:px-6 max-w-4xl">
 
-        {/* Section Heading */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Let's Build Together</span>
-          </div>
-          <h2 className="text-3xl font-bold text-foreground mb-4">
-            Partnership & Inquiries
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            For projects, partnerships or collaborations — kindly share your details below. Our office will review and respond.
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-bold text-foreground mb-4">Let’s Work Together</h2>
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Submit your request or project inquiry below and my management team will respond shortly.
           </p>
         </div>
 
         {/* Form */}
-        <div className="grid gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           <input
             type="text"
             name="name"
             placeholder="Full Name"
             onChange={handleChange}
-            className="border border-border bg-white p-4 rounded-lg w-full text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
+            className="border border-border bg-white p-4 text-base text-foreground focus:ring-primary focus:outline-none"
           />
           <input
             type="email"
             name="email"
             placeholder="Email Address"
             onChange={handleChange}
-            className="border border-border bg-white p-4 rounded-lg w-full text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
+            className="border border-border bg-white p-4 text-base text-foreground focus:ring-primary focus:outline-none"
           />
           <input
             type="tel"
             name="phone"
             placeholder="Phone Number"
             onChange={handleChange}
-            className="border border-border bg-white p-4 rounded-lg w-full text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
+            className="border border-border bg-white p-4 text-base text-foreground focus:ring-primary focus:outline-none"
           />
           <textarea
             name="project"
             placeholder="Project Description"
             onChange={handleChange}
-            className="border border-border bg-white p-4 rounded-lg w-full h-40 text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
+            rows={5}
+            className="border border-border bg-white p-4 text-base text-foreground focus:ring-primary focus:outline-none md:col-span-2"
           />
-          <button
-            onClick={handleSubmit}
-            className="bg-primary text-white font-semibold py-4 rounded-lg text-lg hover:bg-primary/90 transition"
-          >
-            Submit via WhatsApp
-          </button>
         </div>
 
-        {/* Contact Info */}
-        <div className="text-center mb-10">
-          <h3 className="text-lg font-semibold mb-2 text-foreground">Contact My Management</h3>
+        <button
+          onClick={handleSubmit}
+          className="w-full bg-primary text-white font-semibold text-lg py-4 hover:bg-primary/90 transition"
+        >
+          Submit Inquiry via WhatsApp
+        </button>
+
+        {/* Contact */}
+        <div className="text-center mt-14">
+          <h3 className="text-lg font-semibold mb-2 text-foreground">Management Contact</h3>
           <p className="text-base text-muted-foreground">
-            contactonyeolu@outlook.com <br />
-            onyeolusmgt@outlook.com
+            contactonyeolu@outlook.com <br /> onyeolusmgt@outlook.com
           </p>
         </div>
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-8">
+        {/* Social */}
+        <div className="flex justify-center gap-8 mt-10">
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-6 h-6 text-foreground hover:text-primary transition" />
           </a>
