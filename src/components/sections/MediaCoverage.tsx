@@ -59,16 +59,11 @@ const MediaCoverage = () => {
                 Read Full Article
               </a>
             </div>
-          </div>
 
-          {/* The Nation */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg order-2 lg:order-1">
-              <img src="/assets/thenation.jpg" alt="The Nation" className="w-full h-full object-cover object-center" />
-            </div>
-            <div className="space-y-4 order-1 lg:order-2">
+
+            <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
-                On The Rise - The Nation
+                The name Chima Israel Onyeolu is on the rise - The Nation
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed text-justify">
                 The Nation profiles Chima Onyeolu’s entrepreneurial trajectory, his expanding ventures in real estate, agriculture, technology, and his sustained focus on job creation, youth engagement, and long-term institution building as key pillars for Africa's next generation.
@@ -77,14 +72,9 @@ const MediaCoverage = () => {
                 Read Full Article
               </a>
             </div>
-          </div>
 
-          {/* The Sun */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
-              <img src="/assets/thesun.jpg" alt="The Sun" className="w-full h-full object-cover object-center" />
-            </div>
-            <div className="space-y-4">
+
+             <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
                 ECOWAS Ambassadorial Honour - The Sun
               </h3>
