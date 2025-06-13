@@ -5,7 +5,7 @@ const QuoteSection = () => {
   return (
     <ScrollReveal delay={200}>
       <section 
-        className="relative pt-8 pb-8 lg:pt-10 lg:pb-16"
+        className="relative"
         style={{ backgroundColor: '#F8F9F833' }}
       >
         {/* Subtle background pattern */}
