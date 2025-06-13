@@ -13,13 +13,13 @@ const MediaCoverage = () => {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
       summary: "The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.",
       link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
-      image: "/assets/side.JPG",
+      image: "/assets/attach5.jpg",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.",
       link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
-      image: "/assets/attach5.jpg",
+      image: "/assets/ecowas.jpg",
     },
   ];
 
