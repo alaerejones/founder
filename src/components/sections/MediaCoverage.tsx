@@ -49,7 +49,7 @@ const MediaCoverage = () => {
         </div>
 
         {/* Video */}
-        <div className="relative mb-20">
+        <div className="relative mb-6">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
