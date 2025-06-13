@@ -57,9 +57,10 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="py-12 bg-[#F8F9F833]">
+    <section id="media" className="py-14 bg-[#F8F9F833]">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
-        <div className="text-center mb-12">
+        {/* Header */}
+        <div className="text-center mb-14">
           <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
             <Star className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">
@@ -70,7 +71,7 @@ const MediaCoverage = () => {
             Featured Media Coverage
           </h2>
           <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Selected features highlighting entrepreneurial recognitions, leadership engagements, and public impact.
+            Selected features highlighting entrepreneurial recognitions, leadership engagements, and public impact work. These articles showcase just a few of multiple published features and coverages across West Africa.
           </p>
         </div>
 
@@ -90,13 +91,13 @@ const MediaCoverage = () => {
         {/* Articles */}
         <div className="space-y-20">
           {mediaArticles.map((article, index) => (
-            <div key={index} className={`grid lg:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-              <div className="w-full h-full overflow-hidden rounded-xl">
+            <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+              <div className="overflow-hidden rounded-xl">
                 <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
               </div>
               <div className="space-y-5">
                 <h3 className="text-xl font-bold text-foreground">{article.title}</h3>
-                <p className="text-base text-muted-foreground leading-relaxed">{article.summary}</p>
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">{article.summary}</p>
                 <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
                   Read Full Article <ArrowRight className="w-4 h-4" />
                 </a>
