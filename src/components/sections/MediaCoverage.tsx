@@ -115,4 +115,5 @@ const MediaCoverage = () => {
   );
 };
 
+
 export default MediaCoverage;
