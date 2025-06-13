@@ -4,7 +4,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 const VenturesOverview = () => {
   return (
-    <section id="ventures" className="pt-8 pb-8 lg:pt-10 lg:pb-16 bg-muted/20">
+    <section id="ventures" className="pt-8 pb-4 lg:pt-10 lg:pb-16 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
