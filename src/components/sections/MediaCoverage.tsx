@@ -14,54 +14,68 @@ const MediaCoverage = () => {
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player('youtube-player', {
         videoId: '-ehcCk1PP74',
-        playerVars: { autoplay: 1, mute: 1, controls: 1, modestbranding: 1, rel: 0 }
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 1,
+          modestbranding: 1,
+          rel: 0,
+        },
       });
     };
   }, []);
 
   const toggleMute = () => {
     if (!playerRef.current) return;
-    isMuted ? playerRef.current.unMute() : playerRef.current.mute();
+    if (isMuted) {
+      playerRef.current.unMute();
+    } else {
+      playerRef.current.mute();
+    }
     setIsMuted(!isMuted);
   };
 
   const mediaArticles = [
     {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
-      summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries, while addressing national developmental gaps.",
+      summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries, while addressing national developmental gaps and inspiring future entrepreneurs.",
       link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
-      image: "/assets/vanguard.jpg"
+      image: "/assets/vanguard.jpg",
     },
     {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
       summary: "The Nation profiles Chima Onyeolu’s entrepreneurial trajectory, his expanding ventures in real estate, agriculture, technology, and his sustained focus on job creation, youth engagement, and long-term institution building as key pillars for Africa's next generation.",
       link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
-      image: "/assets/side.JPG"
+      image: "/assets/side.JPG",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on Chima Onyeolu’s ECOWAS Youth Council Ambassadorial recognition, underscoring his commitment to youth leadership, entrepreneurship advocacy, and regional development initiatives driving positive socio-economic change in Nigeria and across West Africa.",
       link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
-      image: "/assets/attach5.jpg"
-    }
+      image: "/assets/attach5.jpg",
+    },
   ];
 
   return (
-    <section id="media" className="py-16 bg-[#F8F9F833]">
-      <div className="container mx-auto px-4 lg:px-6 max-w-6xl text-center">
-
-        <div className="mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
+    <section id="media" className="py-12 bg-[#F8F9F833]">
+      <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
             <Star className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+              Media & Insights
+            </span>
           </div>
-          <h2 className="text-3xl font-bold text-foreground mb-4">Featured Media Coverage</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Selected features highlighting some of the recent entrepreneurial recognitions, leadership engagements, and public impact work.
+          <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
+            Featured Media Coverage
+          </h2>
+          <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Selected features highlighting entrepreneurial recognitions, leadership engagements, and public impact.
           </p>
         </div>
 
-        <div className="relative mb-16">
+        {/* YouTube */}
+        <div className="relative mb-20">
           <div className="w-full rounded-xl overflow-hidden shadow-lg relative aspect-video">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
           </div>
@@ -69,25 +83,27 @@ const MediaCoverage = () => {
             {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
           </button>
           <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
-            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development and national impact.
+            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development, and national impact.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Articles */}
+        <div className="space-y-20">
           {mediaArticles.map((article, index) => (
-            <div key={index} className="bg-white border border-gray-100 rounded-xl shadow-lg p-6 flex flex-col">
-              <div className="aspect-[4/3] mb-4 overflow-hidden rounded-lg">
-                <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
+            <div key={index} className={`grid lg:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+              <div className="w-full h-full overflow-hidden rounded-xl">
+                <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-bold text-lg text-foreground mb-2">{article.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 text-justify">{article.summary}</p>
-              <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-auto inline-flex items-center gap-2">
-                Read Full Article <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="space-y-5">
+                <h3 className="text-xl font-bold text-foreground">{article.title}</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">{article.summary}</p>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
+                  Read Full Article <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
