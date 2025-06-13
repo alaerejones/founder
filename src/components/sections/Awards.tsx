@@ -3,10 +3,10 @@ import { Trophy } from 'lucide-react';
 
 const Awards = () => {
   const awards = [
-    { title: "ECOWAS Youth Ambassador", image: "/assets/ecowas.png" },
-    { title: "Golden Role Model Award", image: "/assets/golden-role.png" },
-    { title: "Lions Club Humanitarian Award", image: "/assets/lionsclub.png" },
-    { title: "Leadership Award", image: "/assets/syan.png" },
+    "ECOWAS Youth Ambassador",
+    "Golden Role Model Award",
+    "Lions Club Humanitarian Award",
+    "Leadership Award",
   ];
 
   return (
@@ -18,17 +18,17 @@ const Awards = () => {
             My <span className="text-primary">Recognitions</span>
           </h2>
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
-            A selection of leadership honors and awards received for business leadership, youth empowerment, and economic development across West Africa.
+            Honors received for leadership, entrepreneurship, and youth empowerment across West Africa.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {awards.map((award, index) => (
-            <div key={index} className="flex flex-col items-center text-center space-y-4">
-              <div className="w-24 h-24 bg-white rounded-xl shadow-md flex items-center justify-center overflow-hidden">
-                <img src={award.image} alt={award.title} className="object-contain w-20 h-20" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+          {awards.map((title, index) => (
+            <div key={index} className="flex items-center justify-center space-x-4">
+              <div className="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-full">
+                <Trophy className="w-6 h-6 text-primary" />
               </div>
-              <p className="text-[14px] font-medium text-[#111111]">{award.title}</p>
+              <p className="text-[16px] font-medium text-[#111111] text-left">{title}</p>
             </div>
           ))}
         </div>
