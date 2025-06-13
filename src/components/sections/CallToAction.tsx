@@ -1,50 +1,37 @@
 import React from 'react';
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const CallToAction = () => {
   return (
-    <section id="contact" className="section-spacing bg-[#F9FAFB]">
-      <div className="container mx-auto px-4 lg:px-6 max-w-3xl">
+    <section className="bg-[#F9F9F9] py-24">
+      <div className="max-w-5xl mx-auto px-4 lg:px-8 text-center">
 
-        <div className="text-center mb-10">
-          <h2 className="text-2xl font-semibold text-foreground mb-4">Strategic Engagements & Partnerships</h2>
-          <p className="text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            For vetted partnership inquiries, strategic collaborations, or regional growth initiatives, direct contact details are provided below.
+        <h2 className="text-[32px] font-bold text-[#111111] leading-snug mb-6">
+          Strategic <span className="text-primary">Partnerships</span> & Collaborations
+        </h2>
+
+        <p className="text-[16px] text-[#333333] max-w-3xl mx-auto leading-relaxed mb-12">
+          For vetted partnership inquiries, collaborations, corporate projects, or strategic development discussions, contact my management team directly using the email address provided below.
+        </p>
+
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+              <Mail className="w-6 h-6 text-white" />
+            </div>
+            <div className="text-left">
+              <p className="text-[16px] font-semibold text-[#111111] mb-1">Email Management</p>
+              <a href="mailto:contactonyeolu@outlook.com" className="text-primary text-[16px] font-medium">
+                contactonyeolu@outlook.com
+              </a>
+            </div>
+          </div>
+
+          <p className="text-[14px] text-[#777777] mt-4">
+            Please note: Personal inquiries are handled separately through authorized management representatives.
           </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row justify-center gap-10 text-center sm:text-left">
-
-          <div className="flex flex-col items-center sm:items-start gap-1">
-            <div className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-primary" />
-              <h4 className="text-base font-semibold text-foreground">Email</h4>
-            </div>
-            <a 
-              href="mailto:contactonyeolu@outlook.com" 
-              className="text-primary text-sm font-medium hover:text-primary/80 transition"
-            >
-              contactonyeolu@outlook.com
-            </a>
-          </div>
-
-          <div className="flex flex-col items-center sm:items-start gap-1">
-            <div className="flex items-center gap-2">
-              <Linkedin className="w-5 h-5 text-primary" />
-              <h4 className="text-base font-semibold text-foreground">LinkedIn</h4>
-            </div>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-primary text-sm font-medium hover:text-primary/80 transition"
-            >
-              Onyeolu Israel Chima
-            </a>
-          </div>
-
-        </div>
-
+        
       </div>
     </section>
   );
