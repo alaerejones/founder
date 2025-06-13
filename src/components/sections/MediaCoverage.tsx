@@ -57,7 +57,7 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="section-spacing bg-white">
+    <section id="media" className="bg-[#F9F9F9] py-16">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
