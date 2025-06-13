@@ -57,11 +57,11 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="pt-8 pb-8 lg:pt-10 lg:pb-16 bg-white">
+    <section id="media" className="pt-8 pb-4 lg:pt-10 lg:pb-8 bg-white">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
 
         {/* Section Header */}
-        <div className="text-center mb-12 lg:mb-16">
+        <div className="text-center mb-12 lg:mb-14">
           <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
             <Star className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
@@ -77,31 +77,26 @@ const MediaCoverage = () => {
           <div className="w-full rounded-xl overflow-hidden shadow-lg relative" style={{ paddingBottom: '56.25%', height: '500px' }}>
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
           </div>
-
-          <button
-            onClick={toggleMute}
-            className={`absolute top-4 right-4 p-3 rounded-full shadow-md transition ${isMuted ? 'bg-white' : 'bg-[#EDEDED]'}`}
-          >
+          <button onClick={toggleMute} className={`absolute top-4 right-4 p-3 rounded-full shadow-md transition ${isMuted ? 'bg-white' : 'bg-[#EDEDED]'}`}>
             {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
           </button>
-
           <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
             Interview feature at the Nigerian SME Awards highlighting leadership, real estate development, and the national impact journey.
           </p>
         </div>
 
-        {/* Articles with alternating layout */}
-        <div className="space-y-16">
+        {/* Media Articles */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {mediaArticles.map((article, index) => (
-            <div key={index} className={`grid lg:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-              <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+            <div key={index} className="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col">
+              <div className="w-full h-48 mb-4 rounded-lg overflow-hidden">
                 <img src={article.image} alt={article.title} className="w-full h-full object-cover object-center" />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-lg lg:text-xl font-bold text-foreground">{article.title}</h3>
-                <p className="text-base text-muted-foreground leading-relaxed text-justify">{article.summary}</p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">Read Full Article</a>
-              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2">{article.title}</h3>
+              <p className="text-sm text-muted-foreground mb-4 text-justify">{article.summary}</p>
+              <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-auto">
+                Read Full Article
+              </a>
             </div>
           ))}
         </div>
