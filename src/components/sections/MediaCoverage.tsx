@@ -19,7 +19,7 @@ const MediaCoverage = () => {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.",
       link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
-      image: "/assets/ecowas.jpg",
+      image: "/assets/ecowas.png",
     },
   ];
 
