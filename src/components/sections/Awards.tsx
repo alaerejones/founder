@@ -7,9 +7,10 @@ const Awards = () => {
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     loop: false,
     breakpoints: {
+      "(min-width: 1280px)": { slides: { perView: 4, spacing: 32 } },
       "(min-width: 1024px)": { slides: { perView: 3, spacing: 24 } },
       "(min-width: 640px)": { slides: { perView: 2, spacing: 16 } },
-      "(max-width: 639px)": { slides: { perView: 1.2, spacing: 12 } },
+      "(max-width: 639px)": { slides: { perView: 1.3, spacing: 12 } },
     },
   });
 
@@ -61,13 +62,16 @@ const Awards = () => {
         {/* Carousel */}
         <div ref={sliderRef} className="keen-slider">
           {awards.map((award, index) => (
-            <div key={index} className="keen-slider__slide bg-white rounded-xl shadow-md border border-gray-100 p-8 flex flex-col items-center text-center">
-              <div className="w-24 h-24 mb-5 bg-muted rounded-xl flex items-center justify-center">
-                <img src={award.image} alt={award.title} className="object-contain w-full h-full" />
+            <div 
+              key={index} 
+              className="keen-slider__slide bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2"
+            >
+              <div className="w-28 h-28 mb-5 bg-muted rounded-full flex items-center justify-center shadow-sm">
+                <img src={award.image} alt={award.title} className="object-contain w-20 h-20" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-1">{award.title}</h3>
-              <p className="text-sm text-muted-foreground">{award.organization}</p>
-              <div className="mt-3 px-5 py-1 text-sm font-bold text-primary border border-primary rounded-full">{award.year}</div>
+              <h3 className="text-base font-semibold text-foreground mb-1 text-center leading-snug">{award.title}</h3>
+              <p className="text-sm text-muted-foreground mb-1">{award.organization}</p>
+              <div className="mt-2 text-sm font-bold text-primary border border-primary rounded-full px-4 py-1">{award.year}</div>
             </div>
           ))}
         </div>
