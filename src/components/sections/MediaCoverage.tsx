@@ -14,14 +14,24 @@ const MediaCoverage = () => {
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player('youtube-player', {
         videoId: '-ehcCk1PP74',
-        playerVars: { autoplay: 1, mute: 1, controls: 1, modestbranding: 1, rel: 0 },
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 1,
+          modestbranding: 1,
+          rel: 0,
+        },
       });
     };
   }, []);
 
   const toggleMute = () => {
     if (!playerRef.current) return;
-    isMuted ? playerRef.current.unMute() : playerRef.current.mute();
+    if (isMuted) {
+      playerRef.current.unMute();
+    } else {
+      playerRef.current.mute();
+    }
     setIsMuted(!isMuted);
   };
 
@@ -47,14 +57,12 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="py-16 bg-white">
+    <section id="media" className="section-spacing bg-white">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
             <Star className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              Media & Insights
-            </span>
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
           </div>
           <h2 className="text-3xl font-bold text-foreground mb-6">Featured Media Coverage</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -62,6 +70,7 @@ const MediaCoverage = () => {
           </p>
         </div>
 
+        {/* YouTube Section */}
         <div className="relative mb-24">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
@@ -77,11 +86,12 @@ const MediaCoverage = () => {
           </p>
         </div>
 
+        {/* Articles */}
         <div className="space-y-32">
           {mediaArticles.map((article, index) => (
             <div key={index} className={`flex flex-col lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''} gap-12 items-center`}>
               <div className="flex-1">
-                <img src={article.image} alt={article.title} className="w-full rounded-xl object-cover shadow" />
+                <img src={article.image} alt={article.title} className="w-full rounded-xl object-cover shadow-md" />
               </div>
               <div className="flex-1 space-y-6">
                 <h3 className="text-2xl font-bold text-foreground">{article.title}</h3>
