@@ -1,31 +1,32 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Volume2, VolumeX } from 'lucide-react';
+import { Link } from 'react-router-dom'; // ✅ Import Link for internal routing
 
 const MediaCoverage = () => {
   const mediaArticles = [
     {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
       summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining his strategic entrepreneurship and youth empowerment.",
-      link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
+      slug: "entrepreneurial-drive-nigeria-vanguard",  // ✅ Use slug for internal routes
       image: "/assets/vanguard.jpg",
     },
     {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
       summary: "The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.",
-      link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
+      slug: "chima-israel-on-rise-nation",
       image: "/assets/attach5.jpg",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.",
-      link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
+      slug: "ecowas-ambassadorial-honour-sun",
       image: "/assets/ecowas.png",
     },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
   const playerRef = useRef<any>(null);
-  const [isMuted, setIsMuted] = useState(true); // ✅ start muted
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -47,7 +48,7 @@ const MediaCoverage = () => {
         videoId: '-ehcCk1PP74',
         playerVars: {
           autoplay: 1,
-          mute: 1,  // ✅ start muted to ensure autoplay is allowed
+          mute: 1,
           controls: 1,
           modestbranding: 1,
           rel: 0,
@@ -76,7 +77,6 @@ const MediaCoverage = () => {
     <section id="media" className="bg-white py-12">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
-        {/* Section Heading */}
         <div className="text-center space-y-3 mb-8">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             Featured <span className="text-primary">Media & Insights</span>
@@ -86,7 +86,6 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Fully controlled autoplay video */}
         <div className="relative mb-6">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
@@ -102,7 +101,6 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Media Articles */}
         <div className="space-y-10">
           {mediaArticles.map((article, index) => (
             <div 
@@ -120,9 +118,9 @@ const MediaCoverage = () => {
               <div className="w-full lg:w-1/2 space-y-3 text-left">
                 <h3 className="text-[18px] font-bold text-[#111111]">{article.title}</h3>
                 <p className="text-[16px] text-[#333333] leading-relaxed">{article.summary}</p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
+                <Link to={`/media/${article.slug}`} className="text-primary font-semibold inline-flex items-center gap-2">
                   Read Full Article <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
