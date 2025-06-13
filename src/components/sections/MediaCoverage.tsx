@@ -35,7 +35,7 @@ const MediaCoverage = () => {
   }, []);
 
   return (
-    <section id="media" className="bg-white py-16">
+    <section id="media" className="bg-white py-12">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
         {/* Section Heading */}
