@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <section id="about" className="section-spacing bg-white">
-      <div className="container mx-auto px-4 lg:px-6 max-w-6xl grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-4 lg:px-6 max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
         
         <div className="hidden lg:block">
           <img src="/assets/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="rounded-2xl shadow-lg" />
