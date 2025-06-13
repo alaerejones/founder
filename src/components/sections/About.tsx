@@ -13,7 +13,7 @@ const About = () => {
   };
 
   return (
-    <div className="bg-white py-7">
+    <div className="bg-white section-spacing">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Desktop Image */}
