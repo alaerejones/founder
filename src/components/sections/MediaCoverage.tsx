@@ -128,18 +128,20 @@ const MediaCoverage = () => {
           ))}
         </div>
 
-        {/* Modal */}
+        {/* Presidential Modal */}
         {selectedArticle && (
           <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center px-4">
-            <div className="bg-white max-w-xl w-full p-6 rounded-lg relative">
-              <button onClick={() => setSelectedArticle(null)} className="absolute top-4 right-4">
+            <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 relative transition-transform transform scale-100 opacity-100">
+              <button onClick={() => setSelectedArticle(null)} className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full shadow-sm">
                 <X className="w-5 h-5 text-gray-600" />
               </button>
-              <h3 className="text-xl font-bold mb-4">{selectedArticle.title}</h3>
-              <p className="text-[#333333] text-base leading-relaxed mb-4">{selectedArticle.content}</p>
-              <a href={selectedArticle.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
-                View Original Source ↗
-              </a>
+              <h3 className="text-[22px] font-bold mb-4 leading-tight text-[#111111]">{selectedArticle.title}</h3>
+              <p className="text-[16px] text-[#333333] leading-relaxed mb-5">{selectedArticle.content}</p>
+              <div className="text-right">
+                <a href={selectedArticle.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-1">
+                  View Full Original Source <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         )}
