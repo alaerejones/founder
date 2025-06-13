@@ -49,7 +49,7 @@ const MediaCoverage = () => {
         </div>
 
         {/* Video */}
-        <div className="relative mb-6">
+        <div className="relative mb-10">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
@@ -65,7 +65,7 @@ const MediaCoverage = () => {
         </div>
 
         {/* Media Articles */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {mediaArticles.map((article, index) => (
             <div 
               key={index} 
