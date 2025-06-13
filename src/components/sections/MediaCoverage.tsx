@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Star, Volume2, VolumeX } from 'lucide-react';
+import { Star, Volume2, VolumeX, ArrowRight } from 'lucide-react';
+
 
 const MediaCoverage = () => {
   const playerRef = useRef<any>(null);
@@ -102,9 +104,9 @@ const MediaCoverage = () => {
               <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-lg font-bold text-foreground mb-2">{article.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4 text-justify">{article.summary}</p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-auto">
-                  Read Full Article
-                </a>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-auto inline-flex items-center gap-2">
+  Read Full Article <ArrowRight className="w-4 h-4" />
+</a>
               </div>
             </div>
           ))}
