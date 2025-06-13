@@ -1,30 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Volume2, VolumeX } from 'lucide-react';
-import { Link } from 'react-router-dom'; // ✅ Import Link for internal routing
+import { ArrowRight, Volume2, VolumeX, X } from 'lucide-react';
 
 const MediaCoverage = () => {
   const mediaArticles = [
     {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
       summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining his strategic entrepreneurship and youth empowerment.",
-      slug: "entrepreneurial-drive-nigeria-vanguard",  // ✅ Use slug for internal routes
+      content: `Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining his strategic approach to entrepreneurship, leadership, and youth empowerment across industries.`,
+      link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
       image: "/assets/vanguard.jpg",
     },
     {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
       summary: "The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.",
-      slug: "chima-israel-on-rise-nation",
+      content: `The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.`,
+      link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
       image: "/assets/attach5.jpg",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.",
-      slug: "ecowas-ambassadorial-honour-sun",
+      content: `The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.`,
+      link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
       image: "/assets/ecowas.png",
     },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState<any>(null);
   const playerRef = useRef<any>(null);
   const [isMuted, setIsMuted] = useState(true);
 
@@ -77,6 +80,7 @@ const MediaCoverage = () => {
     <section id="media" className="bg-white py-12">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
+        {/* Section Heading */}
         <div className="text-center space-y-3 mb-8">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             Featured <span className="text-primary">Media & Insights</span>
@@ -86,6 +90,7 @@ const MediaCoverage = () => {
           </p>
         </div>
 
+        {/* Video */}
         <div className="relative mb-6">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
@@ -101,15 +106,12 @@ const MediaCoverage = () => {
           </p>
         </div>
 
+        {/* Media Articles */}
         <div className="space-y-10">
           {mediaArticles.map((article, index) => (
             <div 
               key={index} 
-              className={`flex flex-col lg:flex-row ${
-                index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
-              } items-center gap-6 transition-all duration-700 ease-out ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
+              className={`flex flex-col lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''} items-center gap-6 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-md">
@@ -118,13 +120,29 @@ const MediaCoverage = () => {
               <div className="w-full lg:w-1/2 space-y-3 text-left">
                 <h3 className="text-[18px] font-bold text-[#111111]">{article.title}</h3>
                 <p className="text-[16px] text-[#333333] leading-relaxed">{article.summary}</p>
-                <Link to={`/media/${article.slug}`} className="text-primary font-semibold inline-flex items-center gap-2">
+                <button onClick={() => setSelectedArticle(article)} className="text-primary font-semibold inline-flex items-center gap-2">
                   Read Full Article <ArrowRight className="w-4 h-4" />
-                </Link>
+                </button>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Modal */}
+        {selectedArticle && (
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center px-4">
+            <div className="bg-white max-w-xl w-full p-6 rounded-lg relative">
+              <button onClick={() => setSelectedArticle(null)} className="absolute top-4 right-4">
+                <X className="w-5 h-5 text-gray-600" />
+              </button>
+              <h3 className="text-xl font-bold mb-4">{selectedArticle.title}</h3>
+              <p className="text-[#333333] text-base leading-relaxed mb-4">{selectedArticle.content}</p>
+              <a href={selectedArticle.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
+                View Original Source ↗
+              </a>
+            </div>
+          </div>
+        )}
 
       </div>
     </section>
