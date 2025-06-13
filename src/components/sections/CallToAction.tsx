@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react';
 
 const CallToAction = () => {
   return (
-    <section id="contact" className="bg-[#F9F9F9] py-16">
+    <section id="contact" className="bg-[#F9F9F9] pt-16 pb-0">
       <div className="max-w-5xl mx-auto px-4 lg:px-8">
 
         <div className="mb-12 text-center space-y-5">
