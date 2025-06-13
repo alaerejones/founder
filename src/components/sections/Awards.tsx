@@ -32,6 +32,7 @@ const Awards = () => {
   return (
     <section id="awards" className="pt-8 pb-8 lg:pt-10 lg:pb-16 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
+
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
@@ -53,13 +54,16 @@ const Awards = () => {
         {/* Awards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {awards.map((award, index) => (
-            <div key={index} className="group bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-32 h-32 mb-6 rounded-xl overflow-hidden bg-muted flex items-center justify-center">
+            <div key={index} className="group bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-8 border border-gray-100 flex flex-col items-center text-center">
+              
+              {/* Enlarged Image */}
+              <div className="w-48 h-48 mb-6 rounded-xl overflow-hidden bg-muted flex items-center justify-center">
                 <img src={award.image} alt={award.title} className="object-contain w-full h-full" />
               </div>
+
               <h3 className="text-lg font-semibold text-foreground mb-2">{award.title}</h3>
               <p className="text-sm text-muted-foreground mb-1">{award.organization}</p>
-              <div className="mt-3 px-4 py-1 text-sm font-bold text-primary border border-primary rounded-full">
+              <div className="mt-3 px-5 py-1 text-sm font-bold text-primary border border-primary rounded-full">
                 {award.year}
               </div>
             </div>
