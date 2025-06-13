@@ -24,13 +24,13 @@ const CallToAction = () => {
             <div className="text-left">
               <p className="text-[16px] font-semibold text-[#111111] mb-1">Office of Management</p>
               <a href="mailto:contactonyeolu@outlook.com" className="text-primary text-[18px] font-medium">
-                contactonyeolu@outlook.com
+                onyeolusmgt@outlook.com
               </a>
             </div>
           </div>
 
           <p className="text-sm text-[#777777] text-center max-w-md">
-            Kindly note: Personal inquiries are not processed through this channel.
+            Kindly note: While every inquiry is received, responses are prioritized based on relevance and availability.
           </p>
         </div>
 
