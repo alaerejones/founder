@@ -56,7 +56,7 @@ const VenturesOverview = () => {
           <ScrollReveal delay={300}>
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/assets/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" alt="Sinocle AgroSolutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="/assets/sinocleagro.jpg" alt="Sinocle AgroSolutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 lg:p-8">
                 <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
