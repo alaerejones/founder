@@ -38,7 +38,7 @@ const MediaCoverage = () => {
   const mediaArticles = [
     {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
-      summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries, while addressing national developmental gaps and inspiring future entrepreneurs.",
+      summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries while addressing national developmental gaps in Africa.",
       link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
       image: "/assets/vanguard.jpg",
     },
@@ -57,46 +57,48 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="py-14 bg-[#F8F9F833]">
+    <section id="media" className="py-16 bg-white">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
+
         {/* Header */}
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
             <Star className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">
               Media & Insights
             </span>
           </div>
-          <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-            Featured Media Coverage
-          </h2>
-          <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Selected features highlighting entrepreneurial recognitions, leadership engagements, and public impact work. These articles showcase just a few of multiple published features and coverages across West Africa.
+          <h2 className="text-3xl font-bold text-foreground mb-6">Featured Media Coverage</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Selected features highlighting entrepreneurial recognitions, leadership engagements, and public impact across the continent.
           </p>
         </div>
 
         {/* YouTube */}
-        <div className="relative mb-20">
-          <div className="w-full rounded-xl overflow-hidden shadow-lg relative aspect-video">
+        <div className="relative mb-24">
+          <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
           </div>
-          <button onClick={toggleMute} className={`absolute top-4 right-4 p-3 rounded-full shadow-md transition ${isMuted ? 'bg-white' : 'bg-[#EDEDED]'}`}>
+          <button
+            onClick={toggleMute}
+            className={`absolute top-4 right-4 p-3 rounded-full shadow-md transition ${isMuted ? 'bg-white' : 'bg-[#EDEDED]'}`}
+          >
             {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
           </button>
-          <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
-            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development, and national impact.
+          <p className="mt-4 text-center text-sm text-muted-foreground max-w-xl mx-auto">
+            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development and national impact.
           </p>
         </div>
 
         {/* Articles */}
-        <div className="space-y-20">
+        <div className="space-y-32">
           {mediaArticles.map((article, index) => (
-            <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
-              <div className="overflow-hidden rounded-xl">
-                <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+            <div key={index} className={`flex flex-col lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''} gap-12 items-center`}>
+              <div className="flex-1">
+                <img src={article.image} alt={article.title} className="w-full rounded-xl object-cover shadow" />
               </div>
-              <div className="space-y-5">
-                <h3 className="text-xl font-bold text-foreground">{article.title}</h3>
+              <div className="flex-1 space-y-6">
+                <h3 className="text-2xl font-bold text-foreground">{article.title}</h3>
                 <p className="text-base text-muted-foreground leading-relaxed text-justify">{article.summary}</p>
                 <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
                   Read Full Article <ArrowRight className="w-4 h-4" />
@@ -105,6 +107,7 @@ const MediaCoverage = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
