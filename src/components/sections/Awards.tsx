@@ -47,23 +47,23 @@ const Awards = () => {
           </h2>
 
           <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A selection of honors acknowledging the business leadership, youth advocacy, and impact-driven work that continue to shape national and regional development.
+            Selected recognitions acknowledging business leadership, advocacy and impact.
           </p>
         </div>
 
         {/* Awards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {awards.map((award, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2 relative border border-gray-100">
-              
-              <div className="w-28 h-28 mb-6 flex items-center justify-center">
-                <img src={award.image} alt={award.title} className="w-full h-full object-contain rounded-xl" />
+            <div key={index} className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center relative">
+
+              <div className="w-24 h-24 mb-6 rounded-full bg-muted/20 flex items-center justify-center overflow-hidden">
+                <img src={award.image} alt={award.title} className="object-contain w-20 h-20" />
               </div>
 
               <h3 className="text-lg font-bold text-foreground mb-2">{award.title}</h3>
               <p className="text-sm text-muted-foreground mb-4">{award.organization}</p>
 
-              <div className="absolute top-4 right-4 bg-white border border-primary px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm">
+              <div className="absolute top-4 right-4 bg-white border border-primary px-3 py-1 rounded-full text-xs font-bold text-primary shadow">
                 {award.year}
               </div>
             </div>
