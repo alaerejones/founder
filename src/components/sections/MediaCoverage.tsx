@@ -65,7 +65,7 @@ const MediaCoverage = () => {
         </div>
 
         {/* Media Articles */}
-        <div className="space-y-24">
+        <div className="space-y-10">
           {mediaArticles.map((article, index) => (
             <div 
               key={index} 
