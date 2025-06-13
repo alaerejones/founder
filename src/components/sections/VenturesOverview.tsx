@@ -25,6 +25,7 @@ const VenturesOverview = () => {
 
         {/* Ventures Grid */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 lg:mb-20">
+
           {/* Sinocle Nigeria Limited */}
           <ScrollReveal delay={200}>
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
@@ -54,8 +55,93 @@ const VenturesOverview = () => {
             </div>
           </ScrollReveal>
 
-          {/* The remaining items (AgroSolutions, Energy, iLunar) remain exactly the same as your code above */}
-          {/* No change necessary except this padding update */}
+          {/* Sinocle AgroSolutions */}
+          <ScrollReveal delay={300}>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/assets/896dd14b-eb18-4b8e-aabb-744b3c67fd22.png" 
+                  alt="Sinocle AgroSolutions"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
+                  Sinocle AgroSolutions
+                </h3>
+                <div className="max-w-md">
+                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
+                    With Sinocle AgroSolutions, I'm building an integrated agricultural system that addresses food security, job creation, and rural development. Our operations span poultry farming, frozen chicken processing, egg production, and staple crop cultivation. We serve both bulk buyers and retail outlets, supplying quality agricultural products that feed thousands of households, institutions, and businesses. More importantly, we are developing scalable farming models that empower young farmers, create employment, and strengthen Africa's food supply chain.
+                  </p>
+                </div>
+                <a href="https://agrosolutions.sinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Learn More
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Sinocle Energy Solutions */}
+          <ScrollReveal delay={400}>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <img 
+                  src="/assets/f218aff5-6866-45a9-b57a-89bda6dda12d.png" 
+                  alt="Sinocle Energy Solutions"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-primary">Launching Soon</span>
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
+                  Sinocle Energy Solutions
+                </h3>
+                <div className="max-w-md">
+                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
+                    Energy is at the center of Africa's industrial future. Sinocle Energy Solutions is positioned to develop power infrastructure that supports commercial, industrial, and urban expansion across Nigeria. Our upcoming projects are focused on scalable, efficient, and sustainable energy solutions that meet growing power demands while unlocking opportunities for manufacturing, commerce, and regional growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* iLunar Technologies */}
+          <ScrollReveal delay={500}>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
+              <div className="aspect-[4/3] overflow-hidden relative">
+                <img 
+                  src="/assets/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" 
+                  alt="iLunar Technologies"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-xs font-semibold text-primary">Launching Soon</span>
+                </div>
+              </div>
+              <div className="p-6 lg:p-8">
+                <h3 className="text-lg lg:text-xl font-bold text-foreground mb-4 leading-tight">
+                  iLunar Technologies
+                </h3>
+                <div className="max-w-md">
+                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
+                    Technology holds the key to accelerating growth across sectors. Through iLunar Technologies, I am building digital solutions that simplify complex business processes and enable operational excellence. Our focus is on enterprise software, business automation, and digital platforms that serve organizations across multiple industries. As our initial product lines launch, iLunar will deliver the tools businesses need to optimize workflows, improve efficiency, and scale confidently in the modern economy.
+                  </p>
+                </div>
+                <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
+                  Visit Website
+                  <svg className="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </ScrollReveal>
+
         </div>
       </div>
     </section>
