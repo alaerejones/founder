@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ArrowRight, Volume2, VolumeX } from 'lucide-react';
 
 const MediaCoverage = () => {
   const mediaArticles = [
@@ -24,6 +24,8 @@ const MediaCoverage = () => {
   ];
 
   const [isVisible, setIsVisible] = useState(false);
+  const playerRef = useRef<any>(null);
+  const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -33,6 +35,45 @@ const MediaCoverage = () => {
     observer.observe(document.getElementById('media')!);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag);
+
+    (window as any).onYouTubeIframeAPIReady = () => {
+      playerRef.current = new (window as any).YT.Player('youtube-player', {
+        videoId: '-ehcCk1PP74',
+        playerVars: {
+          autoplay: 1,
+          mute: 0,
+          controls: 1,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1
+        },
+        events: {
+          onReady: (event: any) => {
+            event.target.playVideo();
+            setTimeout(() => {
+              event.target.unMute();
+            }, 500);
+          }
+        }
+      });
+    };
+  }, []);
+
+  const toggleMute = () => {
+    if (!playerRef.current) return;
+    if (isMuted) {
+      playerRef.current.unMute();
+    } else {
+      playerRef.current.mute();
+    }
+    setIsMuted(!isMuted);
+  };
 
   return (
     <section id="media" className="bg-white py-12">
@@ -48,17 +89,17 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Video */}
+        {/* Enhanced Video */}
         <div className="relative mb-6">
-          <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0"
-              title="YouTube video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
+            <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
           </div>
+          <button
+            onClick={toggleMute}
+            className={`absolute top-4 right-4 p-3 rounded-full shadow-md bg-white`}
+          >
+            {isMuted ? <VolumeX className="w-5 h-5 text-primary" /> : <Volume2 className="w-5 h-5 text-primary" />}
+          </button>
           <p className="mt-2 text-sm text-[#777777] text-center">
             Featured at Nigerian SME Awards on leadership, real estate and national development.
           </p>
