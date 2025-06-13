@@ -89,7 +89,7 @@ const MediaCoverage = () => {
                 ECOWAS Ambassadorial Honour - The Sun
               </h3>
               <p className="text-base text-muted-foreground leading-relaxed text-justify">
-                The Sun reports on Chima Onyeolu’s ECOWAS Youth Council Ambassadorial recognition, underscoring his commitment to youth leadership, entrepreneurship advocacy, and regional development initiatives driving positive socio-economic change.
+                The Sun reports on Chima Onyeolu’s ECOWAS Youth Council Ambassadorial recognition, underscoring his commitment to youth leadership, entrepreneurship advocacy, and regional development initiatives driving positive socio-economic change in Nigeria and acroos West Africa.
               </p>
               <a href="https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
                 Read Full Article
