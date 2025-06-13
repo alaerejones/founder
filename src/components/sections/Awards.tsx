@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Awards = () => {
   const awards = [
@@ -7,6 +7,17 @@ const Awards = () => {
     "Lions Club Humanitarian Award",
     "Leadership Award",
   ];
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) setIsVisible(true);
+    }, { threshold: 0.2 });
+
+    observer.observe(document.getElementById('awards')!);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="awards" className="bg-[#F9F9F9] py-16">
@@ -23,7 +34,13 @@ const Awards = () => {
 
         <div className="space-y-6">
           {awards.map((title, index) => (
-            <div key={index} className="text-[16px] font-medium text-[#111111]">
+            <div 
+              key={index} 
+              className={`text-[16px] font-medium text-[#111111] transition-all duration-700 ease-out
+                ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
+              `}
+              style={{ transitionDelay: `${index * 150}ms` }}
+            >
               {title}
             </div>
           ))}
