@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Star, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const MediaCoverage = () => {
   const mediaArticles = [
@@ -7,16 +7,19 @@ const MediaCoverage = () => {
       title: "Entrepreneurial Drive in Nigeria - Vanguard",
       summary: "Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining his strategic entrepreneurship and youth empowerment.",
       link: "https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/",
+      image: "/assets/vanguard.jpg",
     },
     {
       title: "The name Chima Israel Onyeolu is on the rise - The Nation",
       summary: "The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.",
       link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
+      image: "/assets/side.JPG",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
       summary: "The Sun reports on his ECOWAS Youth Council Ambassadorial recognition, entrepreneurship advocacy, and regional development initiatives driving socio-economic change.",
       link: "https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/",
+      image: "/assets/attach5.jpg",
     },
   ];
 
@@ -32,7 +35,7 @@ const MediaCoverage = () => {
   }, []);
 
   return (
-    <section id="media" className="bg-white py-16">
+    <section id="media" className="bg-white py-10">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
         {/* Section Heading */}
@@ -41,7 +44,7 @@ const MediaCoverage = () => {
             Featured <span className="text-primary">Media & Insights</span>
           </h2>
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
-            Highlights from select features, press interviews and public recognitions across leading regional publications.
+            Highlights from select press interviews, editorial features, and public recognitions across leading publications.
           </p>
         </div>
 
@@ -62,16 +65,21 @@ const MediaCoverage = () => {
         </div>
 
         {/* Media Articles */}
-        <div className="space-y-16">
+        <div className="space-y-24">
           {mediaArticles.map((article, index) => (
             <div 
               key={index} 
-              className={`flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out ${
+              className={`flex flex-col lg:flex-row ${
+                index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
+              } items-center gap-12 transition-all duration-700 ease-out ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="flex-1 text-left space-y-4">
+              <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-md">
+                <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
+              </div>
+              <div className="w-full lg:w-1/2 space-y-5 text-left">
                 <h3 className="text-[18px] font-bold text-[#111111]">{article.title}</h3>
                 <p className="text-[16px] text-[#333333] leading-relaxed">{article.summary}</p>
                 <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
