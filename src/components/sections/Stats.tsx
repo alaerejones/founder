@@ -43,23 +43,23 @@ const Stats = () => {
   }, [isVisible]);
 
   return (
-    <section className="bg-[#F9F9F9] py-16" ref={sectionRef}>
+    <section className="bg-[#F9F9F9] py-12" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
-        <div className="mb-12 text-center space-y-5">
+        <div className="mb-10 text-center space-y-5">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             My Impact in <span className="text-primary">Numbers</span>
           </h2>
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
-            These numbers reflect my commitment to driving growth, creating sustainable opportunities, and empowering communities across Africa.
+            Reflecting the scope of my work in building sustainable businesses, infrastructure, and leadership platforms.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-          <Stat icon={<Home className="w-8 h-8 text-primary" />} count={counts.projects} label="Projects Delivered" />
-          <Stat icon={<Building className="w-8 h-8 text-primary" />} count={counts.sectors} label="Major Sectors" />
-          <Stat icon={<Users className="w-8 h-8 text-primary" />} count={counts.lives.toLocaleString()} label="Lives Impacted" />
-          <Stat icon={<Award className="w-8 h-8 text-primary" />} count={counts.awards} label="Awards Received" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <Stat icon={<Home className="w-6 h-6 text-primary" />} count={counts.projects} label="Projects Delivered" />
+          <Stat icon={<Building className="w-6 h-6 text-primary" />} count={counts.sectors} label="Major Sectors" />
+          <Stat icon={<Users className="w-6 h-6 text-primary" />} count={counts.lives.toLocaleString()} label="Lives Impacted" />
+          <Stat icon={<Award className="w-6 h-6 text-primary" />} count={counts.awards} label="Awards Received" />
         </div>
 
       </div>
@@ -68,9 +68,9 @@ const Stats = () => {
 };
 
 const Stat = ({ icon, count, label }: any) => (
-  <div className="space-y-4">
-    <div className="w-16 h-16 mx-auto bg-primary/10 flex items-center justify-center rounded-full">{icon}</div>
-    <div className="text-[32px] font-bold text-[#111111]">{count}+</div>
+  <div className="space-y-3">
+    <div className="w-12 h-12 mx-auto bg-primary/10 flex items-center justify-center rounded-full">{icon}</div>
+    <div className="text-[24px] font-bold text-[#111111]">{count}+</div>
     <p className="text-sm text-[#777777]">{label}</p>
   </div>
 );
