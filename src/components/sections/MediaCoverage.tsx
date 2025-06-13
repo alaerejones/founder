@@ -31,7 +31,7 @@ const MediaCoverage = () => {
               src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0"
               title="Amb. Israel Chima Onyeolu | Leadership, Real Estate & National Impact"
               frameBorder="0"
-              allow="autoplay; encrypted-media"
+              allow="autoplay; muted; encrypted-media"
               allowFullScreen
               className="w-full h-full"
             ></iframe>
