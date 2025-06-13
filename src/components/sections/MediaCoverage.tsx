@@ -1,94 +1,102 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-import ScrollReveal from '@/components/ScrollReveal';
 
 const MediaCoverage = () => {
   return (
-    <section className="bg-white py-10 lg:py-16">
+    <section id="media" className="pt-8 pb-8 lg:pt-10 lg:pb-16 bg-white">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
-            <Star className="w-4 h-4 text-primary mr-2" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
+
+        {/* Section Header */}
+        <div className="text-center mb-12 lg:mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full mb-6 border border-primary/20 bg-white">
+            <Star className="w-4 h-4 mr-2 text-primary" />
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+              Media & Insights
+            </span>
           </div>
 
-          <h2 className="text-xl lg:text-3xl font-bold text-foreground mb-6">
-            Featured Media & Appearances
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-6 leading-tight">
+            Featured Media Coverage
           </h2>
 
-          <p className="text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            A glimpse into my leadership journey, entrepreneurial impact and public engagements captured across major media outlets.
+          <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Selected features highlighting some of the recent entrepreneurial recognitions, leadership engagements, and public impact work. These represent just a few of multiple published features and coverage.
           </p>
         </div>
 
-        {/* Full-width autoplay video */}
-        <div className="mb-12 rounded-xl overflow-hidden shadow-xl">
-          <div className="relative pb-[56.25%]">
+        {/* YouTube Video */}
+        <div className="mb-12">
+          <div className="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-lg">
             <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=1&mute=1&controls=1&loop=1&playlist=-ehcCk1PP74"
-              title="Leadership Nomination Video"
+              src="https://www.youtube.com/embed/-ehcCk1PP74?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0"
+              title="Amb. Israel Chima Onyeolu | Leadership, Real Estate & National Impact"
               frameBorder="0"
-              allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; encrypted-media"
               allowFullScreen
+              className="w-full h-full"
             ></iframe>
           </div>
+          <p className="mt-4 text-sm text-muted-foreground text-center max-w-2xl mx-auto">
+            Interview feature at the Nigerian SME Awards highlighting leadership, real estate development, and the national impact journey.
+          </p>
         </div>
 
-        <p className="text-sm text-muted-foreground text-center max-w-2xl mx-auto leading-relaxed mb-14">
-          This nomination feature captures my leadership in youth empowerment, real estate development, and national capacity-building efforts through various ventures across Africa.
-        </p>
-
-        {/* Media Articles */}
-        <div className="space-y-10">
-          <ScrollReveal delay={100}>
-            <div>
-              <h3 className="text-lg font-bold text-foreground mb-2">Vanguard</h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Exploring Onyeolu Chima’s innovative approach to entrepreneurship and youth empowerment.
+        {/* Articles */}
+        <div className="space-y-16">
+          {/* Vanguard */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+              <img src="/assets/vanguard.jpg" alt="Vanguard" className="w-full h-full object-cover object-center" />
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-lg lg:text-xl font-bold text-foreground">
+                Entrepreneurial Drive in Nigeria - Vanguard
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed text-justify">
+                Vanguard spotlights Onyeolu Israel Chima's growing reputation as one of Nigeria's emerging business leaders, examining how his strategic approach to entrepreneurship and youth empowerment is creating significant value across industries, while addressing national developmental gaps.
               </p>
-              <a href="https://example.com/vanguard-article" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
+              <a href="https://www.vanguardngr.com/2025/03/why-chima-israel-onyeolus-entrepreneurial-trait-is-gaining-recognition/amp/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
                 Read Full Article
               </a>
             </div>
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal delay={200}>
-            <div>
-              <h3 className="text-lg font-bold text-foreground mb-2">The Sun</h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Recognizing the growing influence and leadership of Onyeolu Israel Chima across Africa.
+          {/* The Nation */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg order-2 lg:order-1">
+              <img src="/assets/thenation.jpg" alt="The Nation" className="w-full h-full object-cover object-center" />
+            </div>
+            <div className="space-y-4 order-1 lg:order-2">
+              <h3 className="text-lg lg:text-xl font-bold text-foreground">
+                On The Rise - The Nation
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed text-justify">
+                The Nation profiles Chima Onyeolu’s entrepreneurial trajectory, his expanding ventures in real estate, agriculture, technology, and his sustained focus on job creation, youth engagement, and long-term institution building as key pillars for Africa's next generation.
               </p>
-              <a href="https://example.com/sun-article" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
+              <a href="https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
                 Read Full Article
               </a>
             </div>
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal delay={300}>
-            <div>
-              <h3 className="text-lg font-bold text-foreground mb-2">The Nation</h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Highlights of transformative ventures led by Onyeolu Chima driving sustainable growth.
+          {/* The Sun */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+              <img src="/assets/thesun.jpg" alt="The Sun" className="w-full h-full object-cover object-center" />
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-lg lg:text-xl font-bold text-foreground">
+                ECOWAS Ambassadorial Honour - The Sun
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed text-justify">
+                The Sun reports on Chima Onyeolu’s ECOWAS Youth Council Ambassadorial recognition, underscoring his commitment to youth leadership, entrepreneurship advocacy, and regional development initiatives driving positive socio-economic change.
               </p>
-              <a href="https://example.com/nation-article" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
+              <a href="https://thesun.ng/onyeolu-israel-chima-ceo-of-sinocle-nigeria-limited-gets-wayc-ambassadorial-honour/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
                 Read Full Article
               </a>
             </div>
-          </ScrollReveal>
+          </div>
 
-          <ScrollReveal delay={400}>
-            <div>
-              <h3 className="text-lg font-bold text-foreground mb-2">Latest News</h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Honoring exceptional youth development efforts and capacity-building projects.
-              </p>
-              <a href="https://example.com/latestnews-article" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold">
-                Read Full Article
-              </a>
-            </div>
-          </ScrollReveal>
         </div>
       </div>
     </section>
