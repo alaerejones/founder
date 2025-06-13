@@ -15,10 +15,10 @@ const Awards = () => {
 
         <div className="mb-12 text-center space-y-5">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
-            My <span className="text-primary">Recognitions</span>
+            Selected <span className="text-primary">Recognitions</span>
           </h2>
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
-            Honors received for leadership, entrepreneurship, and youth empowerment across West Africa.
+            Selected highlights from numerous leadership honors, business recognitions, and international awards received across various industries and regions.
           </p>
         </div>
 
