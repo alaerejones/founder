@@ -7,8 +7,8 @@ const CallToAction = () => {
       <div className="max-w-5xl mx-auto px-4 lg:px-8">
 
         <div className="mb-12 text-center space-y-5">
-          <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
-            Partnership & Institutional Engagements
+          <h2 className="text-[24px] font-bold leading-snug text-[#111111]">
+            Partnership & <span className="text-primary">Institutional Engagements</span>
           </h2>
 
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
