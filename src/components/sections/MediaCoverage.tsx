@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Star, Volume2, VolumeX } from 'lucide-react';
 import { Star, Volume2, VolumeX, ArrowRight } from 'lucide-react';
-
 
 const MediaCoverage = () => {
   const playerRef = useRef<any>(null);
@@ -59,7 +57,7 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="py-8 lg:py-12 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
+    <section id="media" className="py-8 lg:py-10" style={{ backgroundColor: '#F8F9F833' }}>
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
 
         {/* Section Header */}
@@ -94,19 +92,19 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Articles - Improved mobile + desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Articles - Alternating on Desktop */}
+        <div className="space-y-20">
           {mediaArticles.map((article, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md border border-gray-100 flex flex-col">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-t-xl">
-                <img src={article.image} alt={article.title} className="w-full h-full object-contain" />
+            <div key={index} className={`grid lg:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+              <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+                <img src={article.image} alt={article.title} className="w-full h-full object-contain bg-white p-4" />
               </div>
-              <div className="p-5 flex flex-col flex-grow">
-                <h3 className="text-lg font-bold text-foreground mb-2">{article.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 text-justify">{article.summary}</p>
-                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-auto inline-flex items-center gap-2">
-  Read Full Article <ArrowRight className="w-4 h-4" />
-</a>
+              <div className="space-y-4">
+                <h3 className="text-lg lg:text-xl font-bold text-foreground">{article.title}</h3>
+                <p className="text-base text-muted-foreground leading-relaxed text-justify">{article.summary}</p>
+                <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
+                  Read Full Article <ArrowRight className="w-4 h-4" />
+                </a>
               </div>
             </div>
           ))}
