@@ -1,6 +1,5 @@
 import React from 'react';
 import { Trophy } from 'lucide-react';
-import Marquee from 'react-fast-marquee';
 
 const Awards = () => {
   const awards = [
@@ -11,29 +10,29 @@ const Awards = () => {
   ];
 
   return (
-    <section id="awards" className="py-16 bg-muted/10">
-      <div className="container mx-auto px-4 lg:px-6 max-w-6xl">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/20 bg-white mb-6">
-            <Trophy className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Awards & Recognition</span>
-          </div>
-          <h2 className="text-3xl font-bold text-foreground mb-6">My Recognitions</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A selection of awards received for business leadership, youth development, and economic impact across West Africa.
+    <section id="awards" className="bg-[#F9F9F9] py-16">
+      <div className="max-w-6xl mx-auto px-4 lg:px-8">
+
+        <div className="mb-12 text-center space-y-5">
+          <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
+            My <span className="text-primary">Recognitions</span>
+          </h2>
+          <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
+            A selection of leadership honors and awards received for business leadership, youth empowerment, and economic development across West Africa.
           </p>
         </div>
 
-        <Marquee pauseOnHover speed={30} gradient={false}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {awards.map((award, index) => (
-            <div key={index} className="flex flex-col items-center justify-center mx-16">
-              <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden bg-muted flex items-center justify-center shadow-md">
-                <img src={award.image} alt={award.title} className="object-contain w-full h-full" />
+            <div key={index} className="flex flex-col items-center text-center space-y-4">
+              <div className="w-24 h-24 bg-white rounded-xl shadow-md flex items-center justify-center overflow-hidden">
+                <img src={award.image} alt={award.title} className="object-contain w-20 h-20" />
               </div>
-              <p className="text-sm text-foreground font-semibold text-center">{award.title}</p>
+              <p className="text-[14px] font-medium text-[#111111]">{award.title}</p>
             </div>
           ))}
-        </Marquee>
+        </div>
+
       </div>
     </section>
   );
