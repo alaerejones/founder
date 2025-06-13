@@ -35,11 +35,11 @@ const MediaCoverage = () => {
   }, []);
 
   return (
-    <section id="media" className="bg-white py-10">
+    <section id="media" className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
 
         {/* Section Heading */}
-        <div className="mb-6 text-center space-y-5">
+        <div className="text-center space-y-3 mb-8">
           <h2 className="text-[24px] font-bold text-[#111111] leading-snug">
             Featured <span className="text-primary">Media & Insights</span>
           </h2>
@@ -49,7 +49,7 @@ const MediaCoverage = () => {
         </div>
 
         {/* Video */}
-        <div className="relative mb-10">
+        <div className="relative mb-6">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
@@ -59,19 +59,19 @@ const MediaCoverage = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <p className="mt-4 text-sm text-[#777777] text-center">
+          <p className="mt-2 text-sm text-[#777777] text-center">
             Featured at Nigerian SME Awards on leadership, real estate and national development.
           </p>
         </div>
 
         {/* Media Articles */}
-        <div className="space-y-4">
+        <div className="space-y-10">
           {mediaArticles.map((article, index) => (
             <div 
               key={index} 
               className={`flex flex-col lg:flex-row ${
                 index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
-              } items-center gap-12 transition-all duration-700 ease-out ${
+              } items-center gap-6 transition-all duration-700 ease-out ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
@@ -79,7 +79,7 @@ const MediaCoverage = () => {
               <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-md">
                 <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
               </div>
-              <div className="w-full lg:w-1/2 space-y-5 text-left">
+              <div className="w-full lg:w-1/2 space-y-3 text-left">
                 <h3 className="text-[18px] font-bold text-[#111111]">{article.title}</h3>
                 <p className="text-[16px] text-[#333333] leading-relaxed">{article.summary}</p>
                 <a href={article.link} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold inline-flex items-center gap-2">
