@@ -64,7 +64,7 @@ const MediaCoverage = () => {
           {/* The Nation */}
          <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
-              <img src="/assets/nation.jpg" alt="The Nation" className="w-full h-full object-cover object-center" />
+              <img src="/assets/side.JPG" alt="The Nation" className="w-full h-full object-cover object-center" />
             </div>
             <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
@@ -82,7 +82,7 @@ const MediaCoverage = () => {
           {/* The Sun */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
-              <img src="/assets/ecowas.png" alt="The Sun" className="w-full h-full object-cover object-center" />
+              <img src="/assets/attach5.jpg" alt="The Sun" className="w-full h-full object-cover object-center" />
             </div>
             <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
