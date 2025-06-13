@@ -34,9 +34,9 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="bg-white">
       <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center px-4 py-2 bg-white rounded-full border border-primary/20 mb-6">
             <Star className="w-4 h-4 text-primary mr-2" />
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">Media & Insights</span>
