@@ -59,8 +59,13 @@ const MediaCoverage = () => {
                 Read Full Article
               </a>
             </div>
+          </div>
 
-
+          {/* The Nation */}
+         <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+              <img src="/assets/nation.jpg" alt="Vanguard" className="w-full h-full object-cover object-center" />
+            </div>
             <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
                 The name Chima Israel Onyeolu is on the rise - The Nation
@@ -72,9 +77,14 @@ const MediaCoverage = () => {
                 Read Full Article
               </a>
             </div>
+          </div>
 
-
-             <div className="space-y-4">
+          {/* The Sun */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="w-full h-full overflow-hidden rounded-xl shadow-lg">
+              <img src="/assets/ecowas.jpg" alt="Vanguard" className="w-full h-full object-cover object-center" />
+            </div>
+            <div className="space-y-4">
               <h3 className="text-lg lg:text-xl font-bold text-foreground">
                 ECOWAS Ambassadorial Honour - The Sun
               </h3>
