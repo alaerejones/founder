@@ -47,7 +47,7 @@ const MediaCoverage = () => {
   ];
 
   return (
-    <section id="media" className="py-16" style={{ backgroundColor: '#F8F9F833' }}>
+    <section id="media" className="py-16 bg-[#F8F9F833]">
       <div className="container mx-auto px-4 lg:px-6 max-w-6xl text-center">
 
         <div className="mb-12">
