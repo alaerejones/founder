@@ -25,7 +25,7 @@ const MediaCoverage = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const playerRef = useRef<any>(null);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true); // ✅ start muted
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -47,7 +47,7 @@ const MediaCoverage = () => {
         videoId: '-ehcCk1PP74',
         playerVars: {
           autoplay: 1,
-          mute: 0,
+          mute: 1,  // ✅ start muted to ensure autoplay is allowed
           controls: 1,
           modestbranding: 1,
           rel: 0,
@@ -56,9 +56,6 @@ const MediaCoverage = () => {
         events: {
           onReady: (event: any) => {
             event.target.playVideo();
-            setTimeout(() => {
-              event.target.unMute();
-            }, 500);
           }
         }
       });
@@ -89,7 +86,7 @@ const MediaCoverage = () => {
           </p>
         </div>
 
-        {/* Enhanced Video */}
+        {/* Fully controlled autoplay video */}
         <div className="relative mb-6">
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg relative">
             <div id="youtube-player" className="absolute top-0 left-0 w-full h-full"></div>
