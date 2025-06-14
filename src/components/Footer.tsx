@@ -10,8 +10,8 @@ const Footer = () => {
         <div>
           <h5 className="text-2xl font-bold mb-3">AMB. ONYEOLU CHIMA</h5>
           <p className="text-sm text-white/80 leading-relaxed">
-            Entrepreneur | Youth Advocate | CEO <br />
-            Building Africa’s Future through leadership, infrastructure and technology.
+            Entrepreneur | Youth Advocate | Builder <br />
+            Building Africa’s Future through leadership, wnterprise and impact.
           </p>
         </div>
 
