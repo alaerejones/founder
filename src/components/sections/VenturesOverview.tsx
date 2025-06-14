@@ -93,12 +93,15 @@ const VenturesOverview = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
+                <h3 className="text-lg lg:text-xl font-bold text-primary leading-tight">
                   Sinocle Energy Solutions
                 </h3>
+                <p className="text-muted-foreground font-medium text-sm mb-4">
+              Oil, Gas & Energy Development
+            </p>
                 <div className="max-w-md">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
-                    Energy is at the center of Africa's industrial future. Sinocle Energy Solutions is positioned to develop power infrastructure...
+                    Sinocle Energy Solutions is being positioned to enter Nigeria’s oil, gas, and power sectors, with plans to operate across various parts of the energy value chain. The company’s vision is to help strengthen Africa’s energy capacity, create jobs, and develop infrastructure that will support industries, businesses, and communities across Nigeria and West Africa as operations launch and expand.
                   </p>
                 </div>
               </div>
