@@ -118,12 +118,15 @@ const VenturesOverview = () => {
                 </div>
               </div>
               <div className="p-6 lg:p-8">
-                <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
+                <h3 className="text-lg lg:text-xl font-bold text-primary leading-tight">
                   iLunar Technologies
                 </h3>
+                <p className="text-muted-foreground font-medium text-sm mb-4">
+              Software Solutions
+            </p>
                 <div className="max-w-md">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
-                    Technology holds the key to accelerating growth across sectors. Through iLunar Technologies, I am building digital solutions...
+                    iLunar Technologies develops software solutions designed to solve real-world problems across different sectors of Nigeria’s economy. Our approach focuses on identifying existing challenges and building scalable, independent software products that directly address these needs. As we prepare to launch our first product, iLunar Technologies remains committed to delivering practical, technology-driven solutions that serve everyday realities in Nigeria and emerging markets. iLunar Technologies stands as part of my broader mission to build companies that create lasting solutions, empower societies, and leave a legacy of real progress across Nigeria and West Africa.
                   </p>
                 </div>
                 <a href="https://ilunartech.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
