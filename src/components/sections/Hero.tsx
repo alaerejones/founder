@@ -15,7 +15,7 @@ const Hero = () => {
       id="hero"
       className="flex items-center h-[100svh] bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden bg-cover bg-top bg-no-repeat" 
       style={{ 
-        backgroundImage: 'url(/assets/653cb4d3-4796-4345-a4f4-d55788d237ce.png)'
+        backgroundImage: 'url(/assets/hero-bg.jpg)'
       }}
     >
       {/* Transparent Overlay */}
