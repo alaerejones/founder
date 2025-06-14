@@ -34,18 +34,21 @@ const About = () => {
 
             <div className="space-y-5 text-[#333333] text-[16px] text-justify leading-relaxed">
               <p>
-                Every journey starts somewhere. Mine started with a clear belief: Africa has what it takes to build its own future with businesses that solve problems, create opportunities, and deliver lasting value.
+                Every journey has a starting point. For me, it started with a clear belief: that Nigeria and Africa as a whole have the potential to build businesses that solve real problems, create jobs, and deliver long-term value.
               </p>
               <p>
-                As CEO of Sinocle Nigeria Limited and co-founder of Ilunar Technologies, my work is focused on developing infrastructure, driving technology adoption, and expanding into energy solutions that serve real needs across Nigeria and West Africa.
+                Through Sinocle Nigeria Limited, I have spent years leading projects in construction and real estate development, building homes, commercial properties, and infrastructure that support communities and businesses across Nigeria and neighboring countries.
+My work continues to grow into agriculture, helping improve food production and farming systems; into energy, with new ventures contributing to Nigeria’s growing oil, gas, and power sector; and into technology, using innovation to support business growth and drive economic development.
               </p>
               <p>
-                The appointment as Youth Ambassador by the ECOWAS Youth Council is a reflection of that commitment not to titles, but to building platforms that create jobs, empower youth, and strengthen the economies that will sustain Africa's next generation.
+                The ECOWAS Youth Council appointment as Youth Ambassador reflects this mission: to build companies that create jobs, support young entrepreneurs, strengthen local economies, and help secure the future of the next generation across Africa.
               </p>
 
               <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
                 <p className="italic text-[#111111] font-medium">
-                  At every stage, my focus remains clear: to build companies that outlive individuals, drive growth that lasts, and create spaces where people and communities thrive.
+                  At every stage, my focus remains clear: to build companies that outlive individuals, building strong businesses that last, support communities, and create opportunities for growth across Nigeria and West Africa.
+
+
                 </p>
               </div>
             </div>
