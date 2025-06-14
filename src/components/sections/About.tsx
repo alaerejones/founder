@@ -18,7 +18,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Desktop Image */}
           <div className="hidden lg:block">
-            <img src="/assets/about" alt="Onyeolu Israel Chima" className="w-full h-full object-cover object-center rounded-2xl shadow-2xl" />
+            <img src="/assets/about.jpg" alt="Onyeolu Israel Chima" className="w-full h-full object-cover object-center rounded-2xl shadow-2xl" />
           </div>
 
           {/* Content Section */}
