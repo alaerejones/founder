@@ -51,12 +51,12 @@ const Stats = () => {
             My Impact in <span className="text-primary">Numbers</span>
           </h2>
           <p className="text-[16px] text-[#333333] leading-relaxed max-w-3xl mx-auto">
-            Reflecting the scope of my work in building sustainable businesses, infrastructure, and leadership platforms.
+           Reflecting my work in building businesses, infrastructure, and industries that create jobs and drive economic growth across Nigeria and Africa.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <Stat icon={<Home className="w-6 h-6 text-primary" />} count={counts.projects} label="Projects Delivered" />
+          <Stat icon={<Home className="w-6 h-6 text-primary" />} count={counts.projects} label="Projects Delivered through Sinocle" />
           <Stat icon={<Building className="w-6 h-6 text-primary" />} count={counts.sectors} label="Major Sectors" />
           <Stat icon={<Users className="w-6 h-6 text-primary" />} count={counts.lives.toLocaleString()} label="Lives Impacted" />
           <Stat icon={<Award className="w-6 h-6 text-primary" />} count={counts.awards} label="Awards Received" />
