@@ -31,7 +31,7 @@ const VenturesOverview = () => {
           <ScrollReveal delay={200}>
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" alt="Sinocle Nigeria Limited" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="/assets/sinocle.png" alt="Sinocle Nigeria Limited" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 lg:p-8">
                 <h3 className="text-lg lg:text-xl font-bold text-primary leading-tight">
@@ -87,7 +87,7 @@ const VenturesOverview = () => {
           <ScrollReveal delay={400}>
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden relative">
-                <img src="/assets/f218aff5-6866-45a9-b57a-89bda6dda12d.png" alt="Sinocle Energy Solutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="/assets/oil.png" alt="Sinocle Energy Solutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                   <span className="text-xs font-semibold text-primary">Launching Soon</span>
                 </div>
@@ -112,7 +112,7 @@ const VenturesOverview = () => {
           <ScrollReveal delay={500}>
             <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] overflow-hidden relative">
-                <img src="/assets/567f24d0-a065-43b2-96ba-7ceb22ee3239.png" alt="iLunar Technologies" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <img src="/assets/ilunar.png" alt="iLunar Technologies" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                   <span className="text-xs font-semibold text-primary">Launching Soon</span>
                 </div>

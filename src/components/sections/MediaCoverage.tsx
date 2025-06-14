@@ -16,7 +16,7 @@ const MediaCoverage = () => {
       summary: "The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.",
       content: `The Nation profiles his expanding ventures in real estate, agriculture, technology, and job creation as key pillars for Africa's next generation.`,
       link: "https://thenationonlineng.net/chima-onyeolu-on-the-rise/amp/",
-      image: "/assets/attach5.jpg",
+      image: "/assets/thenationnews.jpg",
     },
     {
       title: "ECOWAS Ambassadorial Honour - The Sun",
