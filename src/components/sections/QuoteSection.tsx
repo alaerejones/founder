@@ -26,7 +26,7 @@ const QuoteSection = () => {
           
           {/* Quote Text */}
           <blockquote className="text-base md:text-lg lg:text-xl font-medium leading-relaxed mb-8 text-foreground italic">
-            "Success in business is not just about profit — it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
+            "Success in business is not just about profit, it's about creating sustainable solutions that empower communities and build a prosperous future for Africa's next generation."
           </blockquote>
           
           {/* Attribution */}

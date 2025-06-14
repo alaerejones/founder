@@ -37,16 +37,17 @@ const About = () => {
                 Every journey has a starting point. For me, it started with a clear belief: that Nigeria and Africa as a whole have the potential to build businesses that solve real problems, create jobs, and deliver long-term value.
               </p>
               <p>
-                Through Sinocle Nigeria Limited, I have spent years leading projects in construction and real estate development, building homes, commercial properties, and infrastructure that support communities and businesses across Nigeria and neighboring countries.
-My work continues to grow into agriculture, helping improve food production and farming systems; into energy, with new ventures contributing to Nigeria’s growing oil, gas, and power sector; and into technology, using innovation to support business growth and drive economic development.
+                Through Sinocle Nigeria Limited, I’ve led the delivery of residential, commercial, and public infrastructure projects that serve communities, businesses, and governments across Nigeria, with growing footprints across West Africa.
+
+As my work expands into agriculture, energy, and technology, the mission remains the same: to develop businesses that address real needs; from improving food production and building energy capacity, to developing homegrown software that solves global challenges.
               </p>
               <p>
-                The ECOWAS Youth Council appointment as Youth Ambassador reflects this mission: to build companies that create jobs, support young entrepreneurs, strengthen the economy, and help secure the future of the next generation across Africa.
+                My appointment as Youth Ambassador by the ECOWAS Youth Council reflects this larger commitment: not to titles, but to building companies that empower young people, strengthen economies, and create platforms that will serve Africa’s next generation.
               </p>
 
               <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">
                 <p className="italic text-[#111111] font-medium">
-                  At every stage, my focus remains clear: to build companies that outlive individuals, building strong businesses that last, support communities, and create opportunities for growth across Nigeria and West Africa.
+                  At every stage, my focus remains clear: to build companies that outlive individuals, enterprises that create real impact, strengthen communities, and drive Africa’s long-term growth.
 
 
                 </p>
