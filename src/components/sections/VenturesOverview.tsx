@@ -70,7 +70,7 @@ const VenturesOverview = () => {
             </p>
                 <div className="max-w-md">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
-                    Sinocle AgroSolutions operates an integrated agro-business producing poultry and crops for Nigeria’s growing food market. We supply both branded (Sinocle Fresh™) and unbranded eggs, frozen chicken, live broilers, and processed meats to supermarkets, markets, hotels, restaurants, and caterers. Our operations support food security, rural development, and economic empowerment while expanding into regional markets across West Africa.
+                    Sinocle AgroSolutions operates an integrated agro-business in poultry production for Nigeria’s growing food market. We supply both branded (Sinocle Fresh™) and unbranded eggs, frozen chicken, live broilers, and processed meats to supermarkets, markets, hotels, restaurants, and caterers. Our operations support food security, rural development, and economic empowerment while expanding into regional markets across West Africa.
                   </p>
                 </div>
                 <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
