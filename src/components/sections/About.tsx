@@ -56,7 +56,7 @@ As my work expands into agriculture, energy, and technology, the mission remains
 
             {/* Mobile Image */}
             <div className="lg:hidden mb-8">
-              <img src="/assets/d0e52c8f-8905-44f5-9968-ee23342d552d.png" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
+              <img src="/assets/about.jpg" alt="Onyeolu Israel Chima" className="w-full h-[300px] object-cover object-center rounded-2xl shadow-2xl" />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
