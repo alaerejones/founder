@@ -41,7 +41,7 @@ const About = () => {
 My work continues to grow into agriculture, helping improve food production and farming systems; into energy, with new ventures contributing to Nigeria’s growing oil, gas, and power sector; and into technology, using innovation to support business growth and drive economic development.
               </p>
               <p>
-                The ECOWAS Youth Council appointment as Youth Ambassador reflects this mission: to build companies that create jobs, support young entrepreneurs, strengthen local economies, and help secure the future of the next generation across Africa.
+                The ECOWAS Youth Council appointment as Youth Ambassador reflects this mission: to build companies that create jobs, support young entrepreneurs, strengthen the economy, and help secure the future of the next generation across Africa.
               </p>
 
               <div className="bg-muted rounded-xl p-4 border-l-4 border-primary">

@@ -37,9 +37,12 @@ const VenturesOverview = () => {
                 <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
                   Sinocle Nigeria Limited
                 </h3>
+                <p className="text-muted-foreground font-medium text-sm">
+              Construction & Real Estate Development
+            </p>
                 <div className="max-w-md">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
-                    Through Sinocle Nigeria Limited, I've established a construction and real estate development company that delivers full-scale building solutions across residential, commercial, and government sectors...
+                    Sinocle Nigeria Limited delivers full-service construction and real estate projects across residential, commercial, and government sectors. From architectural design to full project delivery, we handle private developments, public infrastructure, healthcare facilities, commercial complexes, and real estate investments across Nigeria, with growing reach into West Africa. Every project creates jobs, supports industries, and contributes to national development.
                   </p>
                 </div>
                 <a href="https://buildwithsinocle.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
