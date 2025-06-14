@@ -34,10 +34,10 @@ const VenturesOverview = () => {
                 <img src="/assets/0d300790-e67a-4840-ac00-b642f49cfa66.png" alt="Sinocle Nigeria Limited" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 lg:p-8">
-                <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
+                <h3 className="text-lg lg:text-xl font-bold text-primary leading-tight">
                   Sinocle Nigeria Limited
                 </h3>
-                <p className="text-muted-foreground font-medium text-sm">
+                <p className="text-muted-foreground font-medium text-sm mb-4">
               Construction & Real Estate Development
             </p>
                 <div className="max-w-md">
