@@ -62,12 +62,15 @@ const VenturesOverview = () => {
                 <img src="/assets/sinocleagro.jpg" alt="Sinocle AgroSolutions" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-6 lg:p-8">
-                <h3 className="text-lg lg:text-xl font-bold text-primary mb-4 leading-tight">
+                <h3 className="text-lg lg:text-xl font-bold text-primary leading-tight">
                   Sinocle AgroSolutions
                 </h3>
+                <p className="text-muted-foreground font-medium text-sm mb-4">
+              Agriculture & Food Supply Chain
+            </p>
                 <div className="max-w-md">
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 text-justify hyphens-auto" style={{ textJustify: 'inter-word' }}>
-                    With Sinocle AgroSolutions, I'm building an integrated agricultural system that addresses food security, job creation, and rural development...
+                    Sinocle AgroSolutions operates an integrated agro-business producing poultry and crops for Nigeria’s growing food market. We supply both branded (Sinocle Fresh™) and unbranded eggs, frozen chicken, live broilers, and processed meats to supermarkets, markets, hotels, restaurants, and caterers. Our operations support food security, rural development, and economic empowerment while expanding into regional markets across West Africa.
                   </p>
                 </div>
                 <a href="https://sinocleagro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium">
