@@ -76,6 +76,15 @@ const MediaCoverage = () => {
     setIsMuted(!isMuted);
   };
 
+  // Handle body scroll lock
+  useEffect(() => {
+    if (selectedArticle) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [selectedArticle]);
+
   return (
     <section id="media" className="bg-white py-12">
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
@@ -130,8 +139,8 @@ const MediaCoverage = () => {
 
         {/* Presidential Modal */}
         {selectedArticle && (
-          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center px-4">
-            <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 relative transition-transform transform scale-100 opacity-100">
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex justify-center items-center">
+            <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl p-8 relative transform scale-100 opacity-100 transition">
               <button onClick={() => setSelectedArticle(null)} className="absolute top-4 right-4 p-2 bg-gray-100 rounded-full shadow-sm">
                 <X className="w-5 h-5 text-gray-600" />
               </button>
